@@ -3,6 +3,7 @@ import './App.css'
 import { Route, Router, Routes, BrowserRouter } from 'react-router-dom'
 import Main from './components/Main'
 import Catalog from './components/Catalog/Catalog'
+import './index.css'
 
 function App() {
 
