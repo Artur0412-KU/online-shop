@@ -1,9 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 body {
     margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    background-color: #F5F3F8;
 }
 
 .header {
@@ -23,7 +25,8 @@ body {
 }
 
 .dropdown {
-    padding: 30px 70px 30px 30px;
+    padding: 50px 180px 50px 22px;
+    font-family: "Inter", sans-serif;
     display: flex;
     align-items: center;
     text-align: center;
@@ -40,6 +43,7 @@ body {
 
 .search-input {
     width: 50%;
+    font-family: "Inter", sans-serif;
 }
 
 .navigations-buttons {
@@ -48,4 +52,96 @@ body {
     justify-content: space-between;
     flex-direction: row;
     gap: 16px;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.search-img {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+.ant-input-search-large .ant-input-group-addon:last-child .ant-input-search-button {
+    background-color: white; 
+    border-color: #d9d9d9;
+    border-left: none;
+    padding-right: 22px;
+    height: 56px;
+}
+
+.ant-input-search-large .ant-input {
+    padding-left: 22px;  
+    height: 56px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 50px;
+}
+
+.poster-container {
+    width: 880px;
+    height: 732px;
+    background-image: url('./components/img/poster-photo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 28px;
+    margin: 40px;
+}
+
+.product-list {
+    background-color: #fff;
+    padding: 24px 28px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+.product-list-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.catalog-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.catalog-items {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+} 
+
+.catalog-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 156px;
+
+}
+
+.catalog-item img {
+    margin-right: 10px; 
+}
+
+.catalog-item div {
+    flex-grow: 1; 
 }

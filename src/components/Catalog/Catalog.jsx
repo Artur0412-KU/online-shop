@@ -4,22 +4,20 @@ import Logo from '../img/gadget-house-logo.png'
 import {Button, Dropdown, Input, Space } from 'antd';
 import { AppstoreOutlined } from '@ant-design/icons';
 const { Search } = Input;
-import items from './Items';
+import items from '../ProductList/Items';
+import CatalogIcon from '../img/catalog-icon.png'
 
 
 
 export default function Catalog() {
     const navigate = useNavigate();
   return (
-    <Dropdown
-      className='dropdown'
-      menu={{
-        items,
-      }}
-      placement="bottomLeft"
-    >
-      <Button><AppstoreOutlined/> Catalog</Button>
-    </Dropdown>
+      <Button className='dropdown' style={{fontSize: '42px'}}>
+        <img src={CatalogIcon}/> 
+        Catalog
+        
+      </Button>
+
     
   )
 }
