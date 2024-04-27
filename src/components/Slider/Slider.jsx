@@ -22,9 +22,6 @@ export default function Slider() {
         <div className="swiper-slide"><ProductCard /></div>
         <div className="swiper-slide"><ProductCard /></div>
         <div className="swiper-slide"><ProductCard /></div>
-        <div className="swiper-slide"><ProductCard /></div>
-        <div className="swiper-slide"><ProductCard /></div>
-        <div className="swiper-slide"><ProductCard /></div>
       </div>
     </div>
   );

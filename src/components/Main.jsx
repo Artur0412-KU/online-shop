@@ -13,6 +13,8 @@ import {Input, Space, Typography, Button } from 'antd';
 import Poster from './Poster/Poster';
 import Slider from './Slider/Slider';
 import RightIcon from './img/right.png'
+import Benefits from './Benefits/Benefits';
+import Footer from './Footer/Footer';
 const { Text } = Typography;
 const { Search } = Input;
 
@@ -48,8 +50,7 @@ export default function Main() {
       <ProductList/>
       <Poster/>
     </div>
-
-  
+ 
     <div className='slider-text'>
       <h2>Smartphone</h2>
       <Button type='link' className='slider-text-button'>
@@ -61,13 +62,9 @@ export default function Main() {
 
 
     </div>
-    <Slider/>
-
-
-    
-
-
-    
+   <Slider/>
+   <Benefits/>
+   <Footer/>
   </>
     
   )
