@@ -145,3 +145,63 @@ body {
 .catalog-item div {
     flex-grow: 1; 
 }
+
+.slider-text {
+    padding-left: 50px;
+    padding-top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    position: relative;
+}
+
+.slider-text::after {
+    border-bottom: #00820D;
+}
+
+
+.slider-text h2 {
+   font-weight: 500;
+   font-size: 42px;
+}
+
+
+.slider-text-button {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: #00820D;
+    background-color: transparent;
+    border: none;
+}
+
+.button-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #00820D;
+}
+
+.slider-text-button .button-content {
+    text-decoration: underline;
+}
+
+.swiper-contaier {
+    padding: 50px;
+    background-color: #EAE4EE;
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    padding: 16px;
+    background-color: #fff;
+    width: 305px;
+
+   height: 480px;
+}

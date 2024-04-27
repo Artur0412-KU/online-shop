@@ -9,8 +9,11 @@ import SearchIcon from './img/icons/search-icon.svg'
 import HeartIcon from './img/icons/heart-icon.svg'
 import PhoneIcon from './img/icons/call-icon.svg'
 import ProductList from './ProductList/ProductList';
-import {Input, Space} from 'antd';
+import {Input, Space, Typography, Button } from 'antd';
 import Poster from './Poster/Poster';
+import Slider from './Slider/Slider';
+import RightIcon from './img/right.png'
+const { Text } = Typography;
 const { Search } = Input;
 
 export default function Main() {
@@ -45,6 +48,21 @@ export default function Main() {
       <ProductList/>
       <Poster/>
     </div>
+
+  
+    <div className='slider-text'>
+      <h2>Smartphone</h2>
+      <Button type='link' className='slider-text-button'>
+       <div class="button-content">
+          See more
+          <img src={RightIcon} alt="Right Icon"/>
+        </div>
+      </Button>
+
+
+    </div>
+    <Slider/>
+
 
     
 
