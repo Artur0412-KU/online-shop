@@ -19,7 +19,7 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    padding:  0 50px;
+    padding: 0 50px;
 }
 
 .dropdown {
@@ -61,13 +61,13 @@ body {
 }
 
 .search-img {
-  display: flex;
-  align-items: center;
-  background-color: transparent;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
 }
 
 .ant-input-search-large .ant-input-group-addon:last-child .ant-input-search-button {
-    background-color: white; 
+    background-color: white;
     border-color: #d9d9d9;
     border-left: none;
     padding-right: 22px;
@@ -75,7 +75,7 @@ body {
 }
 
 .ant-input-search-large .ant-input {
-    padding-left: 22px;  
+    padding-left: 22px;
     height: 56px;
 }
 
@@ -127,7 +127,7 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-} 
+}
 
 .catalog-item {
     display: flex;
@@ -138,11 +138,11 @@ body {
 }
 
 .catalog-item img {
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 .catalog-item div {
-    flex-grow: 1; 
+    flex-grow: 1;
 }
 
 .slider-text {
@@ -161,8 +161,8 @@ body {
 
 
 .slider-text h2 {
-   font-weight: 500;
-   font-size: 42px;
+    font-weight: 500;
+    font-size: 42px;
 }
 
 
@@ -194,11 +194,54 @@ body {
     background-color: #EAE4EE;
 }
 
-.card {
+.card-rate {
+    color: #6F4C9A;
+    font-size: 17px;
+}
+
+.card-img {
+    margin: 0 auto;
+}
+
+.card-svg_like {
+    cursor: pointer;
+    width: 36px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #6F4C9A;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 38px 0px 0px 0px;
+}
+
+.card-footer a {
+    display: flex;
+}
+
+.card h3 {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 23px;
+}
+
+.card p {
+    margin: 0;
+    font-size: 25px;
+
+}
+
+.ant-card .ant-card-body {
     padding: 16px;
-    background-color: #fff;
-    width: 305px;
-    height: 480px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 .benefits-container {
@@ -261,7 +304,9 @@ body {
     gap: 102px;
 }
 
-.clients-section, .categories-section, .contact-section {
+.clients-section,
+.categories-section,
+.contact-section {
     display: flex;
     align-items: start;
     justify-content: flex-start;
@@ -270,11 +315,13 @@ body {
 }
 
 
-.clients-section h3, .categories-section h3, .contact-section h3 {
-   font-size: 24px;
-   font-weight: 500;
-   margin: 0;
-} 
+.clients-section h3,
+.categories-section h3,
+.contact-section h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+}
 
 .footer-nav {
     display: flex;

@@ -1,6 +1,6 @@
-import React, { useRef, useEffect } from 'react';
-import ProductCard from '../Card/ProductCard';
-import Swiper from 'swiper';
+import React, { useRef, useEffect } from "react";
+import ProductCard from "../Card/ProductCard";
+import Swiper from "swiper";
 
 export default function Slider() {
   const swiperRef = useRef(null);
@@ -10,7 +10,7 @@ export default function Slider() {
       new Swiper(swiperRef.current, {
         spaceBetween: 50,
         slidesPerView: 4,
-        onSlideChange: () => console.log('slide change')
+        onSlideChange: () => console.log("slide change"),
       });
     }
   }, []);
@@ -18,12 +18,19 @@ export default function Slider() {
   return (
     <div ref={swiperRef} className="swiper-container">
       <div className="swiper-wrapper">
-        <div className="swiper-slide"><ProductCard /></div>
-        <div className="swiper-slide"><ProductCard /></div>
-        <div className="swiper-slide"><ProductCard /></div>
-        <div className="swiper-slide"><ProductCard /></div>
+        <div className="swiper-slide">
+          <ProductCard />
+        </div>
+        <div className="swiper-slide">
+          <ProductCard />
+        </div>
+        <div className="swiper-slide">
+          <ProductCard />
+        </div>
+        <div className="swiper-slide">
+          <ProductCard />
+        </div>
       </div>
     </div>
   );
 }
-
