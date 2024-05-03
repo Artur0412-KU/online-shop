@@ -1,18 +1,18 @@
 import React, { useState } from "react";
-import { Card, Rate } from "antd";
+import { Card, Rate  } from "antd";
 
 const DATA_CARD = [
   {
     key: "1",
-    title: "Samsung Galaxy A24 6/128Gb Black",
-    price: "19 900 ₴",
-    img: "/src/components/img/card/card-samsungA24-black.png",
+    title: "Lenovo IdeaPad 1 15ALC7",
+    price: "16 999 ₴",
+    img: "/src/components/img/card/lenovo-laptop.png",
     svgCard: "/src/components/img/card/card-buy.svg",
     svgLike: "/src/components/img/card/card-like.svg",
   }
 ];
 
-export default function ProductCard() {
+export default function LaptopCard() {
   const [data, setData] = useState(DATA_CARD);
 
   return (
@@ -24,8 +24,8 @@ export default function ProductCard() {
             className="card-img"
             src={item.img}
             alt="#"
-            width={155}
-            height={200}
+            width={305}
+            height={262}
           />
           <h3>{item.title}</h3>
           <Rate className="card-rate" />

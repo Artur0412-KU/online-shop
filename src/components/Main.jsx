@@ -11,10 +11,14 @@ import PhoneIcon from './img/icons/call-icon.svg'
 import ProductList from './ProductList/ProductList';
 import {Input, Space, Typography, Button } from 'antd';
 import Poster from './Poster/Poster';
-import Slider from './Slider/Slider';
+import MobileSlider from './Slider/MobileSlider';
+import ViewedSlider from './Slider/ViewedSlider';
 import RightIcon from './img/right.png'
 import Benefits from './Benefits/Benefits';
 import Footer from './Footer/Footer';
+import Brands from './Brands/Brands';
+import LaptopSlider from './Slider/LaptopSlider';
+
 const { Text } = Typography;
 const { Search } = Input;
 
@@ -25,8 +29,6 @@ export default function Main() {
   return (
   <>
     <Header/>
-
-    
 
     <nav className='navigation'>
       <Catalog/>
@@ -51,6 +53,8 @@ export default function Main() {
       <Poster/>
     </div>
  
+   {/* Smartphone  */}
+   <> 
     <div className='slider-text'>
       <h2>Smartphone</h2>
       <Button type='link' className='slider-text-button'>
@@ -62,7 +66,43 @@ export default function Main() {
 
 
     </div>
-   <Slider/>
+   <MobileSlider/>
+   </>
+
+   <Brands/>
+    
+    {/* Laptop  */}
+    <>
+    <div className='slider-text'>
+      <h2>Laptop</h2>
+      <Button type='link' className='slider-text-button'>
+       <div class="button-content">
+          See more
+          <img src={RightIcon} alt="Right Icon"/>
+        </div>
+      </Button>
+
+
+    </div>
+    <LaptopSlider/>
+    </>
+    
+    {/* reviewed offers */}
+    <>
+    <div className='slider-text'>
+      <h2>Previously reviewed offers</h2>
+      <Button type='link' className='slider-text-button'>
+       <div class="button-content">
+          See more
+          <img src={RightIcon} alt="Right Icon"/>
+        </div>
+      </Button>
+
+
+    </div>
+    <ViewedSlider/>
+    </>
+    
    <Benefits/>
    <Footer/>
   </>
