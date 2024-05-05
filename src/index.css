@@ -28,7 +28,7 @@ body {
 }
 
 .dropdown {
-    padding: 50px 180px 50px 22px;
+    padding: 50px 230px 50px 22px;
     font-family: "Inter", sans-serif;
     display: flex;
     align-items: center;
@@ -45,7 +45,7 @@ body {
 }
 
 .search-input {
-    width: 50%;
+    width: 48%;
     font-family: "Inter", sans-serif;
 }
 
@@ -116,7 +116,8 @@ body {
 
 .product-list {
     background-color: #fff;
-    padding: 24px 28px;
+    padding: 24px;
+    padding-right: 20px;
     height: fit-content;
     display: flex;
     align-items: center;
@@ -150,8 +151,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 156px;
+    gap: 173px;
 
+}
+
+.catalog-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #000;
+    font-size: 24px;
 }
 
 .catalog-item img {
@@ -208,7 +217,6 @@ body {
 }
 
 /* #endregion */
-
 
 /* #region Carousel */
 

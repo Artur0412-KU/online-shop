@@ -25,7 +25,7 @@ export default function ProductList() {
         >
           <a href='' className='catalog-nav' onClick={(e) => e.preventDefault()}>
             <Space className='catalog-item' style={{ alignItems: 'center' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'black' }}>
+              <div className='catalog-list'>
                 <img src={Smartphone} alt="Smartphone" /> Smartphone
               </div>
               <img src={Right} alt="Right Arrow" style={{ marginLeft: 'auto' }} />
@@ -41,8 +41,8 @@ export default function ProductList() {
           placement='right'
         >
           <a href='' className='catalog-nav' onClick={(e) => e.preventDefault()}>
-            <Space className='catalog-item' style={{ alignItems: 'center', gap: '195px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'black'}}>
+            <Space className='catalog-item' style={{ alignItems: 'center', gap: '230px' }}>
+              <div className='catalog-list'>
                 <img src={laptop} alt="Laptop" /> Laptop
               </div>
               <img src={Right} alt="Right Arrow" style={{ marginLeft: 'auto' }} />
@@ -57,8 +57,8 @@ export default function ProductList() {
           placement='right'
         >
           <a href='' className='catalog-nav' onClick={(e) => e.preventDefault()}>
-            <Space className='catalog-item' style={{ alignItems: 'center', gap: '200px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'black' }}>
+            <Space className='catalog-item' style={{ alignItems: 'center', gap: '235px' }}>
+              <div className='catalog-list'>
                 <img src={tablet} alt="Laptop" /> Tablet
               </div>
               <img src={Right} alt="Right Arrow" style={{ marginLeft: 'auto' }} />
@@ -73,8 +73,8 @@ export default function ProductList() {
           placement='right'
         >
           <a href='' className='catalog-nav' onClick={(e) => e.preventDefault()}>
-            <Space className='catalog-item' style={{ alignItems: 'center', gap: '225px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'black' }}>
+            <Space className='catalog-item' style={{ alignItems: 'center', gap: '270px' }}>
+              <div className='catalog-list'>
                 <img src={PC} alt="Laptop" /> PC
               </div>
               <img src={Right} alt="Right Arrow" style={{ marginLeft: 'auto' }} />
@@ -89,8 +89,8 @@ export default function ProductList() {
           placement='right'
         >
           <a href='' className='catalog-nav' onClick={(e) => e.preventDefault()}>
-            <Space className='catalog-item' style={{ alignItems: 'center', gap: '100px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'black' }}>
+            <Space className='catalog-item' style={{ alignItems: 'center', gap: '75px' }}>
+              <div className='catalog-list'>
                 <img src={TV} alt="Laptop" /> TVs and Multimedia
               </div>
               <img src={Right} alt="Right Arrow" style={{ marginLeft: 'auto' }} />
@@ -106,7 +106,7 @@ export default function ProductList() {
         >
           <a href='' className='catalog-nav' onClick={(e) => e.preventDefault()}>
             <Space className='catalog-item' style={{ alignItems: 'center', gap: '150px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'black' }}>
+              <div className='catalog-list'>
                 <img src={watch} alt="Laptop" /> Smart-watch
               </div>
               <img src={Right} alt="Right Arrow" style={{ marginLeft: 'auto' }} />
@@ -121,8 +121,8 @@ export default function ProductList() {
           placement='right'
         >
           <a href='' className='catalog-nav' onClick={(e) => e.preventDefault()}>
-            <Space className='catalog-item' style={{ alignItems: 'center', gap: '200px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'black' }}>
+            <Space className='catalog-item' style={{ alignItems: 'center', gap: '235px' }}>
+              <div className='catalog-list'>
                 <img src={audio} alt="Laptop" /> Audio
               </div>
               <img src={Right} alt="Right Arrow" style={{ marginLeft: 'auto' }} />
@@ -138,7 +138,7 @@ export default function ProductList() {
         >
           <a href='' className='catalog-nav' onClick={(e) => e.preventDefault()}>
             <Space className='catalog-item' style={{ alignItems: 'center', gap: '135px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'black' }}>
+              <div className='catalog-list'>
                 <img src={console} alt="Laptop" /> Game console
               </div>
               <img src={Right} alt="Right Arrow" style={{ marginLeft: 'auto' }} />
@@ -153,8 +153,8 @@ export default function ProductList() {
           placement='right'
         >
           <a href='' className='catalog-nav' onClick={(e) => e.preventDefault()}>
-            <Space className='catalog-item' style={{ alignItems: 'center', gap: '120px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'black' }}>
+            <Space className='catalog-item' style={{ alignItems: 'center', gap: '110px' }}>
+              <div className='catalog-list' style={{lineHeight: '2.1'}}>
                 <img src={photo} alt="Laptop" /> Photo and video
               </div>
               <img src={Right} alt="Right Arrow" style={{ marginLeft: 'auto' }} />
@@ -169,8 +169,8 @@ export default function ProductList() {
           placement='right'
         >
           <a href='' className='catalog-nav' onClick={(e) => e.preventDefault()}>
-            <Space className='catalog-item' style={{ alignItems: 'center', gap: '208px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'black' }}>
+            <Space className='catalog-item' style={{ alignItems: 'center', gap: '240px' }}>
+              <div className='catalog-list'>
                 <img src={kids} alt="Laptop" /> KIDS
               </div>
               <img src={Right} alt="Right Arrow" style={{ marginLeft: 'auto' }} />
@@ -185,8 +185,8 @@ export default function ProductList() {
           placement='right'
         >
           <a href='' className='catalog-nav' onClick={(e) => e.preventDefault()}>
-            <Space className='catalog-item' style={{ alignItems: 'center', gap: '202px', marginBottom: '0px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'red' }}>
+            <Space className='catalog-item' style={{ alignItems: 'center', gap: '235px', marginBottom: '0px' }}>
+              <div className='catalog-list' style={{color:'red'}}>
                 <img src={sale} alt="Laptop" /> SALE
               </div>
               <img src={Right} alt="Right Arrow" style={{ marginLeft: 'auto' }} />
