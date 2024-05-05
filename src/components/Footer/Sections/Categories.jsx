@@ -5,17 +5,17 @@ export default function Categories() {
     <div className='categories-section'>
         <h3>Categories</h3>
         <nav className='footer-nav'>
-            <a>Smartphone</a>
-            <a>Laptop</a>
-            <a>Tablet</a>
-            <a>PC</a>
-            <a>TVs and Multimedia</a>
-            <a>Smart-watch</a>
-            <a>Audio</a>
-            <a>Game console</a>
-            <a>Photo and video</a>
-            <a>KIDS</a>
-            <a>SALE</a>
+            <a href=''>Smartphone</a>
+            <a href=''>Laptop</a>
+            <a href=''>Tablet</a>
+            <a href=''>PC</a>
+            <a href=''>TVs and Multimedia</a>
+            <a href=''>Smart-watch</a>
+            <a href=''>Audio</a>
+            <a href=''>Game console</a>
+            <a href=''>Photo and video</a>
+            <a href=''>KIDS</a>
+            <a href=''>SALE</a>
         </nav>
     </div>
   )

@@ -7,19 +7,21 @@ import ProductCard from './Card/ProductCard'
 export default function Brands() {
   const ref = useRef();
   return (
-    <div className="brands-container">
+    <div className="carousel-wrapper brands-container">
         <Carousel 
-         slidesToShow={4}
+         slidesToShow={5}
          slidesToScroll={1}
          autoplay={false}
          dots={false}
-         style={{padding: '50px'}}
+         style={{paddingBottom: '24px'}}
+         className='carousel-brands-container'
          ref={ref}
         >
-            <div><ProductCard/></div>
-            <div><ProductCard/></div>
-            <div><ProductCard/></div>
-            <div><ProductCard/></div>
+            <div><ProductCard /></div>
+            <div><ProductCard /></div>
+            <div><ProductCard /></div>
+            <div><ProductCard /></div>
+            <div><ProductCard /></div>
         </Carousel>
     <div className="arrow-container">
        <Button className="btn-arrow-prev" onClick={() => {

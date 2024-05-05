@@ -6,6 +6,8 @@ body {
     background-color: #F5F3F8;
 }
 
+/* #region Header */
+
 .header {
     display: flex;
     align-items: flex-start;
@@ -13,6 +15,9 @@ body {
     padding: 17px 50px;
 }
 
+/* #endregion */
+
+/* #region Navigation */
 .navigation {
     background-color: #EAE4EE;
     display: flex;
@@ -29,10 +34,10 @@ body {
     align-items: center;
     text-align: center;
     border-radius: 0;
-    background-color: #6F4C9A;
+    background-color: #582F8A;
     color: #fff;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 42px;
 }
 
 .dropdown:hover {
@@ -58,6 +63,7 @@ body {
     justify-content: flex-start;
     flex-direction: row;
     gap: 15px;
+    
 }
 
 .search-img {
@@ -66,19 +72,30 @@ body {
     background-color: transparent;
 }
 
-.ant-input-search-large .ant-input-group-addon:last-child .ant-input-search-button {
+:where(.css-dev-only-do-not-override-1qfezbu).ant-input-search >.ant-input-group >.ant-input-group-addon:last-child .ant-input-search-button {
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
     background-color: white;
     border-color: #d9d9d9;
     border-left: none;
     padding-right: 22px;
     height: 56px;
+    border-top-right-radius: 14px;
+}
+
+:where(.css-dev-only-do-not-override-1qfezbu).ant-input-search .ant-input-lg:hover {
+    border: none;
 }
 
 .ant-input-search-large .ant-input {
     padding-left: 22px;
     height: 56px;
+    border-radius: 14px;
 }
 
+/* #endregion */
+
+/* #region Main */
 .main-container {
     display: flex;
     justify-content: space-between;
@@ -145,6 +162,9 @@ body {
     flex-grow: 1;
 }
 
+/* #endregion */
+
+/* #region slider-text-top */
 .slider-text {
     padding-left: 50px;
     padding-top: 48px;
@@ -165,43 +185,99 @@ body {
     font-size: 42px;
 }
 
-
-.slider-text-button {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    border-bottom: #00820D;
-    background-color: transparent;
-    border: none;
-}
-
 .button-content {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+    height: 24px;
+}
+
+.button-link {
+    display: flex;
+    align-items: center;
     gap: 8px;
+    font-size: 16px;
     color: #00820D;
+    text-decoration: none;
 }
 
 .slider-text-button .button-content {
-    text-decoration: underline;
+    width: 100%; 
 }
 
+/* #endregion */
+
+
+/* #region Carousel */
 
 .carousel-wrapper {
     background-color: #EAE4EE;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
     padding-bottom: 24px;
 }
 
 .brands-container {
     padding-bottom: 24px;
+    background-color: #F5F3F8;
 }
+
+.carousel-slide {
+    margin-right: 20px; /* Додайте потрібний відступ справа */
+}
+
+.arrow-container {
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding-right: 10px;
+}
+
+.btn-arrow-prev, .btn-arrow-next {
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    border: 3px solid #00820D;
+    border-radius: 12px;
+}
+
+.btn-arrow-prev:hover,
+.btn-arrow-next:hover {
+  border-color: #000;
+}
+
+.btn-arrow-prev {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+}
+
+.btn-arrow-next  {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0;
+}
+
+/* #region Card */
+
 .card {
     margin-right: 20px;
+    border-radius: 15px;
+}
+
+.product-card {
+    width: 256px;
+    height: 256px;
 }
 
 .card-rate {
     color: #6F4C9A;
     font-size: 17px;
+    padding-top: 4px;
 }
 
 .card-img {
@@ -221,7 +297,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 38px 0px 0px 0px;
+    margin: 35px 0px 0px 0px;
+}
+
+.card-footer p {
+    font-size: 24px;
+    font-weight: 400;
 }
 
 .card-footer a {
@@ -230,10 +311,10 @@ body {
 
 .card h3 {
     margin: 0;
-    padding-top: 20px;
+    padding-top: 34px;
     padding-bottom: 10px;
     font-weight: 400;
-    font-size: 23px;
+    font-size: 24px;
 }
 
 .card p {
@@ -248,6 +329,12 @@ body {
     flex-direction: column;
     position: relative;
 }
+
+/* #endregion */
+
+/* #endregion */
+
+/* #region benefits */
 
 .benefits-container {
     padding: 48px 50px;
@@ -270,6 +357,9 @@ body {
     font-weight: normal;
 }
 
+/* #endregion */
+
+/* #region footer */
 .footer {
     padding: 46px 50px 113px;
     background-color: #1C1817;
@@ -297,8 +387,10 @@ body {
     margin: 0;
 }
 
-.footer-list p {
+.footer-list a {
     font-size: 16px;
+    color: #fff;
+    text-decoration: none;
 }
 
 .footer-right {
@@ -334,6 +426,12 @@ body {
     justify-content: flex-start;
     flex-direction: column;
     gap: 5px;
+    
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .contact-nav {
@@ -349,39 +447,4 @@ body {
     height: 32px;
 }
 
-.carousel-slide {
-    margin-right: 20px; /* Додайте потрібний відступ справа */
-}
-
-.arrow-container {
-    display: flex;
-    align-items: end;
-    justify-content: flex-end;
-    flex-direction: row;
-    padding-right: 10px;
-}
-
-.btn-arrow-prev, .btn-arrow-next {
-    padding: 2px;
-    display: flex;
-    align-items: center;
-    border: 3px solid #00820D;
-    border-radius: 12px;
-}
-
-.btn-arrow-prev:hover,
-.btn-arrow-next:hover {
-  border-color: #0ff; /* Змініть колір на ваш смак */
-}
-
-.btn-arrow-prev {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-right: 0;
-}
-
-.btn-arrow-next  {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-left: 0;
-}
+/* #endregion */

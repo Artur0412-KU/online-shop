@@ -18,14 +18,12 @@ export default function LaptopCard() {
   return (
     <>
       {data.map((item) => (
-        <Card key={item.key} className="card">
+        <Card key={item.key} className="card" >
           <img src={item.svgLike} alt="#" className="card-svg_like" />
           <img
             className="card-img"
             src={item.img}
             alt="#"
-            width={305}
-            height={262}
           />
           <h3>{item.title}</h3>
           <Rate className="card-rate" />

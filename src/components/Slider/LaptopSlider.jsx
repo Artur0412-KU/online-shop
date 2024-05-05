@@ -15,7 +15,7 @@ export default function LaptopSlider() {
       slidesToScroll={1}
       autoplay={false}
       dots={false}
-      style={{padding: '50px'}}
+      style={{paddingBottom: '24px'}}
       ref={ref}
     >
       <div>

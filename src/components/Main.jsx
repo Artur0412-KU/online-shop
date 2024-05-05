@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Header from './Header/Header';
 import Catalog from './Catalog/Catalog';
 import ButtonIcon from './Button/ButtonIcon'
@@ -19,7 +19,7 @@ import Footer from './Footer/Footer';
 import Brands from './Brands/Brands';
 import LaptopSlider from './Slider/LaptopSlider';
 
-const { Text } = Typography;
+const { Text, Link } = Typography;
 const { Search } = Input;
 
 export default function Main() {
@@ -57,12 +57,13 @@ export default function Main() {
    <> 
     <div className='slider-text'>
       <h2>Smartphone</h2>
-      <Button type='link' className='slider-text-button'>
-       <div class="button-content">
+      <div class="button-content">
+        <Link href='' class = 'button-link'>
           See more
           <img src={RightIcon} alt="Right Icon"/>
-        </div>
-      </Button>
+        </Link>
+        <hr style={{color: '#00820D', width: '100%', margin: '0'}}/>
+      </div>
 
 
     </div>
@@ -75,12 +76,15 @@ export default function Main() {
     <>
     <div className='slider-text'>
       <h2>Laptop</h2>
-      <Button type='link' className='slider-text-button'>
-       <div class="button-content">
+      
+      <div class="button-content">
+        <Link class = 'button-link'>
           See more
           <img src={RightIcon} alt="Right Icon"/>
-        </div>
-      </Button>
+        </Link>
+        <hr style={{color: '#00820D', width: '100%', margin: '0'}}/>
+      </div>
+      
 
 
     </div>
@@ -91,12 +95,13 @@ export default function Main() {
     <>
     <div className='slider-text'>
       <h2>Previously reviewed offers</h2>
-      <Button type='link' className='slider-text-button'>
-       <div class="button-content">
+      <div class="button-content">
+        <Link class = 'button-link'>
           See more
           <img src={RightIcon} alt="Right Icon"/>
-        </div>
-      </Button>
+        </Link>
+        <hr style={{color: '#00820D', width: '100%', margin: '0'}}/>
+      </div>
 
 
     </div>

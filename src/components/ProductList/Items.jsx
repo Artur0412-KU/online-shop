@@ -12,7 +12,7 @@ const items = [
       key: '1',
       label: (
         <a target="_blank" rel="" href="" className="list-item">
-         <MobileOutlined />  Smartphone
+         <MobileOutlined />  <p>Smartphone</p>
         </a>
       ),
     },

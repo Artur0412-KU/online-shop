@@ -14,7 +14,7 @@ export default function ProductCard() {
   return (
     <>
       {data.map((item) => (
-        <Card key={item.key} className="card">
+        <Card key={item.key} className="product-card">
           <img
             className="card-img"
             src={item.img}

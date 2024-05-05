@@ -5,12 +5,12 @@ export default function Clients() {
     <div className='clients-section'>
         <h3>To clients</h3>
         <nav className='footer-nav'>
-            <a>About company</a>
-            <a>Career</a>
-            <a>Customer Service</a>
-            <a>New items</a>
-            <a>Delivery</a>
-            <a>Payment</a>
+            <a href=''>About company</a>
+            <a href=''>Career</a>
+            <a href=''>Customer Service</a>
+            <a href=''>New items</a>
+            <a href=''>Delivery</a>
+            <a href=''>Payment</a>
         </nav>
     </div>
   )

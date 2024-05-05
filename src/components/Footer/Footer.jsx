@@ -16,15 +16,15 @@ export default function Footer() {
             <div className='main-information'>
                 <div className='footer-list'>
                   <img src={EmailIcon}/>
-                  <p>GadgetHouse@gmail.com</p>
+                  <a href=''>GadgetHouse@gmail.com</a>
                 </div>
                 <div className='footer-list'>
                   <img src={PhoneIcon}/>
-                  <p>(057) 333 33 33</p>
+                  <a href=''>(057) 333 33 33</a>
                 </div>
                 <div className='footer-list'>
                   <img src={LocationIcon}/>
-                  <p>GadgetHouse@gmail.com</p>
+                  <a href=''>GadgetHouse@gmail.com</a>
                 </div>
             </div>
         </div>
