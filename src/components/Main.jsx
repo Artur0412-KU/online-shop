@@ -18,32 +18,24 @@ import Benefits from './Benefits/Benefits';
 import Footer from './Footer/Footer';
 import Brands from './Brands/Brands';
 import LaptopSlider from './Slider/LaptopSlider';
+import Search from './Search/Search';
 
-const { Text, Link } = Typography;
-const { Search } = Input;
+const {  Link } = Typography;
+
 
 export default function Main() {
-    const navigate = useNavigate();
-    const onSearch = (value, _e, info) => console.log(info?.source, value);
-    
   return (
   <>
     <Header/>
 
     <nav className='navigation'>
       <Catalog/>
-      <Search
-        placeholder="Searching...."
-        onSearch={onSearch}
-        className='search-input'
-        size='large'
-        enterButton ={<img className='search-img' src={SearchIcon}/>}
-      />
+      <Search/>
       <div className='navigations-buttons'>
-        <ButtonIcon icon = {<img src={PhoneIcon}/>} />
-        <ButtonIcon icon = {<img src={HeartIcon}/>}/>
-        <ButtonIcon icon = {<img src={UserIcon}/>}/>
-        <ButtonIcon icon = {<img src={BasketIcon}/>}/>
+        <ButtonIcon icon = {PhoneIcon} />
+        <ButtonIcon icon = {HeartIcon}/>
+        <ButtonIcon icon = {UserIcon}/>
+        <ButtonIcon icon = {BasketIcon}/>
       </div>
       
     </nav>

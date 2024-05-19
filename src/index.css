@@ -34,16 +34,16 @@ body {
     align-items: center;
     text-align: center;
     border-radius: 0;
-    background-color: #582F8A;
+    background-color: #6f4c9a;
     color: #fff;
     font-weight: 500;
     font-size: 42px;
-}
-
+    transition: background-color 0.3s ease; /* Додаємо плавний перехід */
+  }
+  
 .dropdown:hover {
-    border-color: #6F4C9A;
+    background-color: #5a3e7d; /* Замініть на бажаний колір при наведенні */
 }
-
 .search-input {
     width: 48%;
     font-family: "Inter", sans-serif;
@@ -83,8 +83,8 @@ body {
     border-top-right-radius: 14px;
 }
 
-:where(.css-dev-only-do-not-override-1qfezbu).ant-input-search .ant-input-lg:hover {
-    border: none;
+:where(.css-dev-only-do-not-override-1qfezbu).ant-input-search >.ant-input-group >.ant-input-group-addon:last-child .ant-input-search-button:hover {
+    border-color: transparent;
 }
 
 .ant-input-search-large .ant-input {
@@ -105,13 +105,13 @@ body {
 
 .poster-container {
     width: 100%;
-    height: 732px;
+    height: 790px;
     background-image: url('./components/img/poster-photo.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 28px;
-    margin: 40px 50px 40px 40px;
+    margin: 40px 50px 0px 40px;
 }
 
 .product-list {
