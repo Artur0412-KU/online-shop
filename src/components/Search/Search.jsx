@@ -7,10 +7,10 @@ import SearchIcon from './SearchIcon';
 export default function Search() {
   return (
     <Paper component="form"
-      sx={{ padding: '6px 12px', display: 'flex', alignItems: 'center', width: 600, borderRadius: '12px'}}>
+      sx={{ padding: '6px 12px', display: 'flex', alignItems: 'center', width: 600, borderRadius: '16px', boxShadow: 'none'}}>
 
       <InputBase
-        sx={{ ml: 1, flex: 1, border: '24px', fontFamily: 'Inter', color: '#808080' }}
+        sx={{ ml: 1, flex: 1, fontFamily: 'Inter', color: '#808080' }}
         placeholder="Searching..."
         inputProps={{ 'aria-label': 'searching' }}
       />

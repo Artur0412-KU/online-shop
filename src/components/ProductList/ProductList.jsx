@@ -24,7 +24,7 @@ export default function ProductList() {
           placement='right'
         >
           <a href='' className='catalog-nav' onClick={(e) => e.preventDefault()}>
-            <Space className='catalog-item' style={{ alignItems: 'center' }}>
+            <Space className='catalog-item' style={{ alignItems: 'center'}}>
               <div className='catalog-list'>
                 <img src={Smartphone} alt="Smartphone" /> Smartphone
               </div>
@@ -33,7 +33,7 @@ export default function ProductList() {
           </a>
           
         </Dropdown>
-        <Divider style={{marginTop: '8px'}}/>
+        <Divider style={{marginTop: '8px', color:'#808080'}}/>
   
         <Dropdown
           menu={items}
@@ -41,7 +41,7 @@ export default function ProductList() {
           placement='right'
         >
           <a href='' className='catalog-nav' onClick={(e) => e.preventDefault()}>
-            <Space className='catalog-item' style={{ alignItems: 'center', gap: '230px' }}>
+            <Space className='catalog-item' style={{ alignItems: 'center', gap: '190px'}}>
               <div className='catalog-list'>
                 <img src={laptop} alt="Laptop" /> Laptop
               </div>
@@ -49,7 +49,7 @@ export default function ProductList() {
             </Space>
           </a>
         </Dropdown>
-        <Divider style={{marginTop: '8px'}}/>
+        <Divider style={{marginTop: '8px', color:'#808080'}}/>
 
         <Dropdown
           menu={items}
@@ -57,7 +57,7 @@ export default function ProductList() {
           placement='right'
         >
           <a href='' className='catalog-nav' onClick={(e) => e.preventDefault()}>
-            <Space className='catalog-item' style={{ alignItems: 'center', gap: '235px' }}>
+            <Space className='catalog-item' style={{ alignItems: 'center', gap: '200px' }}>
               <div className='catalog-list'>
                 <img src={tablet} alt="Laptop" /> Tablet
               </div>
@@ -65,7 +65,7 @@ export default function ProductList() {
             </Space>
           </a>
         </Dropdown>
-        <Divider style={{marginTop: '8px'}}/>
+        <Divider style={{marginTop: '8px', color:'#808080'}}/>
 
         <Dropdown
           menu={items}
@@ -73,7 +73,7 @@ export default function ProductList() {
           placement='right'
         >
           <a href='' className='catalog-nav' onClick={(e) => e.preventDefault()}>
-            <Space className='catalog-item' style={{ alignItems: 'center', gap: '270px' }}>
+            <Space className='catalog-item' style={{ alignItems: 'center', gap: '235px'}}>
               <div className='catalog-list'>
                 <img src={PC} alt="Laptop" /> PC
               </div>
@@ -81,7 +81,7 @@ export default function ProductList() {
             </Space>
           </a>
         </Dropdown>
-        <Divider style={{marginTop: '8px'}}/>
+        <Divider style={{marginTop: '8px', color:'#808080'}}/>
 
         <Dropdown
           menu={items}
@@ -89,15 +89,16 @@ export default function ProductList() {
           placement='right'
         >
           <a href='' className='catalog-nav' onClick={(e) => e.preventDefault()}>
-            <Space className='catalog-item' style={{ alignItems: 'center', gap: '75px' }}>
+            <Space className='catalog-item' style={{ alignItems: 'center', gap: '50px' }}>
               <div className='catalog-list'>
-                <img src={TV} alt="Laptop" /> TVs and Multimedia
+                <img src={TV} alt="Laptop" /> 
+                TVs and Multimedia
               </div>
               <img src={Right} alt="Right Arrow" style={{ marginLeft: 'auto' }} />
             </Space>
           </a>
         </Dropdown>
-        <Divider style={{marginTop: '8px'}}/>
+        <Divider style={{marginTop: '8px', color:'#808080'}}/>
 
         <Dropdown
           menu={items}
@@ -105,7 +106,7 @@ export default function ProductList() {
           placement='right'
         >
           <a href='' className='catalog-nav' onClick={(e) => e.preventDefault()}>
-            <Space className='catalog-item' style={{ alignItems: 'center', gap: '150px' }}>
+            <Space className='catalog-item' style={{ alignItems: 'center', gap: '126px'}}>
               <div className='catalog-list'>
                 <img src={watch} alt="Laptop" /> Smart-watch
               </div>
@@ -113,7 +114,7 @@ export default function ProductList() {
             </Space>
           </a>
         </Dropdown>
-        <Divider style={{marginTop: '8px'}}/>
+        <Divider style={{marginTop: '8px', color:'#808080'}}/>
 
         <Dropdown
           menu={items}
@@ -121,7 +122,7 @@ export default function ProductList() {
           placement='right'
         >
           <a href='' className='catalog-nav' onClick={(e) => e.preventDefault()}>
-            <Space className='catalog-item' style={{ alignItems: 'center', gap: '235px' }}>
+            <Space className='catalog-item' style={{ alignItems: 'center', gap: '200px' }}>
               <div className='catalog-list'>
                 <img src={audio} alt="Laptop" /> Audio
               </div>
@@ -129,7 +130,7 @@ export default function ProductList() {
             </Space>
           </a>
         </Dropdown>
-        <Divider style={{marginTop: '8px'}}/>
+        <Divider style={{marginTop: '8px', color:'#808080'}}/>
 
         <Dropdown
           menu={items}
@@ -137,7 +138,7 @@ export default function ProductList() {
           placement='right'
         >
           <a href='' className='catalog-nav' onClick={(e) => e.preventDefault()}>
-            <Space className='catalog-item' style={{ alignItems: 'center', gap: '135px' }}>
+            <Space className='catalog-item' style={{ alignItems: 'center', gap: '110px'}}>
               <div className='catalog-list'>
                 <img src={console} alt="Laptop" /> Game console
               </div>
@@ -145,7 +146,7 @@ export default function ProductList() {
             </Space>
           </a>
         </Dropdown>
-        <Divider style={{marginTop: '8px'}}/>
+        <Divider style={{marginTop: '8px', color:'#808080'}}/>
 
         <Dropdown
           menu={items}
@@ -153,15 +154,15 @@ export default function ProductList() {
           placement='right'
         >
           <a href='' className='catalog-nav' onClick={(e) => e.preventDefault()}>
-            <Space className='catalog-item' style={{ alignItems: 'center', gap: '110px' }}>
-              <div className='catalog-list' style={{lineHeight: '2.1'}}>
+            <Space className='catalog-item' style={{ alignItems: 'center', gap: '86px'}}>
+              <div className='catalog-list'>
                 <img src={photo} alt="Laptop" /> Photo and video
               </div>
               <img src={Right} alt="Right Arrow" style={{ marginLeft: 'auto' }} />
             </Space>
           </a>
         </Dropdown>
-        <Divider style={{marginTop: '8px'}}/>
+        <Divider style={{marginTop: '8px', color:'#808080'}}/>
 
         <Dropdown
           menu={items}
@@ -169,7 +170,7 @@ export default function ProductList() {
           placement='right'
         >
           <a href='' className='catalog-nav' onClick={(e) => e.preventDefault()}>
-            <Space className='catalog-item' style={{ alignItems: 'center', gap: '240px' }}>
+            <Space className='catalog-item' style={{ alignItems: 'center', gap: '210px'}}>
               <div className='catalog-list'>
                 <img src={kids} alt="Laptop" /> KIDS
               </div>
@@ -177,7 +178,7 @@ export default function ProductList() {
             </Space>
           </a>
         </Dropdown>
-        <Divider style={{marginTop: '8px'}}/>
+        <Divider style={{marginTop: '8px', color:'#808080'}}/>
 
         <Dropdown
           menu={items}
@@ -185,7 +186,7 @@ export default function ProductList() {
           placement='right'
         >
           <a href='' className='catalog-nav' onClick={(e) => e.preventDefault()}>
-            <Space className='catalog-item' style={{ alignItems: 'center', gap: '235px', marginBottom: '0px' }}>
+            <Space className='catalog-item' style={{ alignItems: 'center', marginBottom: '0px', gap: '210px' }}>
               <div className='catalog-list' style={{color:'red'}}>
                 <img src={sale} alt="Laptop" /> SALE
               </div>
@@ -193,7 +194,7 @@ export default function ProductList() {
             </Space>
           </a>
         </Dropdown>
-        <Divider style={{marginTop: '8px', marginBottom: '0px'}}/>
+        <Divider style={{marginTop: '8px', marginBottom: '0px', color:'#808080'}}/>
       </div>
     );
   }

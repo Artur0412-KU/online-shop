@@ -105,13 +105,13 @@ body {
 
 .poster-container {
     width: 100%;
-    height: 790px;
+    height: 785px;
     background-image: url('./components/img/poster-photo.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 28px;
-    margin: 40px 50px 0px 40px;
+    margin: 40px 0px 0px 40px;
 }
 
 .product-list {
@@ -124,6 +124,7 @@ body {
     justify-content: center;
     flex-direction: column;
     margin-bottom: 0;
+    width: 420px;
 }
 
 .product-list-container {
@@ -151,8 +152,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 173px;
-
+    gap: 135px;
 }
 
 .catalog-list {
@@ -201,6 +201,7 @@ body {
     flex-direction: column;
     gap: 2px;
     height: 24px;
+    cursor: pointer;
 }
 
 .button-link {
@@ -255,7 +256,7 @@ body {
 
 .btn-arrow-prev:hover,
 .btn-arrow-next:hover {
-  border-color: #000;
+  border-color:  inherit !important;;
 }
 
 .btn-arrow-prev {

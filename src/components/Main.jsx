@@ -27,7 +27,6 @@ export default function Main() {
   return (
   <>
     <Header/>
-
     <nav className='navigation'>
       <Catalog/>
       <Search/>
@@ -37,20 +36,17 @@ export default function Main() {
         <ButtonIcon icon = {UserIcon}/>
         <ButtonIcon icon = {BasketIcon}/>
       </div>
-      
     </nav>
-
     <div className = 'main-container'>
       <ProductList/>
       <Poster/>
     </div>
- 
    {/* Smartphone  */}
    <> 
     <div className='slider-text'>
       <h2>Smartphone</h2>
       <div class="button-content">
-        <Link href='' class = 'button-link'>
+        <Link href=''  class = 'button-link'>
           See more
           <img src={RightIcon} alt="Right Icon"/>
         </Link>
@@ -61,9 +57,7 @@ export default function Main() {
     </div>
    <MobileSlider/>
    </>
-
-   <Brands/>
-    
+   <Brands/>   
     {/* Laptop  */}
     <>
     <div className='slider-text'>
@@ -82,7 +76,6 @@ export default function Main() {
     </div>
     <LaptopSlider/>
     </>
-    
     {/* reviewed offers */}
     <>
     <div className='slider-text'>
@@ -99,7 +92,6 @@ export default function Main() {
     </div>
     <ViewedSlider/>
     </>
-    
    <Benefits/>
    <Footer/>
   </>
