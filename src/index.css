@@ -38,12 +38,27 @@ body {
     color: #fff;
     font-weight: 500;
     font-size: 42px;
-    transition: background-color 0.3s ease; /* Додаємо плавний перехід */
-  }
-  
-.dropdown:hover {
-    background-color: #5a3e7d; /* Замініть на бажаний колір при наведенні */
+    transition: background-color 0.3s ease;
+    /* Додаємо плавний перехід */
 }
+
+i {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.dropdown:hover {
+    background-color: #5a3e7d;
+    /* Замініть на бажаний колір при наведенні */
+}
+
 .search-input {
     width: 48%;
     font-family: "Inter", sans-serif;
@@ -63,7 +78,7 @@ body {
     justify-content: flex-start;
     flex-direction: row;
     gap: 15px;
-    
+
 }
 
 .search-img {
@@ -72,7 +87,7 @@ body {
     background-color: transparent;
 }
 
-:where(.css-dev-only-do-not-override-1qfezbu).ant-input-search >.ant-input-group >.ant-input-group-addon:last-child .ant-input-search-button {
+:where(.css-dev-only-do-not-override-1qfezbu).ant-input-search>.ant-input-group>.ant-input-group-addon:last-child .ant-input-search-button {
     border-top-right-radius: 14px;
     border-bottom-right-radius: 14px;
     background-color: white;
@@ -83,7 +98,7 @@ body {
     border-top-right-radius: 14px;
 }
 
-:where(.css-dev-only-do-not-override-1qfezbu).ant-input-search >.ant-input-group >.ant-input-group-addon:last-child .ant-input-search-button:hover {
+:where(.css-dev-only-do-not-override-1qfezbu).ant-input-search>.ant-input-group>.ant-input-group-addon:last-child .ant-input-search-button:hover {
     border-color: transparent;
 }
 
@@ -214,7 +229,7 @@ body {
 }
 
 .slider-text-button .button-content {
-    width: 100%; 
+    width: 100%;
 }
 
 /* #endregion */
@@ -235,7 +250,8 @@ body {
 }
 
 .carousel-slide {
-    margin-right: 20px; /* Додайте потрібний відступ справа */
+    margin-right: 20px;
+    /* Додайте потрібний відступ справа */
 }
 
 .arrow-container {
@@ -246,7 +262,8 @@ body {
     padding-right: 10px;
 }
 
-.btn-arrow-prev, .btn-arrow-next {
+.btn-arrow-prev,
+.btn-arrow-next {
     padding: 2px;
     display: flex;
     align-items: center;
@@ -256,7 +273,8 @@ body {
 
 .btn-arrow-prev:hover,
 .btn-arrow-next:hover {
-  border-color:  inherit !important;;
+    border-color: inherit !important;
+    ;
 }
 
 .btn-arrow-prev {
@@ -265,7 +283,7 @@ body {
     border-right: 0;
 }
 
-.btn-arrow-next  {
+.btn-arrow-next {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-left: 0;
@@ -435,7 +453,7 @@ body {
     justify-content: flex-start;
     flex-direction: column;
     gap: 5px;
-    
+
 }
 
 .footer-nav a {
