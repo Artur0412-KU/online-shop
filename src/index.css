@@ -6,14 +6,30 @@ body {
     background-color: #F5F3F8;
 }
 
+a {
+    text-decoration: none;
+}
+
+
 /* #region Header */
 
 .header {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 17px 50px;
+    padding: 25px 50px;
 }
+
+.nunito-sans-logo {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 34px;
+    line-height: 120%;
+    font-weight: 800;
+    font-style: normal;
+    color: #000;
+    margin: 0;
+}
+
 
 /* #endregion */
 
