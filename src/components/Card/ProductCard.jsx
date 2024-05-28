@@ -8,20 +8,30 @@ const DATA_CARD = [
     price: "19 900 ₴",
     img: "/src/components/img/card/card-samsungA24-black.png",
     svgCard: "/src/components/img/card/card-buy.svg",
-    svgCardH: "/src/components/img/card/card-buy-hover.svg",
+    svgCardClick: "/src/components/img/card/card-buy-hover.svg",
     svgLike: "/src/components/img/card/card-like.svg",
     svgLikeH: "/src/components/img/card/card-like-hover.svg",
+    svgCardHover: "/src/components/img/card/buy-hover.svg"
   },
 ];
 
 export default function ProductCard() {
   const [data, setData] = useState(DATA_CARD);
-  const [isClicked, setIsClicked] = useState(true); // ? Context -> LaptopCard double
+  const [isHovered, setIsHovered] = useState(false);
+  const [isClicked, setIsClicked] = useState(false); // ? Context -> LaptopCard double
   const [isClickedLike, setIsClickedLike] = useState(true); // ? Context -> LaptopCard double
 
   const handleClickBuy = () => {
     setIsClicked((prevState) => !prevState);
   };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  }
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  }
 
   const handleClickLike = () => {
     setIsClickedLike((prevState) => !prevState);
@@ -51,10 +61,12 @@ export default function ProductCard() {
             <img
               onClick={handleClickBuy}
               className="card-buy"
-              src={isClicked ? item.svgCard : item.svgCardH}
+              src={isHovered ? item.svgCardHover : isClicked ? item.svgCardClick : item.svgCard}
               alt="buy"
               width={43}
               height={43}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
             />
           </div>
         </Card>

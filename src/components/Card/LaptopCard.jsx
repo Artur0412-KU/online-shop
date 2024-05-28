@@ -8,18 +8,41 @@ const DATA_CARD = [
     price: "16 999 ₴",
     img: "/src/components/img/card/lenovo-laptop.png",
     svgCard: "/src/components/img/card/card-buy.svg",
+    svgCardClick: "/src/components/img/card/card-buy-hover.svg",
     svgLike: "/src/components/img/card/card-like.svg",
+    svgLikeH: "/src/components/img/card/card-like-hover.svg",
+    svgCardHover: "/src/components/img/card/buy-hover.svg"
   }
 ];
 
 export default function LaptopCard() {
   const [data, setData] = useState(DATA_CARD);
+  const [isHovered, setIsHovered] = useState(false);
+  const [isClicked, setIsClicked] = useState(false); // ? Context -> LaptopCard double
+  const [isClickedLike, setIsClickedLike] = useState(true); // ? Context -> LaptopCard double
+
+  const handleClickBuy = () => {
+    setIsClicked((prevState) => !prevState);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  }
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  }
+
+  const handleClickLike = () => {
+    setIsClickedLike((prevState) => !prevState);
+  };
+
 
   return (
     <>
       {data.map((item) => (
         <Card key={item.key} className="card" >
-          <img src={item.svgLike} alt="#" className="card-svg_like" />
+          <img src={isClickedLike ? item.svgLike : item.svgLikeH} alt="#" className="card-svg_like" onClick={handleClickLike}/>
           <img
             className="card-img"
             src={item.img}
@@ -29,15 +52,18 @@ export default function LaptopCard() {
           <Rate className="card-rate" />
           <div className="card-footer">
             <p>{item.price}</p>
-            <a href="#">
-              <img
-                className="card-buy"
-                src={item.svgCard}
-                alt="buy"
-                width={43}
-                height={43}
-              />
-            </a>
+            
+            <img
+              className="card-buy"
+              onClick={handleClickBuy}
+              src={isHovered ? item.svgCardHover : isClicked ? item.svgCardClick : item.svgCard}
+              alt="buy"
+              width={43}
+              height={43}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            />
+            
           </div>
         </Card>
       ))}

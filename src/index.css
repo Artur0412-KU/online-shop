@@ -103,25 +103,22 @@ i {
     background-color: transparent;
 }
 
-:where(.css-dev-only-do-not-override-1qfezbu).ant-input-search>.ant-input-group>.ant-input-group-addon:last-child .ant-input-search-button {
-    border-top-right-radius: 14px;
-    border-bottom-right-radius: 14px;
-    background-color: white;
-    border-color: #d9d9d9;
-    border-left: none;
-    padding-right: 22px;
-    height: 56px;
-    border-top-right-radius: 14px;
+/* style={{borderRadius: '10px', backgroundColor: '#fff', padding: '10px', width: '45px', height: '50px'}} */
+
+.navigation-button {
+    background-color: #fff  !important;
+    border-radius: 10px  !important;
+    padding: 10px  !important;
+    width: 45px  !important;
+    height: 50px  !important;
 }
 
-:where(.css-dev-only-do-not-override-1qfezbu).ant-input-search>.ant-input-group>.ant-input-group-addon:last-child .ant-input-search-button:hover {
-    border-color: transparent;
+.navigation-button:hover {
+    background-color: #00820D !important;
 }
 
-.ant-input-search-large .ant-input {
-    padding-left: 22px;
-    height: 56px;
-    border-radius: 14px;
+.navigation-button:active {
+    background-color: #00680A !important;
 }
 
 /* #endregion */
@@ -309,17 +306,31 @@ i {
 
 .card {
     margin-right: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 15px;
     border: 2px solid #5a3e7d07;
+    transition: all .2s;
 }
 
 .card:hover {
-    border: 2px solid rgb(111, 76, 154);
+    transform: scale(1.05);
 }
 
 .product-card {
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
     width: 256px;
     height: 256px;
+    transition: all .3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
 }
 
 .card-rate {
@@ -367,10 +378,6 @@ i {
 
 .card-buy {
     cursor: pointer;
-}
-
-.card-buy:hover  {
-
 }
 
 .card p {

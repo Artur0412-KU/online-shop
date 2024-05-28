@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import Header from './Header/Header';
 import Catalog from './Catalog/Catalog';
-import ButtonIcon from './Button/ButtonIcon'
+import ButtonIcon from './Navigation/Button/ButtonIcon'
 import BasketIcon from './img/icons/basket-icon.svg'
 import UserIcon from './img/icons/user-icon.svg'
 import SearchIcon from './img/icons/search-icon.svg'
@@ -19,6 +19,7 @@ import Footer from './Footer/Footer';
 import Brands from './Brands/Brands';
 import LaptopSlider from './Slider/LaptopSlider';
 import Search from './Search/Search';
+import Navigation from './Navigation/Navigation';
 
 const {  Link } = Typography;
 
@@ -27,16 +28,7 @@ export default function Main() {
   return (
   <>
     <Header/>
-    <nav className='navigation'>
-      <Catalog/>
-      <Search/>
-      <div className='navigations-buttons'>
-        <ButtonIcon icon = {PhoneIcon} />
-        <ButtonIcon icon = {HeartIcon}/>
-        <ButtonIcon icon = {UserIcon}/>
-        <ButtonIcon icon = {BasketIcon}/>
-      </div>
-    </nav>
+    <Navigation/>
     <div className = 'main-container'>
       <ProductList/>
       <Poster/>
