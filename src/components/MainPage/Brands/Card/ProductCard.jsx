@@ -4,7 +4,7 @@ import { Card } from "antd";
 const DATA_CARD = [
   {
     key: "1",
-    img: "/src/components/img/samsung.png",
+    img: "/src/components/MainPage/img/samsung.png",
   }
 ];
 

@@ -6,12 +6,12 @@ const DATA_CARD = [
     key: "1",
     title: "Lenovo IdeaPad 1 15ALC7",
     price: "16 999 ₴",
-    img: "/src/components/img/card/lenovo-laptop.png",
-    svgCard: "/src/components/img/card/card-buy.svg",
-    svgCardClick: "/src/components/img/card/card-buy-hover.svg",
-    svgLike: "/src/components/img/card/card-like.svg",
-    svgLikeH: "/src/components/img/card/card-like-hover.svg",
-    svgCardHover: "/src/components/img/card/buy-hover.svg"
+    img: "/src/components/MainPage/img/card/lenovo-laptop.png",
+    svgCard: "/src/components/MainPage/img/card/card-buy.svg",
+    svgCardClick: "/src/components/MainPage/img/card/card-buy-hover.svg",
+    svgLike: "/src/components/MainPage/img/card/card-like.svg",
+    svgLikeH: "/src/components/MainPage/img/card/card-like-hover.svg",
+    svgCardHover: "/src/components/MainPage/img/card/buy-hover.svg"
   }
 ];
 

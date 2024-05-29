@@ -1,13 +1,6 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import Header from './Header/Header';
-import Catalog from './Catalog/Catalog';
-import ButtonIcon from './Navigation/Button/ButtonIcon'
-import BasketIcon from './img/icons/basket-icon.svg'
-import UserIcon from './img/icons/user-icon.svg'
-import SearchIcon from './img/icons/search-icon.svg'
-import HeartIcon from './img/icons/heart-icon.svg'
-import PhoneIcon from './img/icons/call-icon.svg'
 import ProductList from './ProductList/ProductList';
 import {Input, Space, Typography, Button } from 'antd';
 import Poster from './Poster/Poster';
@@ -18,10 +11,8 @@ import Benefits from './Benefits/Benefits';
 import Footer from './Footer/Footer';
 import Brands from './Brands/Brands';
 import LaptopSlider from './Slider/LaptopSlider';
-import Search from './Search/Search';
 import Navigation from './Navigation/Navigation';
 
-const {  Link } = Typography;
 
 
 export default function Main() {
@@ -38,7 +29,7 @@ export default function Main() {
     <div className='slider-text'>
       <h2>Smartphone</h2>
       <div class="button-content">
-        <Link href=''  class = 'button-link'>
+        <Link class = 'button-link' to='/smartphones'>
           See more
           <img src={RightIcon} alt="Right Icon"/>
         </Link>
@@ -56,7 +47,7 @@ export default function Main() {
       <h2>Laptop</h2>
       
       <div class="button-content">
-        <Link class = 'button-link'>
+        <Link class = 'button-link' to='/laptop'>
           See more
           <img src={RightIcon} alt="Right Icon"/>
         </Link>
@@ -73,7 +64,7 @@ export default function Main() {
     <div className='slider-text'>
       <h2>Previously reviewed offers</h2>
       <div class="button-content">
-        <Link class = 'button-link'>
+        <Link class = 'button-link' to='/viewed'>
           See more
           <img src={RightIcon} alt="Right Icon"/>
         </Link>

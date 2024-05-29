@@ -9,27 +9,27 @@ import ButtonIcon from './Button/ButtonIcon'
 const DATA = [
     {
       key: "1",
-      img: '/src/components/img/icons/call-icon.svg',
-      hoverImg: '/src/components/img/icons/phone-icon-white.svg',
-      clickImg: '/src/components/img/icons/phone-icon-white.svg'
+      img: '/src/components/MainPage/img/icons/call-icon.svg',
+      hoverImg: '/src/components/MainPage/img/icons/phone-icon-white.svg',
+      clickImg: '/src/components/MainPage/img/icons/phone-icon-white.svg'
     }, 
     {
       key: "2",
-      img: "/src/components/img/icons/heart-icon.svg",
-      hoverImg: '/src/components/img/icons/heart-icon-white.svg',
-      clickImg: '/src/components/img/icons/heart-icon-white.svg'
+      img: "/src/components/MainPage/img/icons/heart-icon.svg",
+      hoverImg: '/src/components/MainPage/img/icons/heart-icon-white.svg',
+      clickImg: '/src/components/MainPage/img/icons/heart-icon-white.svg'
     },
     {
       key: "3",
-      img: "/src/components/img/icons/user-icon.svg",
-      hoverImg: '/src/components/img/icons/user-icon-white.svg',
-      clickImg: '/src/components/img/icons/user-icon-white.svg'
+      img: "/src/components/MainPage/img/icons/user-icon.svg",
+      hoverImg: '/src/components/MainPage/img/icons/user-icon-white.svg',
+      clickImg: '/src/components/MainPage/img/icons/user-icon-white.svg'
     },
     {
       key: "4",
-      img: "/src/components/img/icons/basket-icon.svg",
-      hoverImg: '/src/components/img/icons/basket-icon-white.svg',
-      clickImg: '/src/components/img/icons/basket-icon-white.svg'
+      img: "/src/components/MainPage/img/icons/basket-icon.svg",
+      hoverImg: '/src/components/MainPage/img/icons/basket-icon-white.svg',
+      clickImg: '/src/components/MainPage/img/icons/basket-icon-white.svg'
     },
 ]
 

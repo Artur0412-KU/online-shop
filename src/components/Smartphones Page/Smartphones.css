@@ -1,0 +1,12 @@
+li {
+    list-style: none;
+}
+
+.page-nav {
+    color: #808080;
+    transition: .2s ease-in-out;
+}
+
+.page-nav:hover {
+    color: black;
+}
