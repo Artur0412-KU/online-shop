@@ -152,7 +152,7 @@ i {
     justify-content: center;
     flex-direction: column;
     margin-bottom: 0;
-    width: 420px;
+    min-width: 375px;
 }
 
 .product-list-container {
