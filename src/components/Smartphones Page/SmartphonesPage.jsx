@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../MainPage/Header/Header'
-import Navigation from '../MainPage/Navigation/Navigation'
+import Navigation from './Navigation/Navigation'
 import PageNav from './PageNav/PageNav'
 import './Smartphones.css'
 
