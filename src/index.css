@@ -33,6 +33,70 @@ a {
 
 /* #endregion */
 
+/* search */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #d3d3d3;
+}
+
+.search-label {
+    margin-bottom: 5px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.search-input input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+}
+
+.search-input.active {
+    border-color: #6a0dad;
+}
+
+.search-input.active .search-icon {
+    color: #6a0dad;
+}
+
+.search-input.disabled {
+    background-color: #f0f0f0;
+    border-color: #d3d3d3;
+}
+
+.search-input.disabled input {
+    background-color: #f0f0f0;
+    color: #a0a0a0;
+}
+
+.search-input.disabled .search-icon {
+    color: #a0a0a0;
+}
+
+.search-input.error {
+    border-color: #ff0000;
+}
+
+.search-input.error .search-icon {
+    color: #ff0000;
+}
+
+.search-icon {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
 /* #region Navigation */
 .navigation {
     background-color: #EAE4EE;
@@ -106,11 +170,11 @@ i {
 /* style={{borderRadius: '10px', backgroundColor: '#fff', padding: '10px', width: '45px', height: '50px'}} */
 
 .navigation-button {
-    background-color: #fff  !important;
-    border-radius: 10px  !important;
-    padding: 10px  !important;
-    width: 45px  !important;
-    height: 50px  !important;
+    background-color: #fff !important;
+    border-radius: 10px !important;
+    padding: 10px !important;
+    width: 45px !important;
+    height: 50px !important;
 }
 
 .navigation-button:hover {
