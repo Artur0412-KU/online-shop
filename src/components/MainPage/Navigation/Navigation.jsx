@@ -1,9 +1,6 @@
 import React, { useState } from 'react'
 import Catalog from '../Catalog/Catalog'
 import Search from '../Search/Search'
-import BasketIcon from '../img/icons/basket-icon.svg'
-import UserIcon from '../img/icons/user-icon.svg'
-import HeartIcon from '../img/icons/heart-icon.svg'
 import ButtonIcon from './Button/ButtonIcon'
 
 const DATA = [
