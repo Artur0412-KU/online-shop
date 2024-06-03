@@ -25,6 +25,7 @@ export default function Catalog() {
           color: '#fff',
           fontFamily: 'Inter',
           textTransform: 'capitalize',
+          fontFamily: '"Arial", sans-serif',
           fontWeight: 'medium',
           width: '420px',
           height: '92px'

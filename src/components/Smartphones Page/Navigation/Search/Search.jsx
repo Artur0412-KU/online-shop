@@ -1,22 +1,70 @@
-import React from 'react'
-import Paper from '@mui/material/Paper';
-import InputBase from '@mui/material/InputBase';
-import IconButton from '@mui/material/IconButton';
-import SearchIcon from './SearchIcon';
+import React, { useState } from "react";
+import SearchIcon from "./SearchIcon";
+import { Input } from "antd";
+
+const SearchField = ({ status, onHover }) => {
+  const getStatusProps = (status) => {
+    switch (status) {
+      case "Active":
+        return {
+          style: { borderColor: "#fff" },
+          suffix: (
+            <SearchIcon
+              width={"24px"}
+              height={"24px"}
+              color={"#6a0dad"}
+              style={{ cursor: "pointer" }}
+            />
+          ),
+        };
+      case "Disable":
+        return {
+          disabled: true,
+          style: { backgroundColor: "#E6E6E6" },
+          suffix: (
+            <SearchIcon
+              width={"24px"}
+              height={"24px"}
+              color={"#A5A5A5"}
+              style={{ cursor: "not-allowed" }}
+            />
+          ),
+        };
+      case "Hover":
+        return {
+          style: { borderColor: "#fff" },
+          suffix: (
+            <SearchIcon
+              width={"24px"}
+              height={"24px"}
+              color={"#6a0dad"}
+              style={{ cursor: "pointer" }}
+            />
+          ),
+        };
+      default:
+        return {};
+    }
+  };
+
+  return (
+    <div
+      onMouseEnter={() => onHover("Hover")}
+      onMouseLeave={() => onHover("Disable")}
+      style={{ width: 610, height: 56, display: "flex", borderRadius: "24px" }}
+    >
+      <Input
+        onFocus={() => onHover("Active")}
+        placeholder={status === "Active" ? null : "Searching..."}
+        {...getStatusProps(status)}
+        
+      />
+    </div>
+  );
+};
 
 export default function Search() {
-  return (
-    <Paper component="form"
-      sx={{ padding: '6px 12px', display: 'flex', alignItems: 'center', width: 600, borderRadius: '16px', boxShadow: 'none'}}>
+  const [status, setStatus] = useState("Disable");
 
-      <InputBase
-        sx={{ ml: 1, flex: 1, fontFamily: 'Inter', color: '#808080' }}
-        placeholder="Searching..."
-        inputProps={{ 'aria-label': 'searching' }}
-      />
-      <IconButton type="button" sx={{ p: '10px' }} aria-label="search">
-         <SearchIcon width = {'24px'} height = {'24px'}/>
-      </IconButton>
-    </Paper>
-  )
+  return <SearchField status={status} onHover={setStatus} style = {{borderRadius: '30px'}}/>;
 }
