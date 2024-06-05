@@ -23,7 +23,6 @@ export default function Catalog() {
           paddingBottom: '15px',
           borderRadius: '0px',
           color: '#fff',
-          fontFamily: 'Inter',
           textTransform: 'capitalize',
           fontFamily: '"Arial", sans-serif',
           fontWeight: 'medium',

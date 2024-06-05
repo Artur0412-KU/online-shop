@@ -51,7 +51,7 @@ const SearchField = ({ status, onHover }) => {
     <div
       onMouseEnter={() => onHover("Hover")}
       onMouseLeave={() => onHover("Disable")}
-      style={{ width: 610, height: 56, display: "flex", borderRadius: "24px" }}
+      style={{ width: 610, height: 56, display: "flex", borderRadius: "32px" }}
     >
       <Input
         onFocus={() => onHover("Active")}
@@ -64,7 +64,7 @@ const SearchField = ({ status, onHover }) => {
 };
 
 export default function Search() {
-  const [status, setStatus] = useState("Disable");
+  const [status, setStatus] = useState("Active");
 
-  return <SearchField status={status} onHover={setStatus} style = {{borderRadius: '30px'}}/>;
+  return <SearchField status={status} onHover={setStatus} style = {{borderRadius: '32px'}}/>;
 }

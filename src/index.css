@@ -3,7 +3,7 @@
 body {
     margin: 0 auto;
     font-family: "Inter", sans-serif;
-    background-color: #F5F3F8;
+    background-color: #F8F7FA;
 }
 
 a {
@@ -46,12 +46,17 @@ a {
     margin-bottom: 5px;
 }
 
+:where(.css-dev-only-do-not-override-1qfezbu).ant-input-affix-wrapper {
+    border-radius: 13px;
+    padding-left: 22px;
+}
+
 .search-input {
     width: 100%;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 18px;
     display: flex;
     align-items: center;
 }
@@ -166,14 +171,13 @@ i {
     background-color: transparent;
 }
 
-/* style={{borderRadius: '10px', backgroundColor: '#fff', padding: '10px', width: '45px', height: '50px'}} */
 
 .navigation-button {
     background-color: #fff !important;
-    border-radius: 15px !important;
+    border-radius: 16px !important;
     padding: 10px !important;
-    width: 45px !important;
-    height: 50px !important;
+    width: 50px !important;
+    height: 56px !important;
 }
 
 .navigation-button:hover {
@@ -196,7 +200,7 @@ i {
 
 .poster-container {
     width: 100%;
-    height: 785px;
+    height: 765px;
     background-image: url('./components/MainPage/img/poster-photo.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -216,6 +220,7 @@ i {
     flex-direction: column;
     margin-bottom: 0;
     min-width: 375px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
 }
 
 .product-list-container {
@@ -245,7 +250,7 @@ i {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 135px;
+    gap: 50px;
     width: 100%;
 }
 
@@ -255,7 +260,7 @@ i {
     gap: 10px;
     color: #000;
     font-size: 24px;
-    width: 170px;
+    width: 240px;
     line-height: 150%;
 }
 
@@ -355,7 +360,6 @@ i {
 .btn-arrow-prev:hover,
 .btn-arrow-next:hover {
     border-color: inherit !important;
-    ;
 }
 
 .btn-arrow-prev {
@@ -380,6 +384,7 @@ i {
     border-radius: 15px;
     border: 2px solid #5a3e7d07;
     transition: all .2s;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
 }
 
 .card:hover {
@@ -395,6 +400,7 @@ i {
     width: 256px;
     height: 256px;
     transition: all .3s;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
 }
 
 .product-card:hover {
