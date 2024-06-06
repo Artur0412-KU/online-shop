@@ -24,7 +24,7 @@ export default function Footer() {
                 </div>
                 <div className='footer-list'>
                   <img src={LocationIcon}/>
-                  <a href=''>GadgetHouse@gmail.com</a>
+                  <a href=''>Ave. Sciences, 4</a>
                 </div>
             </div>
         </div>

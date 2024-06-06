@@ -12,6 +12,7 @@ import Footer from './Footer/Footer';
 import Brands from './Brands/Brands';
 import LaptopSlider from './Slider/LaptopSlider';
 import Navigation from './Navigation/Navigation';
+import SliderText from './Slider/SliderText/SliderText';
 
 
 
@@ -26,18 +27,7 @@ export default function Main() {
     </div>
    {/* Smartphone  */}
    <> 
-    <div className='slider-text'>
-      <h2>Smartphone</h2>
-      <div class="button-content">
-        <Link class = 'button-link' to='/smartphones'>
-          See more
-          <img src={RightIcon} alt="Right Icon"/>
-        </Link>
-        <hr style={{color: '#00820D', width: '100%', margin: '0'}}/>
-      </div>
-
-
-    </div>
+    <SliderText text = "Smartphone"/>
    <MobileSlider/>
    </>
    <Brands/>   
@@ -51,7 +41,7 @@ export default function Main() {
           See more
           <img src={RightIcon} alt="Right Icon"/>
         </Link>
-        <hr style={{color: '#00820D', width: '100%', margin: '0'}}/>
+        <hr style={{border: '1px solid #00820D', width: '100%', margin: '0'}}/>
       </div>
       
 
@@ -68,7 +58,7 @@ export default function Main() {
           See more
           <img src={RightIcon} alt="Right Icon"/>
         </Link>
-        <hr style={{color: '#00820D', width: '100%', margin: '0'}}/>
+        <hr style={{border: '1px solid #00820D', width: '100%', margin: '0'}}/>
       </div>
 
 

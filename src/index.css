@@ -314,8 +314,16 @@ i {
     text-decoration: none;
 }
 
+.button-link:active {
+    color: #6F4C9A;
+}
+
 .slider-text-button .button-content {
     width: 100%;
+}
+
+hr:active {
+    color: #6F4C9A;
 }
 
 /* #endregion */
@@ -337,7 +345,6 @@ i {
 
 .carousel-slide {
     margin-right: 20px;
-    /* Додайте потрібний відступ справа */
 }
 
 .arrow-container {
@@ -357,10 +364,16 @@ i {
     border-radius: 12px;
 }
 
-.btn-arrow-prev:hover,
-.btn-arrow-next:hover {
-    border-color: inherit !important;
+.carousel-wrapper .btn-arrow-prev:hover,
+.carousel-wrapper .btn-arrow-next:hover {
+    border-color: #4DA856 !important;
 }
+
+.carousel-wrapper .btn-arrow-prev.clicked,
+.carousel-wrapper .btn-arrow-next.clicked {
+    border-color: #00680A !important;
+}
+
 
 .btn-arrow-prev {
     border-top-right-radius: 0;
@@ -498,7 +511,7 @@ i {
 
 /* #region footer */
 .footer {
-    padding: 46px 50px 113px;
+    padding: 46px 50px 73px;
     background-color: #1C1817;
     color: white;
     display: flex;
@@ -513,6 +526,13 @@ i {
     justify-content: flex-start;
     flex-direction: column;
     gap: 16px;
+}
+
+.main-information {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .footer-list {
@@ -562,7 +582,7 @@ i {
     align-items: start;
     justify-content: flex-start;
     flex-direction: column;
-    gap: 5px;
+    gap: 8px;
 
 }
 
@@ -576,7 +596,7 @@ i {
     align-items: start;
     justify-content: flex-start;
     flex-direction: row;
-    gap: 16px;
+    gap: 8px;
 }
 
 .social-icon svg {
