@@ -25,44 +25,18 @@ export default function Main() {
       <ProductList/>
       <Poster/>
     </div>
-   {/* Smartphone  */}
-   <> 
-    <SliderText text = "Smartphone"/>
+
+   <SliderText text = "Smartphone"/>
    <MobileSlider/>
-   </>
+
    <Brands/>   
-    {/* Laptop  */}
-    <>
-    <div className='slider-text'>
-      <h2>Laptop</h2>
-      
-      <div class="button-content">
-        <Link class = 'button-link' to='/laptop'>
-          See more
-          <img src={RightIcon} alt="Right Icon"/>
-        </Link>
-        <hr style={{border: '1px solid #00820D', width: '100%', margin: '0'}}/>
-      </div>
-      
 
-
-    </div>
+    <SliderText text = "Laptop"/>
     <LaptopSlider/>
-    </>
-    {/* reviewed offers */}
+
+    {/* Previously reviewed offers */}
     <>
-    <div className='slider-text'>
-      <h2>Previously reviewed offers</h2>
-      <div class="button-content">
-        <Link class = 'button-link' to='/viewed'>
-          See more
-          <img src={RightIcon} alt="Right Icon"/>
-        </Link>
-        <hr style={{border: '1px solid #00820D', width: '100%', margin: '0'}}/>
-      </div>
-
-
-    </div>
+    <SliderText text = "Previously reviewed offers"/>
     <ViewedSlider/>
     </>
    <Benefits/>
