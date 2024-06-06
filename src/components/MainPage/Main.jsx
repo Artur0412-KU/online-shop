@@ -34,11 +34,9 @@ export default function Main() {
     <SliderText text = "Laptop"/>
     <LaptopSlider/>
 
-    {/* Previously reviewed offers */}
-    <>
     <SliderText text = "Previously reviewed offers"/>
     <ViewedSlider/>
-    </>
+
    <Benefits/>
    <Footer/>
   </>
