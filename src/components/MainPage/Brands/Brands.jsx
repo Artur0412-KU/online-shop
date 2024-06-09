@@ -3,6 +3,10 @@ import React, { useRef, useState } from 'react'
 import PrevIcon from '../img/icons/prev-icon.png'
 import NextIcon from '../img/icons/next-icon.png'
 import ProductCard from './Card/ProductCard'
+import PrevIconHover from '../img/arrow-prev-hover.png'
+import NextIconHover from '../img/arrow-next-hover.png'
+import NextIconClick from '../img/arrow-next-click.png'
+import PrevIconClick from '../img/arrow-prev-click.png'
 
 export default function Brands() {
   const ref = useRef();
@@ -53,7 +57,7 @@ export default function Brands() {
           onMouseLeave={handleMouseLeavePrev}
           style={{ borderColor: prevHover ? '#4DA856' : '' }}
         >
-        <img src = {PrevIcon}/>
+        <img src = {prevHover ? PrevIconHover : prevClick ? PrevIconClick : PrevIcon}/>
        </Button>
        <Button className={`btn-arrow-next ${nextClick ? 'clicked' : ''}`}
           onClick={handleNextClick}
@@ -61,7 +65,7 @@ export default function Brands() {
           onMouseLeave={handleMouseLeaveNext}
           style={{ borderColor: nextHover ? '#4DA856' : '' }}
         >
-        <img src={NextIcon}/>
+        <img src={nextHover ? NextIconHover : nextClick ? NextIconClick : NextIcon}/>
        </Button>
     </div>
     </div>
