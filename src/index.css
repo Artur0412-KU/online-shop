@@ -230,6 +230,14 @@ i {
     flex-direction: column;
 }
 
+.ant-dropdown-menu {
+    border-radius: 0 !important;
+}
+  
+.ant-dropdown-menu-item {
+    border-radius: 0 !important;
+}
+
 .catalog-nav {
     display: flex;
     align-items: center;
