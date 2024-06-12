@@ -6,15 +6,17 @@ const items = [
     label: (
       <>
         <div className="catalog-nav" style={{ paddingBottom: '0px' }}>
-          <Space className="catalog-item" style={{ alignItems: 'center', display: 'flex', justifyContent: 'space-between', paddingRight: '20px', paddingTop: '8px'  }}>
+          <Space className="catalog-item" style={{paddingRight: '20px', paddingTop: '16px'  }} align="center">
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', paddingLeft: '10px' }}>
-              <img src='/src/components/MainPage/img/catalog-icons/smartphone.svg' alt='Smartphone' />
-              <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0' }}>Smartphone</p>
+              <img src='/src/components/MainPage/img/catalog-icons/smartphone.svg' alt='Smartphone' style={{padding: '0px', margin: '0px'}}/>
+              <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0', lineHeight: '150%' }}>Smartphone</p>
             </div>
           </Space>
-          <i className="arrow right" style={{ marginLeft: 'auto', marginRight: '10px' }}></i>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginLeft: '0px', marginRight: '10px', height: '36px', lineHeight: '150%' }}>
+            <i className="arrow right"></i>
+          </div>
         </div>
-        <Divider style={{paddingTop: '0px'}}/>
+        <Divider style={{paddingTop: '0px', marginTop: '10px',  marginBottom: '16px'}}/>
       </>
     )
   },
@@ -30,7 +32,7 @@ const items = [
       </Space>
       <i className="arrow right" style={{ marginLeft: 'auto', marginRight: '10px' }}></i>
     </div>
-    <Divider style={{paddingTop: '0px'}}/>
+    <Divider style={{paddingTop: '0px', marginTop: '10px', marginBottom: '16px'}}/>
   </>
   },
   {
@@ -45,7 +47,7 @@ const items = [
       </Space>
       <i className="arrow right" style={{ marginLeft: 'auto', marginRight: '10px' }}></i>
     </div>
-    <Divider style={{paddingTop: '0px'}}/>
+    <Divider style={{paddingTop: '0px', marginTop: '10px',  marginBottom: '16px'}}/>
   </>
   },
   {
@@ -60,7 +62,7 @@ const items = [
       </Space>
       <i className="arrow right" style={{ marginLeft: 'auto', marginRight: '10px' }}></i>
     </div>
-    <Divider style={{paddingTop: '0px'}}/>
+    <Divider style={{paddingTop: '0px', marginTop: '10px', marginBottom: '16px'}}/>
   </>
   },
   {
@@ -75,7 +77,7 @@ const items = [
       </Space>
       <i className="arrow right" style={{ marginLeft: 'auto', marginRight: '10px' }}></i>
     </div>
-    <Divider style={{paddingTop: '0px'}}/>
+    <Divider style={{paddingTop: '0px', marginTop: '10px', marginBottom: '16px'}}/>
   </>
   },
   {
@@ -90,7 +92,7 @@ const items = [
       </Space>
       <i className="arrow right" style={{ marginLeft: 'auto', marginRight: '10px' }}></i>
     </div>
-    <Divider style={{paddingTop: '0px'}}/>
+    <Divider style={{paddingTop: '0px', marginTop: '10px', marginBottom: '16px'}}/>
   </>
   },
   {
@@ -105,7 +107,7 @@ const items = [
       </Space>
       <i className="arrow right" style={{ marginLeft: 'auto', marginRight: '10px' }}></i>
     </div>
-    <Divider style={{paddingTop: '0px'}}/>
+    <Divider style={{paddingTop: '0px', marginTop: '10px', marginBottom: '16px'}}/>
   </>
   },
   {
@@ -120,7 +122,7 @@ const items = [
       </Space>
       <i className="arrow right" style={{ marginLeft: 'auto', marginRight: '10px' }}></i>
     </div>
-    <Divider style={{paddingTop: '0px'}}/>
+    <Divider style={{paddingTop: '0px', marginTop: '10px', marginBottom: '16px'}}/>
   </>
   },
   {
@@ -135,7 +137,7 @@ const items = [
       </Space>
       <i className="arrow right" style={{ marginLeft: 'auto', marginRight: '10px' }}></i>
     </div>
-    <Divider style={{paddingTop: '0px'}}/>
+    <Divider style={{paddingTop: '0px', marginTop: '10px', marginBottom: '16px'}}/>
   </>
   },
   {
@@ -150,7 +152,7 @@ const items = [
       </Space>
       <i className="arrow right" style={{ marginLeft: 'auto', marginRight: '10px' }}></i>
     </div>
-    <Divider style={{paddingTop: '0px'}}/>
+    <Divider style={{paddingTop: '0px', marginTop: '10px', marginBottom: '16px'}}/>
   </>
   },
   {
@@ -165,7 +167,7 @@ const items = [
       </Space>
       <i className="arrow right" style={{ marginLeft: 'auto', marginRight: '10px' }}></i>
     </div>
-    <Divider style={{paddingTop: '0px'}}/>
+    <Divider style={{paddingTop: '0px', marginTop: '10px', marginBottom: '16px'}}/>
   </>
   }
 ];
