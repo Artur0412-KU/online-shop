@@ -19,7 +19,7 @@ export default function ProductList() {
     { key: "2", title: "Laptop", img: laptop, link: "/laptops" },
     { key: "3", title: "Tablet", img: tablet, link: "/tablets" },
     { key: "4", title: "PC", img: PC, link: "/pcs" },
-    { key: "5", title: "TV and Multimedia", img: TV, link: "/tvs" },
+    { key: "5", title: "TVs and Multimedia", img: TV, link: "/tvs" },
     { key: "6", title: "Smart-watch", img: watch, link: "/smartwatches" },
     { key: "7", title: "Audio", img: audio, link: "/audio" },
     { key: "8", title: "Game console", img: console, link: "/consoles" },
