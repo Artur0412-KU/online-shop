@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card, Rate  } from "antd";
+import { Card, Rate } from "antd";
 
 const DATA_CARD = [
   {
@@ -11,8 +11,8 @@ const DATA_CARD = [
     svgCardClick: "/src/components/MainPage/img/card/card-buy-hover.svg",
     svgLike: "/src/components/MainPage/img/card/card-like.svg",
     svgLikeH: "/src/components/MainPage/img/card/card-like-hover.svg",
-    svgCardHover: "/src/components/MainPage/img/card/buy-hover.svg"
-  }
+    svgCardHover: "/src/components/MainPage/img/card/buy-hover.svg",
+  },
 ];
 
 export default function LaptopCard() {
@@ -27,43 +27,48 @@ export default function LaptopCard() {
 
   const handleMouseLeave = () => {
     setIsHovered(false);
-  }
+  };
 
   const handleMouseEnter = () => {
     setIsHovered(true);
-  }
+  };
 
   const handleClickLike = () => {
     setIsClickedLike((prevState) => !prevState);
   };
 
-
   return (
     <>
       {data.map((item) => (
-        <Card key={item.key} className="card" >
-          <img src={isClickedLike ? item.svgLike : item.svgLikeH} alt="#" className="card-svg_like" onClick={handleClickLike}/>
+        <Card key={item.key} className="card">
           <img
-            className="card-img"
-            src={item.img}
+            src={isClickedLike ? item.svgLike : item.svgLikeH}
             alt="#"
+            className="card-svg_like"
+            onClick={handleClickLike}
           />
+          <img className="card-img" src={item.img} alt="#" />
           <h3>{item.title}</h3>
           <Rate className="card-rate" />
           <div className="card-footer">
             <p>{item.price}</p>
-            
+
             <img
               className="card-buy"
               onClick={handleClickBuy}
-              src={isHovered ? item.svgCardHover : isClicked ? item.svgCardClick : item.svgCard}
+              src={
+                isHovered
+                  ? item.svgCardHover
+                  : isClicked
+                    ? item.svgCardClick
+                    : item.svgCard
+              }
               alt="buy"
               width={43}
               height={43}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             />
-            
           </div>
         </Card>
       ))}

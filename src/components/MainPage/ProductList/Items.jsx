@@ -18,7 +18,7 @@ const items = [
   {
     key: "1",
     label: (
-      <Link target="_blank" to='/smartphones'  className="list-item">
+      <Link target="_blank" to="/smartphones" className="list-item">
         <MobileOutlined /> <p>Smartphone</p>
       </Link>
     ),

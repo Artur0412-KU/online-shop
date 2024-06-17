@@ -65,5 +65,11 @@ const SearchField = ({ status, onHover }) => {
 export default function Search() {
   const [status, setStatus] = useState("Disable");
 
-  return <SearchField status={status} onHover={setStatus} style = {{borderRadius: '30px'}}/>;
+  return (
+    <SearchField
+      status={status}
+      onHover={setStatus}
+      style={{ borderRadius: "30px" }}
+    />
+  );
 }

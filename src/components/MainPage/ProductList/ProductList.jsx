@@ -25,30 +25,44 @@ export default function ProductList() {
     { key: "8", title: "Game console", img: console, link: "/consoles" },
     { key: "9", title: "Photo and video", img: photo, link: "/photo-video" },
     { key: "10", title: "KIDS", img: kids, link: "/kids" },
-    { key: "11", title: "SALE", img: sale, link: "/sale", style: { color: "red" } },
+    {
+      key: "11",
+      title: "SALE",
+      img: sale,
+      link: "/sale",
+      style: { color: "red" },
+    },
   ];
 
   return (
     <div className="product-list">
       {items.map((item, index) => (
-        <div key={item.key} style={{width: '100%'}}>
+        <div key={item.key} style={{ width: "100%" }}>
           <div className="catalog-nav">
             <Space
               className="catalog-item"
-              style={{ alignItems: "center", display: "flex", justifyContent: "space-between" }}
+              style={{
+                alignItems: "center",
+                display: "flex",
+                justifyContent: "space-between",
+              }}
             >
-              <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <div
+                style={{ display: "flex", alignItems: "center", gap: "8px" }}
+              >
                 <img src={item.img} alt={item.title} />
-                <Link to={item.link} className="catalog-list" style={item.style}>
+                <Link
+                  to={item.link}
+                  className="catalog-list"
+                  style={item.style}
+                >
                   {item.title}
                 </Link>
               </div>
               <i className="arrow right"></i>
             </Space>
-            
           </div>
           <Divider style={{ marginTop: "8px", color: "#808080" }} />
-          
         </div>
       ))}
     </div>

@@ -57,7 +57,6 @@ const SearchField = ({ status, onHover }) => {
         onFocus={() => onHover("Active")}
         placeholder={status === "Active" ? null : "Searching..."}
         {...getStatusProps(status)}
-        
       />
     </div>
   );
@@ -66,5 +65,11 @@ const SearchField = ({ status, onHover }) => {
 export default function Search() {
   const [status, setStatus] = useState("Active");
 
-  return <SearchField status={status} onHover={setStatus} style = {{borderRadius: '32px'}}/>;
+  return (
+    <SearchField
+      status={status}
+      onHover={setStatus}
+      style={{ borderRadius: "32px" }}
+    />
+  );
 }

@@ -5,7 +5,7 @@ const DATA_CARD = [
   {
     key: "1",
     img: "/src/components/MainPage/img/samsung.png",
-  }
+  },
 ];
 
 export default function ProductCard() {
