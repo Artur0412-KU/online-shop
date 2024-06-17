@@ -1,12 +1,11 @@
-import { useState } from "react";
-import "./App.css";
-import { Route, Router, Routes, BrowserRouter } from "react-router-dom";
-import Main from "./components/MainPage/Main";
-import Catalog from "./components/MainPage/Catalog/Catalog";
-import "./index.css";
-import SmartphonesPage from "./components/Smartphones Page/SmartphonesPage";
-import LaptopPage from "./components/LaptopPage/LaptopPage";
-import ViewedPage from "./components/ViewedPage/ViewedPage";
+import './App.css';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import Main from './components/MainPage/Main';
+import Catalog from './components/MainPage/Catalog/Catalog';
+import './index.css';
+import SmartphonesPage from './components/Smartphones Page/SmartphonesPage';
+import LaptopPage from './components/LaptopPage/LaptopPage';
+import ViewedPage from './components/ViewedPage/ViewedPage';
 
 function App() {
   return (

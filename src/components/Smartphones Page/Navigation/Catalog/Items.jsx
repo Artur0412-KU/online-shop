@@ -1,35 +1,35 @@
-import { Space, Divider } from "antd";
+import { Space, Divider } from 'antd';
 
 const items = [
   {
-    key: "1",
+    key: '1',
     label: (
       <>
-        <div className="catalog-nav" style={{ paddingBottom: "0px" }}>
+        <div className="catalog-nav" style={{ paddingBottom: '0px' }}>
           <Space
             className="catalog-item"
-            style={{ paddingRight: "20px", paddingTop: "16px" }}
+            style={{ paddingRight: '20px', paddingTop: '16px' }}
             align="center"
           >
             <div
               style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "8px",
-                paddingLeft: "10px",
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                paddingLeft: '10px',
               }}
             >
               <img
                 src="/src/components/MainPage/img/catalog-icons/smartphone.svg"
                 alt="Smartphone"
-                style={{ padding: "0px", margin: "0px" }}
+                style={{ padding: '0px', margin: '0px' }}
               />
               <p
                 style={{
-                  fontSize: "24px",
+                  fontSize: '24px',
                   fontFamily: '"Arial", sans-serif',
-                  margin: "0",
-                  lineHeight: "150%",
+                  margin: '0',
+                  lineHeight: '150%',
                 }}
               >
                 Smartphone
@@ -38,45 +38,45 @@ const items = [
           </Space>
           <div
             style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              marginLeft: "0px",
-              marginRight: "10px",
-              height: "36px",
-              lineHeight: "150%",
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              marginLeft: '0px',
+              marginRight: '10px',
+              height: '36px',
+              lineHeight: '150%',
             }}
           >
             <i className="arrow right"></i>
           </div>
         </div>
         <Divider
-          style={{ paddingTop: "0px", marginTop: "10px", marginBottom: "16px" }}
+          style={{ paddingTop: '0px', marginTop: '10px', marginBottom: '16px' }}
         />
       </>
     ),
   },
   {
-    key: "2",
+    key: '2',
     label: (
       <>
-        <div className="catalog-nav" style={{ paddingBottom: "0px" }}>
+        <div className="catalog-nav" style={{ paddingBottom: '0px' }}>
           <Space
             className="catalog-item"
             style={{
-              alignItems: "center",
-              display: "flex",
-              justifyContent: "space-between",
-              paddingRight: "20px",
-              paddingTop: "8px",
+              alignItems: 'center',
+              display: 'flex',
+              justifyContent: 'space-between',
+              paddingRight: '20px',
+              paddingTop: '8px',
             }}
           >
             <div
               style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "8px",
-                paddingLeft: "10px",
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                paddingLeft: '10px',
               }}
             >
               <img
@@ -85,9 +85,9 @@ const items = [
               />
               <p
                 style={{
-                  fontSize: "24px",
+                  fontSize: '24px',
                   fontFamily: '"Arial", sans-serif',
-                  margin: "0",
+                  margin: '0',
                 }}
               >
                 Laptop
@@ -96,36 +96,36 @@ const items = [
           </Space>
           <i
             className="arrow right"
-            style={{ marginLeft: "auto", marginRight: "10px" }}
+            style={{ marginLeft: 'auto', marginRight: '10px' }}
           ></i>
         </div>
         <Divider
-          style={{ paddingTop: "0px", marginTop: "10px", marginBottom: "16px" }}
+          style={{ paddingTop: '0px', marginTop: '10px', marginBottom: '16px' }}
         />
       </>
     ),
   },
   {
-    key: "3",
+    key: '3',
     label: (
       <>
-        <div className="catalog-nav" style={{ paddingBottom: "0px" }}>
+        <div className="catalog-nav" style={{ paddingBottom: '0px' }}>
           <Space
             className="catalog-item"
             style={{
-              alignItems: "center",
-              display: "flex",
-              justifyContent: "space-between",
-              paddingRight: "20px",
-              paddingTop: "8px",
+              alignItems: 'center',
+              display: 'flex',
+              justifyContent: 'space-between',
+              paddingRight: '20px',
+              paddingTop: '8px',
             }}
           >
             <div
               style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "8px",
-                paddingLeft: "10px",
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                paddingLeft: '10px',
               }}
             >
               <img
@@ -134,9 +134,9 @@ const items = [
               />
               <p
                 style={{
-                  fontSize: "24px",
+                  fontSize: '24px',
                   fontFamily: '"Arial", sans-serif',
-                  margin: "0",
+                  margin: '0',
                 }}
               >
                 Tablet
@@ -145,36 +145,36 @@ const items = [
           </Space>
           <i
             className="arrow right"
-            style={{ marginLeft: "auto", marginRight: "10px" }}
+            style={{ marginLeft: 'auto', marginRight: '10px' }}
           ></i>
         </div>
         <Divider
-          style={{ paddingTop: "0px", marginTop: "10px", marginBottom: "16px" }}
+          style={{ paddingTop: '0px', marginTop: '10px', marginBottom: '16px' }}
         />
       </>
     ),
   },
   {
-    key: "4",
+    key: '4',
     label: (
       <>
-        <div className="catalog-nav" style={{ paddingBottom: "0px" }}>
+        <div className="catalog-nav" style={{ paddingBottom: '0px' }}>
           <Space
             className="catalog-item"
             style={{
-              alignItems: "center",
-              display: "flex",
-              justifyContent: "space-between",
-              paddingRight: "20px",
-              paddingTop: "8px",
+              alignItems: 'center',
+              display: 'flex',
+              justifyContent: 'space-between',
+              paddingRight: '20px',
+              paddingTop: '8px',
             }}
           >
             <div
               style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "8px",
-                paddingLeft: "10px",
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                paddingLeft: '10px',
               }}
             >
               <img
@@ -183,9 +183,9 @@ const items = [
               />
               <p
                 style={{
-                  fontSize: "24px",
+                  fontSize: '24px',
                   fontFamily: '"Arial", sans-serif',
-                  margin: "0",
+                  margin: '0',
                 }}
               >
                 PC
@@ -194,36 +194,36 @@ const items = [
           </Space>
           <i
             className="arrow right"
-            style={{ marginLeft: "auto", marginRight: "10px" }}
+            style={{ marginLeft: 'auto', marginRight: '10px' }}
           ></i>
         </div>
         <Divider
-          style={{ paddingTop: "0px", marginTop: "10px", marginBottom: "16px" }}
+          style={{ paddingTop: '0px', marginTop: '10px', marginBottom: '16px' }}
         />
       </>
     ),
   },
   {
-    key: "5",
+    key: '5',
     label: (
       <>
-        <div className="catalog-nav" style={{ paddingBottom: "0px" }}>
+        <div className="catalog-nav" style={{ paddingBottom: '0px' }}>
           <Space
             className="catalog-item"
             style={{
-              alignItems: "center",
-              display: "flex",
-              justifyContent: "space-between",
-              paddingRight: "20px",
-              paddingTop: "8px",
+              alignItems: 'center',
+              display: 'flex',
+              justifyContent: 'space-between',
+              paddingRight: '20px',
+              paddingTop: '8px',
             }}
           >
             <div
               style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "8px",
-                paddingLeft: "10px",
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                paddingLeft: '10px',
               }}
             >
               <img
@@ -232,9 +232,9 @@ const items = [
               />
               <p
                 style={{
-                  fontSize: "24px",
+                  fontSize: '24px',
                   fontFamily: '"Arial", sans-serif',
-                  margin: "0",
+                  margin: '0',
                 }}
               >
                 TVs and Multimedia
@@ -243,36 +243,36 @@ const items = [
           </Space>
           <i
             className="arrow right"
-            style={{ marginLeft: "auto", marginRight: "10px" }}
+            style={{ marginLeft: 'auto', marginRight: '10px' }}
           ></i>
         </div>
         <Divider
-          style={{ paddingTop: "0px", marginTop: "10px", marginBottom: "16px" }}
+          style={{ paddingTop: '0px', marginTop: '10px', marginBottom: '16px' }}
         />
       </>
     ),
   },
   {
-    key: "6",
+    key: '6',
     label: (
       <>
-        <div className="catalog-nav" style={{ paddingBottom: "0px" }}>
+        <div className="catalog-nav" style={{ paddingBottom: '0px' }}>
           <Space
             className="catalog-item"
             style={{
-              alignItems: "center",
-              display: "flex",
-              justifyContent: "space-between",
-              paddingRight: "20px",
-              paddingTop: "8px",
+              alignItems: 'center',
+              display: 'flex',
+              justifyContent: 'space-between',
+              paddingRight: '20px',
+              paddingTop: '8px',
             }}
           >
             <div
               style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "8px",
-                paddingLeft: "10px",
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                paddingLeft: '10px',
               }}
             >
               <img
@@ -281,9 +281,9 @@ const items = [
               />
               <p
                 style={{
-                  fontSize: "24px",
+                  fontSize: '24px',
                   fontFamily: '"Arial", sans-serif',
-                  margin: "0",
+                  margin: '0',
                 }}
               >
                 Smart-watch
@@ -292,36 +292,36 @@ const items = [
           </Space>
           <i
             className="arrow right"
-            style={{ marginLeft: "auto", marginRight: "10px" }}
+            style={{ marginLeft: 'auto', marginRight: '10px' }}
           ></i>
         </div>
         <Divider
-          style={{ paddingTop: "0px", marginTop: "10px", marginBottom: "16px" }}
+          style={{ paddingTop: '0px', marginTop: '10px', marginBottom: '16px' }}
         />
       </>
     ),
   },
   {
-    key: "7",
+    key: '7',
     label: (
       <>
-        <div className="catalog-nav" style={{ paddingBottom: "0px" }}>
+        <div className="catalog-nav" style={{ paddingBottom: '0px' }}>
           <Space
             className="catalog-item"
             style={{
-              alignItems: "center",
-              display: "flex",
-              justifyContent: "space-between",
-              paddingRight: "20px",
-              paddingTop: "8px",
+              alignItems: 'center',
+              display: 'flex',
+              justifyContent: 'space-between',
+              paddingRight: '20px',
+              paddingTop: '8px',
             }}
           >
             <div
               style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "8px",
-                paddingLeft: "10px",
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                paddingLeft: '10px',
               }}
             >
               <img
@@ -330,9 +330,9 @@ const items = [
               />
               <p
                 style={{
-                  fontSize: "24px",
+                  fontSize: '24px',
                   fontFamily: '"Arial", sans-serif',
-                  margin: "0",
+                  margin: '0',
                 }}
               >
                 Audio
@@ -341,36 +341,36 @@ const items = [
           </Space>
           <i
             className="arrow right"
-            style={{ marginLeft: "auto", marginRight: "10px" }}
+            style={{ marginLeft: 'auto', marginRight: '10px' }}
           ></i>
         </div>
         <Divider
-          style={{ paddingTop: "0px", marginTop: "10px", marginBottom: "16px" }}
+          style={{ paddingTop: '0px', marginTop: '10px', marginBottom: '16px' }}
         />
       </>
     ),
   },
   {
-    key: "8",
+    key: '8',
     label: (
       <>
-        <div className="catalog-nav" style={{ paddingBottom: "0px" }}>
+        <div className="catalog-nav" style={{ paddingBottom: '0px' }}>
           <Space
             className="catalog-item"
             style={{
-              alignItems: "center",
-              display: "flex",
-              justifyContent: "space-between",
-              paddingRight: "20px",
-              paddingTop: "8px",
+              alignItems: 'center',
+              display: 'flex',
+              justifyContent: 'space-between',
+              paddingRight: '20px',
+              paddingTop: '8px',
             }}
           >
             <div
               style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "8px",
-                paddingLeft: "10px",
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                paddingLeft: '10px',
               }}
             >
               <img
@@ -379,9 +379,9 @@ const items = [
               />
               <p
                 style={{
-                  fontSize: "24px",
+                  fontSize: '24px',
                   fontFamily: '"Arial", sans-serif',
-                  margin: "0",
+                  margin: '0',
                 }}
               >
                 Game console
@@ -390,36 +390,36 @@ const items = [
           </Space>
           <i
             className="arrow right"
-            style={{ marginLeft: "auto", marginRight: "10px" }}
+            style={{ marginLeft: 'auto', marginRight: '10px' }}
           ></i>
         </div>
         <Divider
-          style={{ paddingTop: "0px", marginTop: "10px", marginBottom: "16px" }}
+          style={{ paddingTop: '0px', marginTop: '10px', marginBottom: '16px' }}
         />
       </>
     ),
   },
   {
-    key: "9",
+    key: '9',
     label: (
       <>
-        <div className="catalog-nav" style={{ paddingBottom: "0px" }}>
+        <div className="catalog-nav" style={{ paddingBottom: '0px' }}>
           <Space
             className="catalog-item"
             style={{
-              alignItems: "center",
-              display: "flex",
-              justifyContent: "space-between",
-              paddingRight: "20px",
-              paddingTop: "8px",
+              alignItems: 'center',
+              display: 'flex',
+              justifyContent: 'space-between',
+              paddingRight: '20px',
+              paddingTop: '8px',
             }}
           >
             <div
               style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "8px",
-                paddingLeft: "10px",
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                paddingLeft: '10px',
               }}
             >
               <img
@@ -428,9 +428,9 @@ const items = [
               />
               <p
                 style={{
-                  fontSize: "24px",
+                  fontSize: '24px',
                   fontFamily: '"Arial", sans-serif',
-                  margin: "0",
+                  margin: '0',
                 }}
               >
                 Photo and video
@@ -439,36 +439,36 @@ const items = [
           </Space>
           <i
             className="arrow right"
-            style={{ marginLeft: "auto", marginRight: "10px" }}
+            style={{ marginLeft: 'auto', marginRight: '10px' }}
           ></i>
         </div>
         <Divider
-          style={{ paddingTop: "0px", marginTop: "10px", marginBottom: "16px" }}
+          style={{ paddingTop: '0px', marginTop: '10px', marginBottom: '16px' }}
         />
       </>
     ),
   },
   {
-    key: "10",
+    key: '10',
     label: (
       <>
-        <div className="catalog-nav" style={{ paddingBottom: "0px" }}>
+        <div className="catalog-nav" style={{ paddingBottom: '0px' }}>
           <Space
             className="catalog-item"
             style={{
-              alignItems: "center",
-              display: "flex",
-              justifyContent: "space-between",
-              paddingRight: "20px",
-              paddingTop: "8px",
+              alignItems: 'center',
+              display: 'flex',
+              justifyContent: 'space-between',
+              paddingRight: '20px',
+              paddingTop: '8px',
             }}
           >
             <div
               style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "8px",
-                paddingLeft: "10px",
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                paddingLeft: '10px',
               }}
             >
               <img
@@ -477,9 +477,9 @@ const items = [
               />
               <p
                 style={{
-                  fontSize: "24px",
+                  fontSize: '24px',
                   fontFamily: '"Arial", sans-serif',
-                  margin: "0",
+                  margin: '0',
                 }}
               >
                 KIDS
@@ -488,36 +488,36 @@ const items = [
           </Space>
           <i
             className="arrow right"
-            style={{ marginLeft: "auto", marginRight: "10px" }}
+            style={{ marginLeft: 'auto', marginRight: '10px' }}
           ></i>
         </div>
         <Divider
-          style={{ paddingTop: "0px", marginTop: "10px", marginBottom: "16px" }}
+          style={{ paddingTop: '0px', marginTop: '10px', marginBottom: '16px' }}
         />
       </>
     ),
   },
   {
-    key: "11",
+    key: '11',
     label: (
       <>
-        <div className="catalog-nav" style={{ paddingBottom: "0px" }}>
+        <div className="catalog-nav" style={{ paddingBottom: '0px' }}>
           <Space
             className="catalog-item"
             style={{
-              alignItems: "center",
-              display: "flex",
-              justifyContent: "space-between",
-              paddingRight: "20px",
-              paddingTop: "8px",
+              alignItems: 'center',
+              display: 'flex',
+              justifyContent: 'space-between',
+              paddingRight: '20px',
+              paddingTop: '8px',
             }}
           >
             <div
               style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "8px",
-                paddingLeft: "10px",
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                paddingLeft: '10px',
               }}
             >
               <img
@@ -526,10 +526,10 @@ const items = [
               />
               <p
                 style={{
-                  fontSize: "24px",
+                  fontSize: '24px',
                   fontFamily: '"Arial", sans-serif',
-                  margin: "0",
-                  color: "red",
+                  margin: '0',
+                  color: 'red',
                 }}
               >
                 SALE
@@ -538,11 +538,11 @@ const items = [
           </Space>
           <i
             className="arrow right"
-            style={{ marginLeft: "auto", marginRight: "10px" }}
+            style={{ marginLeft: 'auto', marginRight: '10px' }}
           ></i>
         </div>
         <Divider
-          style={{ paddingTop: "0px", marginTop: "10px", marginBottom: "16px" }}
+          style={{ paddingTop: '0px', marginTop: '10px', marginBottom: '16px' }}
         />
       </>
     ),

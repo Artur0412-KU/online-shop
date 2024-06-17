@@ -1,9 +1,9 @@
-import React from "react";
-import BenefitsCard from "./BenefitsCard";
-import ReturnIcon from "../img/benefit-icon/return.png";
-import GiftIcon from "../img/benefit-icon/gift.png";
-import CertificateIcon from "../img/benefit-icon/certificate.png";
-import DeliveryIcon from "../img/benefit-icon/delivery.png";
+import React from 'react';
+import BenefitsCard from './BenefitsCard';
+import ReturnIcon from '../img/benefit-icon/return.png';
+import GiftIcon from '../img/benefit-icon/gift.png';
+import CertificateIcon from '../img/benefit-icon/certificate.png';
+import DeliveryIcon from '../img/benefit-icon/delivery.png';
 
 export default function Benefits() {
   return (

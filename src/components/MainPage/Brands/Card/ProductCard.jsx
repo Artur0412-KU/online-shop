@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import { Card } from "antd";
+import React, { useState } from 'react';
+import { Card } from 'antd';
 
 const DATA_CARD = [
   {
-    key: "1",
-    img: "/src/components/MainPage/img/samsung.png",
+    key: '1',
+    img: '/src/components/MainPage/img/samsung.png',
   },
 ];
 

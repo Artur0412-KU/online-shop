@@ -1,11 +1,11 @@
-import React from "react";
-import LogoWhite from "../img/gadget-house-white.png";
-import EmailIcon from "../img/social-media/email.svg";
-import LocationIcon from "../img/location.png";
-import PhoneIcon from "../img/phone.png";
-import Clients from "./Sections/Clients";
-import Categories from "./Sections/Categories";
-import ContactInfo from "./Sections/ContactInfo";
+import React from 'react';
+import LogoWhite from '../img/gadget-house-white.png';
+import EmailIcon from '../img/social-media/email.svg';
+import LocationIcon from '../img/location.png';
+import PhoneIcon from '../img/phone.png';
+import Clients from './Sections/Clients';
+import Categories from './Sections/Categories';
+import ContactInfo from './Sections/ContactInfo';
 
 export default function Footer() {
   return (

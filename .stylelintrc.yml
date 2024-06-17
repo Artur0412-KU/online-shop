@@ -7,7 +7,6 @@ plugins:
 rules:
     selector-class-pattern: null
     color-hex-length: long
-    declaration-no-important: true
     max-nesting-depth: 1
     no-descending-specificity: true
     unit-disallowed-list:

@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import { Card, Rate } from "antd";
+import React, { useState } from 'react';
+import { Card, Rate } from 'antd';
 
 const DATA_CARD = [
   {
-    key: "1",
-    title: "Samsung Galaxy A24 6/128Gb Black",
-    price: "19 900 ₴",
-    img: "/src/components/MainPage/img/card/card-samsungA24-black.png",
-    svgCard: "/src/components/MainPage/img/card/card-buy.svg",
-    svgCardClick: "/src/components/MainPage/img/card/card-buy-hover.svg",
-    svgLike: "/src/components/MainPage/img/card/card-like.svg",
-    svgLikeH: "/src/components/MainPage/img/card/card-like-hover.svg",
-    svgCardHover: "/src/components/MainPage/img/card/buy-hover.svg",
+    key: '1',
+    title: 'Samsung Galaxy A24 6/128Gb Black',
+    price: '19 900 ₴',
+    img: '/src/components/MainPage/img/card/card-samsungA24-black.png',
+    svgCard: '/src/components/MainPage/img/card/card-buy.svg',
+    svgCardClick: '/src/components/MainPage/img/card/card-buy-hover.svg',
+    svgLike: '/src/components/MainPage/img/card/card-like.svg',
+    svgLikeH: '/src/components/MainPage/img/card/card-like-hover.svg',
+    svgCardHover: '/src/components/MainPage/img/card/buy-hover.svg',
   },
 ];
 

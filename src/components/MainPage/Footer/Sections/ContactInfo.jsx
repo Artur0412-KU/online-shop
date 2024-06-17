@@ -1,11 +1,11 @@
-import React from "react";
-import { InstagramOutlined } from "@ant-design/icons";
-import MessengerIcon from "../social-media/messenger.png";
-import InstagramIcon from "../social-media/insta.png";
-import TelegramIcon from "../social-media/telegram.png";
-import FacebookIcon from "../social-media/facebook.png";
-import EmailIcon from "../social-media/email.svg";
-import PhoneIcon from "../social-media/phone.png";
+import React from 'react';
+import { InstagramOutlined } from '@ant-design/icons';
+import MessengerIcon from '../social-media/messenger.png';
+import InstagramIcon from '../social-media/insta.png';
+import TelegramIcon from '../social-media/telegram.png';
+import FacebookIcon from '../social-media/facebook.png';
+import EmailIcon from '../social-media/email.svg';
+import PhoneIcon from '../social-media/phone.png';
 
 export default function ContactInfo() {
   return (
