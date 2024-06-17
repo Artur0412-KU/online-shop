@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Catalog from '../Catalog/Catalog';
 import Search from '../Search/Search';
 import ButtonIcon from './Button/ButtonIcon';
@@ -31,14 +31,14 @@ const DATA = [
 ];
 
 export default function Navigation() {
-  const [data, setData] = useState(DATA);
+  // const [data, setData] = useState(DATA);
 
   return (
     <nav className="navigation">
       <Catalog />
       <Search />
       <div className="navigations-buttons">
-        {data.map((item) => (
+        {DATA.map((item) => (
           <ButtonIcon
             key={item.key}
             icon={item.img}

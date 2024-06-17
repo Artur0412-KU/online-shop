@@ -2,17 +2,8 @@ import {
   MobileOutlined,
   LaptopOutlined,
   TabletOutlined,
-  ClockCircleOutlined,
-  VideoCameraOutlined,
 } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
-import { HiDesktopComputer } from 'react-icons/hi';
-import { PiTelevisionSimpleBold } from 'react-icons/pi';
-import { FaHeadphonesSimple } from 'react-icons/fa6';
-import { IoGameController } from 'react-icons/io5';
-import { MdChildCare } from 'react-icons/md';
-import { LuPercent } from 'react-icons/lu';
-import BasketIcon from '../img/icons/basket-icon.svg';
 
 const items = [
   {

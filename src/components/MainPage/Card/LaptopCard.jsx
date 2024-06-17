@@ -16,7 +16,7 @@ const DATA_CARD = [
 ];
 
 export default function LaptopCard() {
-  const [data, setData] = useState(DATA_CARD);
+  // const [data, setData] = useState(DATA_CARD);
   const [isHovered, setIsHovered] = useState(false);
   const [isClicked, setIsClicked] = useState(false); // ? Context -> LaptopCard double
   const [isClickedLike, setIsClickedLike] = useState(true); // ? Context -> LaptopCard double
@@ -39,7 +39,7 @@ export default function LaptopCard() {
 
   return (
     <>
-      {data.map((item) => (
+      {DATA_CARD.map((item) => (
         <Card key={item.key} className="card">
           <img
             src={isClickedLike ? item.svgLike : item.svgLikeH}

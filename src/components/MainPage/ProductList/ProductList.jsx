@@ -36,7 +36,7 @@ export default function ProductList() {
 
   return (
     <div className="product-list">
-      {items.map((item, index) => (
+      {items.map((item) => (
         <div key={item.key} style={{ width: '100%' }}>
           <div className="catalog-nav">
             <Space

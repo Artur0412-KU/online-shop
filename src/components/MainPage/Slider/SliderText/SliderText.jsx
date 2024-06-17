@@ -8,7 +8,7 @@ const DATA = [
   },
 ];
 export default function SliderText(props) {
-  const [data, setData] = useState(DATA);
+  // const [data, setData] = useState(DATA);
   const [isClicked, setIsClicked] = useState(true);
 
   const handleClick = (event) => {
@@ -18,14 +18,15 @@ export default function SliderText(props) {
   return (
     <div className="slider-text">
       <h2>{props.text}</h2>
-      <div class="button-content">
-        <Link class="button-link" to="/smartphones">
+      <div className="button-content">
+        <Link className="button-link" to="/smartphones">
           See more
-          {data.map((item) => (
+          {DATA.map((item) => (
             <img
               src={isClicked ? item.img : item.imgClick}
               alt="Right Icon"
               onClick={handleClick}
+              key={crypto.randomUUID()}
             />
           ))}
         </Link>

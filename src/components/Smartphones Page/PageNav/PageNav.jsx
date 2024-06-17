@@ -25,8 +25,8 @@ export default function PageNav() {
       <li>
         <NavLink
           className="page-nav"
-          style={(isActive) => {
-            return { color: '#000' };
+          style={{
+            color: '#000',
           }}
         >
           Smartphone

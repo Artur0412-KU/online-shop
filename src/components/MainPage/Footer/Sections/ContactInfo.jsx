@@ -1,5 +1,4 @@
 import React from 'react';
-import { InstagramOutlined } from '@ant-design/icons';
 import MessengerIcon from '../social-media/messenger.png';
 import InstagramIcon from '../social-media/insta.png';
 import TelegramIcon from '../social-media/telegram.png';

@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
 import { Dropdown, Menu, Space } from 'antd';
 import items from './Items';
 import styles from './Catalog.module.css';
@@ -9,7 +8,6 @@ const catalogIcon = {
 };
 
 export default function Catalog() {
-  const navigate = useNavigate();
   const [showOverlay, setShowOverlay] = useState(false);
 
   const handleMouseEnter = () => {
