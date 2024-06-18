@@ -1,5 +1,4 @@
-import React from "react";
-import Logo from "../img/gadget-house-logo.png";
+import React from 'react';
 
 export default function Header() {
   return (
