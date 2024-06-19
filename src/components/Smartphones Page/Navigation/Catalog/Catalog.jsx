@@ -3,9 +3,10 @@ import { useNavigate } from 'react-router-dom';
 import { Dropdown, Menu, Space } from 'antd';
 import items from './Items';
 import styles from './Catalog.module.css';
+import { CatalogIcon } from '../../../MainPage/img/icons';
 
 const catalogIcon = {
-  img: '/src/components/MainPage/img/catalog-icon.png'
+  img: CatalogIcon
 };
 
 export default function Catalog() {

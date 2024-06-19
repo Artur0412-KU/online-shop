@@ -17,9 +17,23 @@ import svgLike from './card/card-like.svg';
 import svgLikeH from './card/card-like-hover.svg';
 import svgCardHover from './card/buy-hover.svg';
 import Laptop from './card/lenovo-laptop.png'
+import CatalogIcon from './catalog-icon.png'
+import SmartphoneIcon from './catalog-icons/smartphone.svg'
+import LaptopIcon from './catalog-icons/laptop.svg'
+import TabletIcon from './catalog-icons/tablet.svg'
+import PCIcon from './catalog-icons/pc.svg'
+import TVIcon from './catalog-icons/tv.svg';
+import WatchIcon from './catalog-icons/watch.svg';
+import AudioIcon from './catalog-icons/audio.svg';
+import ConsoleIcon from './catalog-icons/console.svg';
+import PhotoIcon from './catalog-icons/photo.svg';
+import KidsIcon from './catalog-icons/kids.svg';
+import SaleIcon from './catalog-icons/sale.svg';
 
 
-export {CallIcon, CallIconWhite, NextIcon, BasketIcon, BasketIconWhite, 
+export {
+    CallIcon, CallIconWhite, NextIcon, BasketIcon, BasketIconWhite, 
     HeartIcon, HeartIconWhite, UserIcon, UserIconWhite, RightIcon, 
-    RightIconClick, Samsung, Smartphone, svgCard, svgCardClick, svgLike, svgLikeH, svgCardHover, Laptop
+    RightIconClick, Samsung, Smartphone, svgCard, svgCardClick, svgLike, svgLikeH, svgCardHover, Laptop, CatalogIcon,
+    SmartphoneIcon, LaptopIcon, TabletIcon, PCIcon, TVIcon, WatchIcon, AudioIcon, ConsoleIcon, PhotoIcon, KidsIcon, SaleIcon
 }
