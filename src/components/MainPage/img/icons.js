@@ -9,7 +9,7 @@ import UserIcon from './icons/user-icon.svg';
 import UserIconWhite from './icons/user-icon-white.svg';
 import RightIcon from './right.png'
 import RightIconClick from './right-click.png'
-import Samsung from './samsung.png';
+import Samsung from '/samsung.png';
 import Smartphone from './card/card-samsungA24-black.png';
 import svgCard from './card/card-buy.svg';
 import svgCardClick from './card/card-buy-hover.svg';
