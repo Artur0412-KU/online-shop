@@ -1,19 +1,6 @@
 import React, { useState } from "react";
 import { Card, Rate  } from "antd";
-
-const DATA_CARD = [
-  {
-    key: "1",
-    title: "Lenovo IdeaPad 1 15ALC7",
-    price: "16 999 ₴",
-    img: "/src/components/MainPage/img/card/lenovo-laptop.png",
-    svgCard: "/src/components/MainPage/img/card/card-buy.svg",
-    svgCardClick: "/src/components/MainPage/img/card/card-buy-hover.svg",
-    svgLike: "/src/components/MainPage/img/card/card-like.svg",
-    svgLikeH: "/src/components/MainPage/img/card/card-like-hover.svg",
-    svgCardHover: "/src/components/MainPage/img/card/buy-hover.svg"
-  }
-];
+import DATA_CARD from "./costants";
 
 export default function LaptopCard() {
   const [data, setData] = useState(DATA_CARD);
@@ -45,13 +32,13 @@ export default function LaptopCard() {
           <img src={isClickedLike ? item.svgLike : item.svgLikeH} alt="#" className="card-svg_like" onClick={handleClickLike}/>
           <img
             className="card-img"
-            src={item.img}
+            src={item.img2}
             alt="#"
           />
-          <h3>{item.title}</h3>
+          <h3>{item.title2}</h3>
           <Rate className="card-rate" />
           <div className="card-footer">
-            <p>{item.price}</p>
+            <p>{item.price2}</p>
             
             <img
               className="card-buy"
