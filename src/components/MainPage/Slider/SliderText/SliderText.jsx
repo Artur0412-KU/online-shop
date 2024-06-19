@@ -1,12 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import DATA from './constants';
 
-const DATA = [
-    {
-        img: '/src/components/MainPage/img/right.png',
-        imgClick: '/src/components/MainPage/img/right-click.png'
-    }
-]
+
 export default function SliderText(props) {
     const [data, setData] = useState(DATA);
     const [isClicked, setIsClicked] = useState(true);

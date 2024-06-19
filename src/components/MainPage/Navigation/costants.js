@@ -1,4 +1,4 @@
-import { BasketIcon, BasketIconWhite, CallIcon, CallIconWhite, HeartIcon, HeartIconWhite, UserIcon, UserIconWhite } from "../img/icons/icons";
+import { BasketIcon, BasketIconWhite, CallIcon, CallIconWhite, HeartIcon, HeartIconWhite, UserIcon, UserIconWhite } from "../img/icons";
 
 const DATA = [
     {
