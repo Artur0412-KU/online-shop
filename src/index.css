@@ -46,7 +46,7 @@ a {
     margin-bottom: 5px;
 }
 
-:where(.css-dev-only-do-not-override-1qfezbu).ant-input-affix-wrapper {
+:where(.css-dev-only-do-not-override-1qfezbu).ant-input-affix-wrapper, .ant-input-affix-wrapper .css-1qfezbu .ant-input-outlined  {
     border-radius: 13px;
     padding-left: 22px;
 }
