@@ -1,4 +1,5 @@
 import { Space, Divider } from "antd";
+import { AudioIcon, ConsoleIcon, KidsIcon, LaptopIcon, PCIcon, PhotoIcon, SaleIcon, SmartphoneIcon, TabletIcon, TVIcon, WatchIcon } from "../../../MainPage/img/icons";
 
 const items = [
   {
@@ -8,7 +9,7 @@ const items = [
         <div className="catalog-nav" style={{ paddingBottom: '0px' }}>
           <Space className="catalog-item" style={{paddingRight: '20px', paddingTop: '16px'  }} align="center">
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', paddingLeft: '10px' }}>
-              <img src='/src/components/MainPage/img/catalog-icons/smartphone.svg' alt='Smartphone' style={{padding: '0px', margin: '0px'}}/>
+              <img src={SmartphoneIcon} alt='Smartphone' style={{padding: '0px', margin: '0px'}}/>
               <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0', lineHeight: '150%' }}>Smartphone</p>
             </div>
           </Space>
@@ -26,7 +27,7 @@ const items = [
     <div className="catalog-nav" style={{ paddingBottom: '0px' }}>
       <Space className="catalog-item" style={{ alignItems: 'center', display: 'flex', justifyContent: 'space-between', paddingRight: '20px', paddingTop: '8px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', paddingLeft: '10px' }}>
-          <img src='/src/components/MainPage/img/catalog-icons/laptop.svg' alt='Smartphone' />
+          <img src={LaptopIcon} alt='Smartphone' />
           <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0' }}>Laptop</p>
         </div>
       </Space>
@@ -41,7 +42,7 @@ const items = [
     <div className="catalog-nav" style={{ paddingBottom: '0px' }}>
       <Space className="catalog-item" style={{ alignItems: 'center', display: 'flex', justifyContent: 'space-between', paddingRight: '20px', paddingTop: '8px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', paddingLeft: '10px' }}>
-          <img src='/src/components/MainPage/img/catalog-icons/tablet.svg' alt='Smartphone' />
+          <img src={TabletIcon} alt='Smartphone' />
           <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0' }}>Tablet</p>
         </div>
       </Space>
@@ -56,7 +57,7 @@ const items = [
     <div className="catalog-nav" style={{ paddingBottom: '0px' }}>
       <Space className="catalog-item" style={{ alignItems: 'center', display: 'flex', justifyContent: 'space-between', paddingRight: '20px', paddingTop: '8px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', paddingLeft: '10px' }}>
-          <img src='/src/components/MainPage/img/catalog-icons/pc.svg' alt='Smartphone' />
+          <img src={PCIcon} alt='Smartphone' />
           <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0' }}>PC</p>
         </div>
       </Space>
@@ -71,7 +72,7 @@ const items = [
     <div className="catalog-nav" style={{ paddingBottom: '0px' }}>
       <Space className="catalog-item" style={{ alignItems: 'center', display: 'flex', justifyContent: 'space-between', paddingRight: '20px', paddingTop: '8px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', paddingLeft: '10px' }}>
-          <img src='/src/components/MainPage/img/catalog-icons/tv.svg' alt='Smartphone' />
+          <img src={TVIcon} alt='Smartphone' />
           <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0' }}>TVs and Multimedia</p>
         </div>
       </Space>
@@ -86,7 +87,7 @@ const items = [
     <div className="catalog-nav" style={{ paddingBottom: '0px' }}>
       <Space className="catalog-item" style={{ alignItems: 'center', display: 'flex', justifyContent: 'space-between', paddingRight: '20px', paddingTop: '8px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', paddingLeft: '10px' }}>
-          <img src='/src/components/MainPage/img/catalog-icons/watch.svg' alt='Smartphone' />
+          <img src={WatchIcon} alt='Smartphone' />
           <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0' }}>Smart-watch</p>
         </div>
       </Space>
@@ -101,7 +102,7 @@ const items = [
     <div className="catalog-nav" style={{ paddingBottom: '0px' }}>
       <Space className="catalog-item" style={{ alignItems: 'center', display: 'flex', justifyContent: 'space-between', paddingRight: '20px', paddingTop: '8px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', paddingLeft: '10px' }}>
-          <img src='/src/components/MainPage/img/catalog-icons/audio.svg' alt='Smartphone' />
+          <img src={AudioIcon} alt='Smartphone' />
           <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0' }}>Audio</p>
         </div>
       </Space>
@@ -116,7 +117,7 @@ const items = [
     <div className="catalog-nav" style={{ paddingBottom: '0px' }}>
       <Space className="catalog-item" style={{ alignItems: 'center', display: 'flex', justifyContent: 'space-between', paddingRight: '20px', paddingTop: '8px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', paddingLeft: '10px' }}>
-          <img src='/src/components/MainPage/img/catalog-icons/console.svg' alt='Smartphone' />
+          <img src={ConsoleIcon} alt='Smartphone' />
           <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0' }}>Game console</p>
         </div>
       </Space>
@@ -131,7 +132,7 @@ const items = [
     <div className="catalog-nav" style={{ paddingBottom: '0px' }}>
       <Space className="catalog-item" style={{ alignItems: 'center', display: 'flex', justifyContent: 'space-between', paddingRight: '20px', paddingTop: '8px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', paddingLeft: '10px' }}>
-          <img src='/src/components/MainPage/img/catalog-icons/photo.svg' alt='Smartphone' />
+          <img src={PhotoIcon} alt='Smartphone' />
           <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0' }}>Photo and video</p>
         </div>
       </Space>
@@ -146,7 +147,7 @@ const items = [
     <div className="catalog-nav" style={{ paddingBottom: '0px' }}>
       <Space className="catalog-item" style={{ alignItems: 'center', display: 'flex', justifyContent: 'space-between', paddingRight: '20px', paddingTop: '8px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', paddingLeft: '10px' }}>
-          <img src='/src/components/MainPage/img/catalog-icons/kids.svg' alt='Smartphone' />
+          <img src={KidsIcon} alt='Smartphone' />
           <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0' }}>KIDS</p>
         </div>
       </Space>
@@ -161,7 +162,7 @@ const items = [
     <div className="catalog-nav" style={{ paddingBottom: '0px' }}>
       <Space className="catalog-item" style={{ alignItems: 'center', display: 'flex', justifyContent: 'space-between', paddingRight: '20px', paddingTop: '8px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', paddingLeft: '10px' }}>
-          <img src='/src/components/MainPage/img/catalog-icons/sale.svg' alt='Smartphone' />
+          <img src={SaleIcon} alt='Smartphone' />
           <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0', color: 'red' }}>SALE</p>
         </div>
       </Space>
