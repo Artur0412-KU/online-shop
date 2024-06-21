@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from 'react';
 import { Card, Rate } from 'antd';
 
@@ -14,6 +15,11 @@ const DATA_CARD = [
     svgCardHover: '/src/components/MainPage/img/card/buy-hover.svg',
   },
 ];
+=======
+import React, { useState } from "react";
+import { Card, Rate } from "antd";
+import DATA_CARD from "./costants";
+>>>>>>> main
 
 export default function ProductCard() {
   // const [data, setData] = useState(DATA_CARD);

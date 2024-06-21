@@ -2,9 +2,14 @@ import React, { useState } from 'react';
 import { Dropdown, Menu, Space } from 'antd';
 import items from './Items';
 import styles from './Catalog.module.css';
+import { CatalogIcon } from '../../../MainPage/img/icons';
 
 const catalogIcon = {
+<<<<<<< HEAD
   img: '/src/components/MainPage/img/catalog-icon.png',
+=======
+  img: CatalogIcon
+>>>>>>> main
 };
 
 export default function Catalog() {

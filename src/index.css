@@ -44,9 +44,61 @@ a {
   margin-bottom: 5px;
 }
 
+<<<<<<< HEAD
 :where(.css-dev-only-do-not-override-1qfezbu).ant-input-affix-wrapper {
   padding-left: 22px;
   border-radius: 13px;
+=======
+:where(.css-dev-only-do-not-override-1qfezbu).ant-input-affix-wrapper, :where(.css-1qfezbu).ant-input-affix-wrapper  {
+    border-radius: 13px;
+    padding-left: 22px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.search-input input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+}
+
+.search-input.active {
+    border-color: #6a0dad;
+}
+
+.search-input.active .search-icon {
+    color: #6a0dad;
+}
+
+.search-input.disabled {
+    background-color: #f0f0f0;
+    border-color: #d3d3d3;
+}
+
+.search-input.disabled input {
+    background-color: #f0f0f0;
+    color: #a0a0a0;
+}
+
+.search-input.disabled .search-icon {
+    color: #a0a0a0;
+}
+
+.search-input.error {
+    border-color: #ff0000;
+}
+
+.search-input.error .search-icon {
+    color: #ff0000;
+>>>>>>> main
 }
 
 .search-icon {

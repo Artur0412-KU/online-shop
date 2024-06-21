@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from 'react';
 import { Card, Rate } from 'antd';
 
@@ -14,6 +15,11 @@ const DATA_CARD = [
     svgCardHover: '/src/components/MainPage/img/card/buy-hover.svg',
   },
 ];
+=======
+import React, { useState } from "react";
+import { Card, Rate  } from "antd";
+import DATA_CARD from "./costants";
+>>>>>>> main
 
 export default function LaptopCard() {
   // const [data, setData] = useState(DATA_CARD);
@@ -42,17 +48,30 @@ export default function LaptopCard() {
       {DATA_CARD.map((item) => (
         <Card key={item.key} className="card">
           <img
+<<<<<<< HEAD
             src={isClickedLike ? item.svgLike : item.svgLikeH}
+=======
+            className="card-img"
+            src={item.img2}
+>>>>>>> main
             alt="#"
             className="card-svg_like"
             onClick={handleClickLike}
           />
+<<<<<<< HEAD
           <img className="card-img" src={item.img} alt="#" />
           <h3>{item.title}</h3>
           <Rate className="card-rate" />
           <div className="card-footer">
             <p>{item.price}</p>
 
+=======
+          <h3>{item.title2}</h3>
+          <Rate className="card-rate" />
+          <div className="card-footer">
+            <p>{item.price2}</p>
+            
+>>>>>>> main
             <img
               className="card-buy"
               onClick={handleClickBuy}

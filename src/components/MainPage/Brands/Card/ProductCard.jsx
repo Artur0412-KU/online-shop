@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import { Card } from 'antd';
 
@@ -7,6 +8,11 @@ const DATA_CARD = [
     img: '/src/components/MainPage/img/samsung.png',
   },
 ];
+=======
+import React, { useState } from "react";
+import { Card } from "antd";
+import DATA_CARD from "./constants";
+>>>>>>> main
 
 export default function ProductCard() {
   // const [data, setData] = useState(DATA_CARD);

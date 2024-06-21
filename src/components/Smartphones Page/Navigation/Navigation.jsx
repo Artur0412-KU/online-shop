@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import Catalog from './Catalog/Catalog';
 import Search from './Search/Search';
@@ -29,6 +30,13 @@ const DATA = [
     clickImg: '/src/components/MainPage/img/icons/basket-icon-white.svg',
   },
 ];
+=======
+import React, { useState } from 'react'
+import Catalog from './Catalog/Catalog'
+import Search from './Search/Search'
+import ButtonIcon from './Button/ButtonIcon'
+import DATA from './costants'
+>>>>>>> main
 
 export default function Navigation() {
   // const [data, setData] = useState(DATA);
