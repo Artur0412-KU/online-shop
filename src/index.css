@@ -272,6 +272,10 @@ i {
     line-height: 150%;
 }
 
+.catalog-list:hover {
+    color: black;
+}
+
 .catalog-item img {
     margin-right: 10px;
 }
