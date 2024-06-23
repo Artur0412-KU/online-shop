@@ -1,10 +1,10 @@
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
-import Main from './components/MainPage/Main';
-import Catalog from './components/MainPage/Catalog/Catalog';
+import Catalog from './components/Catalog/Catalog';
+import Main from './components/pages/Main';
+import SmartphonesPage from './components/pages/SmartphonesPage';
+import LaptopPage from './components/pages/LaptopPage';
+import ViewedPage from './components/pages/ViewedPage';
 import './index.css';
-import SmartphonesPage from './components/Smartphones Page/SmartphonesPage';
-import LaptopPage from './components/LaptopPage/LaptopPage';
-import ViewedPage from './components/ViewedPage/ViewedPage';
 
 function App() {
   return (
