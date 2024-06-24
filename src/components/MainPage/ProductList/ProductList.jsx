@@ -33,18 +33,20 @@ export default function ProductList() {
       {items.map((item, index) => (
         <div key={item.key} style={{width: '100%'}}>
           <div className="catalog-nav">
-            <Space
+            <Link
+              to={item.link}
               className="catalog-item"
               style={{ alignItems: "center", display: "flex", justifyContent: "space-between" }}
             >
+              
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                 <img src={item.img} alt={item.title} />
-                <Link to={item.link} className="catalog-list" style={item.style}>
+                <a href="" className="catalog-list" style={item.style}>
                   {item.title}
-                </Link>
+                </a>
               </div>
               <i className="arrow right"></i>
-            </Space>
+            </Link>
             
           </div>
           <Divider style={{ marginTop: "8px", color: "#808080" }} />

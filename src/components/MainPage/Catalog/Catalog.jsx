@@ -18,16 +18,16 @@ export default function Catalog() {
           fontSize: '42px', 
           backgroundColor: '#6f4c9a',
           paddingLeft: '50px',
-          paddingRight: '190px',
+          paddingRight: '173px',
           paddingTop:'15px',
           paddingBottom: '15px',
           borderRadius: '0px',
           color: '#fff',
           textTransform: 'capitalize',
-          fontFamily: '"Arial", sans-serif',
+          fontFamily: '"Inter", sans-serif',
           fontWeight: 'medium',
-          width: '420px',
-          height: '92px'
+          width: '405px',
+          height: '94px'
         }} 
         startIcon = {<img src={CatalogIcon}/> }>
         Catalog
