@@ -6,7 +6,7 @@ export default function ButtonIcon({ icon, clickImg, hoverImg}) {
   const [isClicked, setIsClicked] = useState(false); // ? Context -> LaptopCard double
 
   const handleClick = () => {
-    setIsClicked((prevState) => !prevState);
+    setIsClicked((prevState) => prevState);
   };
 
   const handleMouseLeave = () => {
