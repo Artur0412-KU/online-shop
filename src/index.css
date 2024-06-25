@@ -25,7 +25,7 @@ a {
     font-family: "Nunito", sans-serif;
     font-size: 34px;
     line-height: 120%;
-    font-weight: 800;
+    font-weight: 850;
     font-style: normal;
     color: #000;
     margin: 0;
@@ -213,13 +213,13 @@ i {
 .product-list {
     background-color: #fff;
     padding: 24px;
-    padding-right: 20px;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
     margin-bottom: 0;
-    width: 507.3px;
+    width: 502px;
     height: auto;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
 }
