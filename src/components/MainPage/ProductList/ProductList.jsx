@@ -49,7 +49,7 @@ export default function ProductList() {
             </Link>
             
           </div>
-          <Divider style={{ marginTop: "8px", color: "#808080" }} />
+          <Divider style={{ marginTop: "8px", color: "#808080", marginBottom: '0px' }} />
           
         </div>
       ))}

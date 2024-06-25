@@ -17,7 +17,7 @@ const items = [
             <i className="arrow right"></i>
           </div>
         </div>
-        <Divider style={{paddingTop: '0px', marginTop: '10px',  marginBottom: '16px'}}/>
+        <Divider style={{paddingTop: '0px', margin: '0px',  marginBottom: '16px'}}/>
       </>
     )
   },
