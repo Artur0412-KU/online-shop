@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 body {
     margin: 0 auto;
@@ -21,10 +22,10 @@ a {
 }
 
 .nunito-sans-logo {
-    font-family: "Nunito Sans", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 34px;
     line-height: 120%;
-    font-weight: 800;
+    font-weight: 900;
     font-style: normal;
     color: #000;
     margin: 0;
@@ -213,13 +214,13 @@ i {
     background-color: #fff;
     padding: 24px;
     padding-right: 20px;
-    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-bottom: 0;
-    min-width: 375px;
+    width: 507px;
+    height: 772px;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
 }
 
