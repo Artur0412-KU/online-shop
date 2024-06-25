@@ -26,7 +26,7 @@ export default function Catalog() {
           textTransform: 'capitalize',
           fontFamily: '"Inter", sans-serif',
           fontWeight: 'medium',
-          width: '420px',
+          maxWidth: '420px',
           height: '94px'
         }} 
         startIcon = {<img src={CatalogIcon}/> }>
