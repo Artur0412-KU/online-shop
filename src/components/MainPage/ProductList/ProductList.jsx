@@ -25,7 +25,7 @@ export default function ProductList() {
     { key: "8", title: "Game console", img: console, link: "/consoles" },
     { key: "9", title: "Photo and video", img: photo, link: "/photo-video" },
     { key: "10", title: "KIDS", img: kids, link: "/kids" },
-    { key: "11", title: "SALE", img: sale, link: "/sale", style: { color: "red" } },
+    { key: "11", title: "SALE", img: sale, link: "/sale", style: { color: "#F01A1A" } },
   ];
 
   return (

@@ -31,7 +31,7 @@ export default function LaptopCard() {
         <Card key={item.key} className="card" >
           <img src={isClickedLike ? item.svgLike : item.svgLikeH} alt="#" className="card-svg_like" onClick={handleClickLike}/>
           <img
-            className="card-img"
+            className="card-img-laptop"
             src={item.img2}
             alt="#"
           />

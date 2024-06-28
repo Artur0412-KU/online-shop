@@ -352,7 +352,7 @@ hr:active {
 
 .brands-container {
     padding-bottom: 24px;
-    background-color: #F5F3F8;
+    background-color: #F8F7FA;
 }
 
 .carousel-slide {
@@ -412,6 +412,17 @@ hr:active {
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
 }
 
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+    .card {
+        width: 305px;
+        height: 480px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
 .card:hover {
     transform: scale(1.05);
 }
@@ -426,7 +437,18 @@ hr:active {
     height: 256px;
     transition: all .3s;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+} 
+
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+    .product-card {
+        width: 305px;
+        height: 480px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
+
 
 .product-card:hover {
     transform: scale(1.05);
@@ -440,6 +462,12 @@ hr:active {
 
 .card-img {
     margin: 0 auto;
+    width: auto;
+}
+
+.card-img-laptop {
+    margin: 0 auto;
+    width: 100%;
 }
 
 .card-svg_like {
@@ -473,6 +501,8 @@ hr:active {
     padding-bottom: 10px;
     font-weight: 400;
     font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    color: #1c1817;
 }
 
 .card-buy {
