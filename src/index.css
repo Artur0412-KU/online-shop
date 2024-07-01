@@ -40,10 +40,9 @@ a {
   background-color: #d3d3d3;
 }
 
-.search-container-external {
+.search-input {
   width: 610px;
   height: 56px;
-  display: flex;
   margin: 0 42px 0 40px;
 }
 

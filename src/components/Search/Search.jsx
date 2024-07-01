@@ -54,6 +54,7 @@ const SearchField = ({ status, onHover }) => {
       className="search-container-external"
     >
       <Input
+        className="search-input-wh"
         onFocus={() => onHover('Active')}
         placeholder={status === 'Active' ? null : 'Searching...'}
         {...getStatusProps(status)}
