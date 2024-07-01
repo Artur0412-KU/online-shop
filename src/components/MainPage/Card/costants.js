@@ -1,4 +1,5 @@
-import { Laptop, Smartphone, svgCard, svgCardClick, svgCardHover, svgLike, svgLikeH } from "../img/icons";
+import { Laptop, LenovoColors, Smartphone, svgCard, svgCardClick, svgCardHover, svgLike, svgLikeH } from "../img/icons";
+import { SamsungColors } from "../img/icons";
 
 const DATA_CARD = [
     {
@@ -7,6 +8,8 @@ const DATA_CARD = [
       title2:  "Lenovo IdeaPad 1 15ALC7",
       price: "19 900 ₴",
       price2: "16 999 ₴",
+      colorPalette: SamsungColors,
+      colorPalette2: LenovoColors,
       img: Smartphone,
       img2: Laptop,
       svgCard: svgCard,
@@ -15,6 +18,6 @@ const DATA_CARD = [
       svgLikeH: svgLikeH,
       svgCardHover: svgCardHover
     },
-];
+]
 
 export default DATA_CARD;
