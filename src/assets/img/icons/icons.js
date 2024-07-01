@@ -19,5 +19,4 @@ export {
   UserIcon,
   UserIconWhite,
   BasketIcon,
-  BasketIconWhite,
 };

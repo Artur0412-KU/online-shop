@@ -51,7 +51,7 @@ const SearchField = ({ status, onHover }) => {
     <div
       onMouseEnter={() => onHover('Hover')}
       onMouseLeave={() => onHover('Disable')}
-      style={{ width: 610, height: 56, display: 'flex', borderRadius: '16px' }}
+      className="search-container-external"
     >
       <Input
         onFocus={() => onHover('Active')}

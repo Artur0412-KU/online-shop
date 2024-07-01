@@ -40,6 +40,14 @@ a {
   background-color: #d3d3d3;
 }
 
+.search-container-external {
+  width: 610px;
+  height: 56px;
+  display: flex;
+  border-radius: 16px;
+  margin: 0 42px 0 40px;
+}
+
 .search-label {
   margin-bottom: 5px;
 }
