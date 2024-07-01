@@ -29,11 +29,14 @@ import ConsoleIcon from './catalog-icons/console.svg';
 import PhotoIcon from './catalog-icons/photo.svg';
 import KidsIcon from './catalog-icons/kids.svg';
 import SaleIcon from './catalog-icons/sale.svg';
+import SamsungColors from './icons/samsung-colors.svg';
+import LenovoColors from './icons/lenovo-colors.svg'
 
 
 export {
     CallIcon, CallIconWhite, NextIcon, BasketIcon, BasketIconWhite, 
     HeartIcon, HeartIconWhite, UserIcon, UserIconWhite, RightIcon, 
     RightIconClick, Samsung, Smartphone, svgCard, svgCardClick, svgLike, svgLikeH, svgCardHover, Laptop, CatalogIcon,
-    SmartphoneIcon, LaptopIcon, TabletIcon, PCIcon, TVIcon, WatchIcon, AudioIcon, ConsoleIcon, PhotoIcon, KidsIcon, SaleIcon
+    SmartphoneIcon, LaptopIcon, TabletIcon, PCIcon, TVIcon, WatchIcon, AudioIcon, ConsoleIcon, 
+    PhotoIcon, KidsIcon, SaleIcon, SamsungColors, LenovoColors
 }

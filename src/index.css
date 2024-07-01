@@ -439,17 +439,6 @@ hr:active {
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
 } 
 
-@media screen and (max-width: 1440px) and (min-width: 1024px) {
-    .product-card {
-        width: 305px;
-        height: 480px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-
 .product-card:hover {
     transform: scale(1.05);
 }
@@ -463,6 +452,33 @@ hr:active {
 .card-img {
     margin: 0 auto;
     width: auto;
+    position: relative;
+}
+
+.card-palette, .card-palette-laptop {
+    width: 24px;
+    height: 88px;
+    position: absolute;
+    bottom: 0; 
+    left: 245px;
+}
+
+.card-palette-laptop  {
+    left: 340px;
+}
+
+@media screen and (max-width: 1720px) and (min-width: 1024px) {
+    .card-palette {
+    width: 24px;
+    height: 88px;
+    position: absolute;
+    bottom: 0; 
+    left: 200px;
+   }
+
+   .card-palette-laptop {
+    left: 270px;
+   }
 }
 
 .card-img-laptop {
@@ -511,9 +527,14 @@ hr:active {
 
 .card p {
     margin: 0;
-    font-size: 25px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    color: #1c1817;
 
 }
+
+
 
 .ant-card .ant-card-body {
     padding: 16px;

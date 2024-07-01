@@ -34,13 +34,20 @@ export default function ProductCard() {
             alt="#"
             className="card-svg_like"
           />
-          <img
-            className="card-img"
+          <div className="card-img">
+            <img
             src={item.img}
             alt="#"
             width={155}
             height={200}
-          />
+           />
+           <img
+             className="card-palette"
+             src={item.colorPalette}
+             alt="#"
+            />
+          </div>
+          
           <h3>{item.title}</h3>
           <Rate className="card-rate" />
           <div className="card-footer">

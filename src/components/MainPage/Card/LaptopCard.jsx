@@ -30,11 +30,19 @@ export default function LaptopCard() {
       {data.map((item) => (
         <Card key={item.key} className="card" >
           <img src={isClickedLike ? item.svgLike : item.svgLikeH} alt="#" className="card-svg_like" onClick={handleClickLike}/>
-          <img
+          <div className="card-img">
+            <img
             className="card-img-laptop"
             src={item.img2}
             alt="#"
-          />
+            />
+            <img
+             className="card-palette-laptop"
+             src={item.colorPalette2}
+             alt="#"
+            />
+          </div>
+          
           <h3>{item.title2}</h3>
           <Rate className="card-rate" />
           <div className="card-footer">
