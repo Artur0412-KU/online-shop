@@ -10,7 +10,7 @@ const items = [
           <Space className="catalog-item" style={{paddingRight: '20px', paddingTop: '16px'  }} align="center">
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', paddingLeft: '10px' }}>
               <img src={SmartphoneIcon} alt='Smartphone' style={{padding: '0px', margin: '0px'}}/>
-              <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0', lineHeight: '150%' }}>Smartphone</p>
+              <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0', lineHeight: '150%', color: '#1C1817' }}>Smartphone</p>
             </div>
           </Space>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginLeft: '0px', marginRight: '10px', height: '36px', lineHeight: '150%' }}>
@@ -28,7 +28,7 @@ const items = [
       <Space className="catalog-item" style={{ alignItems: 'center', display: 'flex', justifyContent: 'space-between', paddingRight: '20px', paddingTop: '8px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', paddingLeft: '10px' }}>
           <img src={LaptopIcon} alt='Smartphone' />
-          <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0' }}>Laptop</p>
+          <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0', color: '#1C1817'  }}>Laptop</p>
         </div>
       </Space>
       <i className="arrow right" style={{ marginLeft: 'auto', marginRight: '10px' }}></i>
@@ -43,7 +43,7 @@ const items = [
       <Space className="catalog-item" style={{ alignItems: 'center', display: 'flex', justifyContent: 'space-between', paddingRight: '20px', paddingTop: '8px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', paddingLeft: '10px' }}>
           <img src={TabletIcon} alt='Smartphone' />
-          <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0' }}>Tablet</p>
+          <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0', color: '#1C1817'  }}>Tablet</p>
         </div>
       </Space>
       <i className="arrow right" style={{ marginLeft: 'auto', marginRight: '10px' }}></i>
@@ -58,7 +58,7 @@ const items = [
       <Space className="catalog-item" style={{ alignItems: 'center', display: 'flex', justifyContent: 'space-between', paddingRight: '20px', paddingTop: '8px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', paddingLeft: '10px' }}>
           <img src={PCIcon} alt='Smartphone' />
-          <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0' }}>PC</p>
+          <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0', color: '#1C1817'  }}>PC</p>
         </div>
       </Space>
       <i className="arrow right" style={{ marginLeft: 'auto', marginRight: '10px' }}></i>
@@ -73,7 +73,7 @@ const items = [
       <Space className="catalog-item" style={{ alignItems: 'center', display: 'flex', justifyContent: 'space-between', paddingRight: '20px', paddingTop: '8px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', paddingLeft: '10px' }}>
           <img src={TVIcon} alt='Smartphone' />
-          <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0' }}>TVs and Multimedia</p>
+          <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0', color: '#1C1817'  }}>TVs and Multimedia</p>
         </div>
       </Space>
       <i className="arrow right" style={{ marginLeft: 'auto', marginRight: '10px' }}></i>
@@ -88,7 +88,7 @@ const items = [
       <Space className="catalog-item" style={{ alignItems: 'center', display: 'flex', justifyContent: 'space-between', paddingRight: '20px', paddingTop: '8px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', paddingLeft: '10px' }}>
           <img src={WatchIcon} alt='Smartphone' />
-          <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0' }}>Smart-watch</p>
+          <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0', color: '#1C1817'  }}>Smart-watch</p>
         </div>
       </Space>
       <i className="arrow right" style={{ marginLeft: 'auto', marginRight: '10px' }}></i>
@@ -103,7 +103,7 @@ const items = [
       <Space className="catalog-item" style={{ alignItems: 'center', display: 'flex', justifyContent: 'space-between', paddingRight: '20px', paddingTop: '8px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', paddingLeft: '10px' }}>
           <img src={AudioIcon} alt='Smartphone' />
-          <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0' }}>Audio</p>
+          <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0', color: '#1C1817'  }}>Audio</p>
         </div>
       </Space>
       <i className="arrow right" style={{ marginLeft: 'auto', marginRight: '10px' }}></i>
@@ -118,7 +118,7 @@ const items = [
       <Space className="catalog-item" style={{ alignItems: 'center', display: 'flex', justifyContent: 'space-between', paddingRight: '20px', paddingTop: '8px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', paddingLeft: '10px' }}>
           <img src={ConsoleIcon} alt='Smartphone' />
-          <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0' }}>Game console</p>
+          <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0', color: '#1C1817'  }}>Game console</p>
         </div>
       </Space>
       <i className="arrow right" style={{ marginLeft: 'auto', marginRight: '10px' }}></i>
@@ -133,7 +133,7 @@ const items = [
       <Space className="catalog-item" style={{ alignItems: 'center', display: 'flex', justifyContent: 'space-between', paddingRight: '20px', paddingTop: '8px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', paddingLeft: '10px' }}>
           <img src={PhotoIcon} alt='Smartphone' />
-          <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0' }}>Photo and video</p>
+          <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0', color: '#1C1817'  }}>Photo and video</p>
         </div>
       </Space>
       <i className="arrow right" style={{ marginLeft: 'auto', marginRight: '10px' }}></i>
@@ -148,7 +148,7 @@ const items = [
       <Space className="catalog-item" style={{ alignItems: 'center', display: 'flex', justifyContent: 'space-between', paddingRight: '20px', paddingTop: '8px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', paddingLeft: '10px' }}>
           <img src={KidsIcon} alt='Smartphone' />
-          <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0' }}>KIDS</p>
+          <p style={{ fontSize: '24px', fontFamily: '"Arial", sans-serif', margin: '0', color: '#1C1817'  }}>KIDS</p>
         </div>
       </Space>
       <i className="arrow right" style={{ marginLeft: 'auto', marginRight: '10px' }}></i>
