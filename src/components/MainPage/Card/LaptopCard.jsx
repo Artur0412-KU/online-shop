@@ -26,7 +26,7 @@ export default function LaptopCard() {
 
 
   return (
-    <>
+    <div>
       {data.map((item) => (
         <Card key={item.key} className="card" >
           <img src={isClickedLike ? item.svgLike : item.svgLikeH} alt="#" className="card-svg_like" onClick={handleClickLike}/>
@@ -62,6 +62,6 @@ export default function LaptopCard() {
           </div>
         </Card>
       ))}
-    </>
+    </div>
   );
 }

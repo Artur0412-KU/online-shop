@@ -25,7 +25,7 @@ export default function ProductCard() {
   };
 
   return (
-    <>
+    <div className="card-container">
       {data.map((item) => (
         <Card key={item.key} className="card">
           <img
@@ -38,8 +38,7 @@ export default function ProductCard() {
             <img
             src={item.img}
             alt="#"
-            width={155}
-            height={200}
+            className="body-card"
            />
            <img
              className="card-palette"
@@ -65,6 +64,6 @@ export default function ProductCard() {
           </div>
         </Card>
       ))}
-    </>
+    </div>
   );
 }
