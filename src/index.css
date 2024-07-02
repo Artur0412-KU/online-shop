@@ -162,8 +162,7 @@ i {
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
-    gap: 15px;
-
+    gap: 15px
 }
 
 .search-img {
@@ -269,7 +268,7 @@ i {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #000;
+    color: #1C1817;
     font-size: 24px;
     width: 240px;
     line-height: 150%;
@@ -515,6 +514,7 @@ hr:active {
 
 .card-palette-laptop  {
     left: 260px;
+
 }
 
 @media screen and (max-width: 1440px) and (min-width: 1024px) {
