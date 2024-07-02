@@ -13,8 +13,6 @@ export default function ProductCard() {
             className="card-img"
             src={item.img}
             alt="#"
-            width={228}
-            height={228}
           />
         </Card>
       ))}

@@ -399,6 +399,12 @@ hr:active {
 }
 
 /* #region Card */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 40px;
+}
 
 .card {
     margin-right: 20px;
@@ -413,14 +419,23 @@ hr:active {
 
 @media screen and (max-width: 1440px) and (min-width: 1024px) {
     .card {
-        width: 305px;
+        width: calc(33.333% - 40px); 
         height: 480px;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 10px;
     }
+
 }
 
+@media screen and (max-width: 1337px) and (min-width: 1024px) {
+    .card {
+        width: 250px; /* Adjust width to prevent overlapping */
+        height: 450px;
+        margin: 10px; /* Ensure spacing between cards */
+    }
+}
 
 .card:hover {
     transform: scale(1.05);
@@ -438,6 +453,23 @@ hr:active {
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
 } 
 
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+    .product-card {
+        width: calc(100% - 40px); /* Responsive width with gap considered */
+        height: auto;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-card img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
 .product-card:hover {
     transform: scale(1.05);
 }
@@ -454,29 +486,47 @@ hr:active {
     position: relative;
 }
 
+.body-card {
+    width: 155px;
+    height: 200px;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+    .card-img {
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .body-card {
+        width: 150px;
+        height: 180px;
+    }
+
+}
+
 .card-palette, .card-palette-laptop {
     width: 24px;
     height: 88px;
     position: absolute;
     bottom: 0; 
-    left: 245px;
+    left: 200px;
 }
 
 .card-palette-laptop  {
-    left: 320px;
+    left: 260px;
+
 }
 
-@media screen and (max-width: 1720px) and (min-width: 1024px) {
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
     .card-palette {
     width: 24px;
-    height: 88px;
     position: absolute;
     bottom: 0; 
-    left: 200px;
+    left: 160px;
    }
 
    .card-palette-laptop {
-    left: 270px;
+    left: 190px;
    }
 }
 
