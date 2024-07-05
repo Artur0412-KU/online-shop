@@ -29,7 +29,12 @@ export default function LaptopCard() {
     <div>
       {data.map((item) => (
         <Card key={item.key} className="card" >
-          <img src={isClickedLike ? item.svgLike : item.svgLikeH} alt="#" className="card-svg_like" onClick={handleClickLike}/>
+          <img
+            onClick={handleClickLike}
+            src={isClickedLike ? item.svgLike : item.svgLikeH}
+            alt="#"
+            className="card-svg_like"
+          />
           <div className="card-img">
             <img
             className="card-img-laptop"
@@ -51,7 +56,7 @@ export default function LaptopCard() {
             <img
               className="card-buy"
               onClick={handleClickBuy}
-              src={isHovered ? item.svgCardHover : isClicked ? item.svgCardClick : item.svgCard}
+              src={isHovered ? item.svgCardHover : item.svgCard}
               alt="buy"
               width={43}
               height={43}
