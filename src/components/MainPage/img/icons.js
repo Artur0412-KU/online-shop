@@ -31,6 +31,11 @@ import KidsIcon from './catalog-icons/kids.svg';
 import SaleIcon from './catalog-icons/sale.svg';
 import SamsungColors from './icons/samsung-colors.svg';
 import LenovoColors from './icons/lenovo-colors.svg'
+import InstagramIcon from './social-media/instagram.svg';
+import PinterestIcon from './social-media/pinterest.svg';
+import YoutubeIcon from './social-media/youtube.svg';
+import TiktokIcon from './social-media/tiktok.svg';
+import FacebookIcon from './social-media/facebook.svg';
 
 
 export {
@@ -38,5 +43,6 @@ export {
     HeartIcon, HeartIconWhite, UserIcon, UserIconWhite, RightIcon, 
     RightIconClick, Samsung, Smartphone, svgCard, svgCardClick, svgLike, svgLikeH, svgCardHover, Laptop, CatalogIcon,
     SmartphoneIcon, LaptopIcon, TabletIcon, PCIcon, TVIcon, WatchIcon, AudioIcon, ConsoleIcon, 
-    PhotoIcon, KidsIcon, SaleIcon, SamsungColors, LenovoColors
+    PhotoIcon, KidsIcon, SaleIcon, SamsungColors, LenovoColors, InstagramIcon, PinterestIcon, YoutubeIcon,
+    TiktokIcon, FacebookIcon
 }
