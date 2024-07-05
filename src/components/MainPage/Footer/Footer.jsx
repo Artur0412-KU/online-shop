@@ -16,15 +16,15 @@ export default function Footer() {
             <div className='main-information'>
                 <div className='footer-list'>
                   <img src={EmailIcon}/>
-                  <a href=''>GadgetHouse@gmail.com</a>
+                  <a href='mailto: GadgetHouse@gmail.com'>GadgetHouse@gmail.com</a>
                 </div>
                 <div className='footer-list'>
                   <img src={PhoneIcon}/>
-                  <a href=''>(057) 333 33 33</a>
+                  <a href='tel:(057)-333-33-33'>(057) 333 33 33</a>
                 </div>
                 <div className='footer-list'>
                   <img src={LocationIcon}/>
-                  <a href=''>Ave. Sciences, 4</a>
+                  <a href='https://www.google.com/maps/place/Hostynyy+Dvir,+Kontraktova+Square,+4,+Kyiv,+02000/@50.4648844,30.5144404,17z/data=!3m1!4b1!4m6!3m5!1s0x40d4ce4026cba28f:0xb1e17e87b1141676!8m2!3d50.464881!4d30.5170153!16s%2Fg%2F11c0ptqwyv?entry=ttu'>Ave. Sciences, 4</a>
                 </div>
             </div>
         </div>
