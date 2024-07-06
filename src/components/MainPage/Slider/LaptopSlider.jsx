@@ -36,63 +36,64 @@ export default function LaptopSlider() {
 
   return (
     <div className="carousel-wrapper">
-     <Carousel
-      slidesToShow={5}
-      slidesToScroll={1}
-      autoplay={false}
-      dots={false}
-      style={{paddingBottom: '24px'}}
-      ref={ref}
-      responsive={[
-        {
-          breakpoint: 1890, // Less than 1890px
-          settings: {
-            slidesToShow: 5,
-            slidesToScroll: 1,
+      <Carousel
+        slidesToShow={5}
+        slidesToScroll={1}
+        autoplay={false}
+        dots={false}
+        style={{ paddingBottom: '24px' }}
+        ref={ref}
+        responsive={[
+          {
+            breakpoint: 1890, // Less than 1890px
+            settings: {
+              slidesToShow: 5,
+              slidesToScroll: 1,
+            },
           },
-        },
-        {
-          breakpoint: 1550, // Less than 1440px
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 1,
+          {
+            breakpoint: 1550, // Less than 1440px
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1,
+            },
           },
-        },
-      ]}
-    >
-      <div>
+        ]}
+      >
+        <div>
+          <LaptopCard/>
+        </div>
+        <div>
         <LaptopCard/>
-      </div>
-      <div>
+        </div>
+        <div>
         <LaptopCard/>
-      </div>
-      <div>
+        </div>
+        <div>
         <LaptopCard/>
-      </div>
-      <div>
-        <LaptopCard/>
-      </div>
-      <div>
-        <LaptopCard/>
-      </div>
-    </Carousel>
-    <div className="arrow-container">
-       <Button  className={`btn-arrow-prev ${prevClick ? 'clicked' : ''}`}
+        </div>
+        
+      </Carousel>
+      <div className="arrow-container">
+        <Button
+          className={`btn-arrow-prev ${prevClick ? 'clicked' : ''}`}
           onClick={handlePrevClick}
           onMouseEnter={handleMouseEnterPrev}
           onMouseLeave={handleMouseLeavePrev}
           style={{ borderColor: prevHover ? '#4DA856' : '' }}
         >
-        <img src={prevHover ? PrevIconHover : prevClick ? PrevIconClick : PrevIcon}/>
-       </Button>
-       <Button className={`btn-arrow-next ${nextClick ? 'clicked' : ''}`}
+          <img src={prevHover ? PrevIconHover : prevClick ? PrevIconClick : PrevIcon} alt="Previous" />
+        </Button>
+        <Button
+          className={`btn-arrow-next ${nextClick ? 'clicked' : ''}`}
           onClick={handleNextClick}
           onMouseEnter={handleMouseEnterNext}
           onMouseLeave={handleMouseLeaveNext}
-          style={{ borderColor: nextHover ? '#4DA856' : '' }}>
-        <img src={nextHover ? NextIconHover : nextClick ? NextIconClick : NextIcon}/>
-       </Button>
-    </div>
+          style={{ borderColor: nextHover ? '#4DA856' : '' }}
+        >
+          <img src={nextHover ? NextIconHover : nextClick ? NextIconClick : NextIcon} alt="Next" />
+        </Button>
+      </div>
     </div>
    
   );
