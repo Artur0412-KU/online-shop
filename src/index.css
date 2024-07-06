@@ -661,6 +661,10 @@ hr:active {
     gap: 16px;
 }
 
+.contact-info-section {
+    align-items: end;
+}
+
 
 .clients-section h3,
 .categories-section h3,
@@ -686,8 +690,7 @@ hr:active {
 
 .contact-nav {
     display: flex;
-    align-items: start;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: row;
     gap: 8px;
 }
