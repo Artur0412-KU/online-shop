@@ -37,12 +37,28 @@ export default function LaptopSlider() {
   return (
     <div className="carousel-wrapper">
      <Carousel
-      slidesToShow={4}
+      slidesToShow={5}
       slidesToScroll={1}
       autoplay={false}
       dots={false}
       style={{paddingBottom: '24px'}}
       ref={ref}
+      responsive={[
+        {
+          breakpoint: 1890, // Less than 1890px
+          settings: {
+            slidesToShow: 5,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 1550, // Less than 1440px
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+          },
+        },
+      ]}
     >
       <div>
         <LaptopCard/>
