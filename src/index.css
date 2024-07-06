@@ -347,6 +347,7 @@ hr:active {
     padding-top: 50px;
     padding-right: 50px;
     padding-bottom: 24px;
+    
 }
 
 .brands-container {
@@ -435,10 +436,14 @@ hr:active {
 } 
 
 @media screen and (max-width: 1590px) and (min-width: 768px) {
+    .card {
+        height: auto;
+    }
     .product-card {
         width: calc(100% - 30px); /* Two cards per row with gap considered */
-        height: auto;
         margin: 10px 0; /* Maintain vertical margin */
+        height: auto;
+        
     }
 
     .product-card img {
@@ -489,23 +494,28 @@ hr:active {
     position: absolute;
     bottom: 0; 
     left: 190px;
+    z-index: 2;
 }
 
 .card-palette-laptop  {
-    left: 250px;
+    left: 245px;
 }
 
 @media screen and (max-width: 1440px) and (min-width: 1024px) {
     .card-palette {
-    width: 24px;
-    position: absolute;
-    bottom: 0; 
-    left: 160px;
+       width: 24px;
+       position: absolute;
+       bottom: 0; 
+       left: 160px;
    }
 
    .card-palette-laptop {
-    left: 190px;
+       left: 170px;
    }
+
+   .card-img-laptop {
+       width: 120px;
+   } 
 }
 
 .card-img-laptop {
