@@ -8,4 +8,4 @@ import HeartIconWhite from './heart-icon-white.svg';
 import UserIcon from './user-icon.svg';
 import UserIconWhite from './user-icon-white.svg';
 
-export {CallIcon, CallIconWhite, NextIcon, BasketIcon, BasketIconWhite, HeartIcon, HeartIconWhite, UserIcon, UserIconWhite, BasketIcon, BasketIconWhite}
+export {CallIcon, CallIconWhite, NextIcon, BasketIcon, BasketIconWhite, HeartIcon, HeartIconWhite, UserIcon, UserIconWhite}
