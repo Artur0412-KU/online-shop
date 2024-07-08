@@ -6,9 +6,8 @@ body {
   background-color: #f8f7fa;
 }
 
-a, p, h1, h2, h3, h4, h5 {
+a {
   text-decoration: none;
-  color: #1C1817;
 }
 
 /* #region Header */
@@ -22,7 +21,7 @@ a, p, h1, h2, h3, h4, h5 {
 
 .nunito-sans-logo {
   margin: 0;
-  color: #1C1817;
+  color: #000000;
   font-weight: 800;
   font-size: 34px;
   font-family: "Nunito Sans", sans-serif;
@@ -45,55 +44,9 @@ a, p, h1, h2, h3, h4, h5 {
   margin-bottom: 5px;
 }
 
-:where(.css-dev-only-do-not-override-1qfezbu).ant-input-affix-wrapper, :where(.css-1qfezbu).ant-input-affix-wrapper  {
-    border-radius: 13px;
-    padding-left: 22px;
-}
-
-.search-input {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 18px;
-    display: flex;
-    align-items: center;
-}
-
-.search-input input {
-    border: none;
-    outline: none;
-    flex-grow: 1;
-}
-
-.search-input.active {
-    border-color: #6a0dad;
-}
-
-.search-input.active .search-icon {
-    color: #6a0dad;
-}
-
-.search-input.disabled {
-    background-color: #f0f0f0;
-    border-color: #d3d3d3;
-}
-
-.search-input.disabled input {
-    background-color: #f0f0f0;
-    color: #a0a0a0;
-}
-
-.search-input.disabled .search-icon {
-    color: #a0a0a0;
-}
-
-.search-input.error {
-    border-color: #ff0000;
-}
-
-.search-input.error .search-icon {
-    color: #ff0000;
+:where(.css-dev-only-do-not-override-1qfezbu).ant-input-affix-wrapper {
+  padding-left: 22px;
+  border-radius: 13px;
 }
 
 .search-icon {
@@ -246,7 +199,7 @@ i {
 
 .poster-container {
   width: 100%;
-  height: 732px;
+  height: 765px;
   margin: 40px 0 0 40px;
   background-image: url("./components/MainPage/img/poster-photo.png");
   background-repeat: no-repeat;
@@ -258,17 +211,16 @@ i {
 .product-list {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   min-width: 375px;
-  height: 730px;
+  height: fit-content;
   margin-bottom: 0;
   padding: 24px;
   padding-right: 20px;
   background-color: #ffffff;
   box-shadow: 0 0 8px 0 rgb(0 0 0 / 8%);
 }
-
 
 .product-list-container {
   display: flex;
@@ -302,32 +254,26 @@ i {
 }
 
 .catalog-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-    width: 100%;
-    cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
 }
 
 .catalog-list {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #1C1817;
-    font-size: 24px;
-    width: 240px;
-    line-height: 150%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 240px;
+  color: #000000;
+  font-size: 24px;
+  line-height: 150%;
 }
 
-.right {
-  color: #1C1817;
+.catalog-item img {
+  margin-right: 10px;
 }
-
-.catalog-list:hover {
-    color: black;
-}
-
 
 .catalog-item div {
   flex-grow: 1;
@@ -391,17 +337,13 @@ hr:active {
 /* #region Carousel */
 
 .carousel-wrapper {
-    background-color: #EAE4EE;
-    padding-left: 50px;
-    padding-top: 50px;
-    padding-right: 50px;
-    padding-bottom: 24px;
-    
+  padding: 50px 50px 24px;
+  background-color: #eae4ee;
 }
 
 .brands-container {
-    padding-bottom: 24px;
-    background-color: #F8F7FA;
+  padding-bottom: 24px;
+  background-color: #f5f3f8;
 }
 
 .carousel-slide {
@@ -449,9 +391,10 @@ hr:active {
 
 /* #region Card */
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 }
 
 .card {
@@ -467,33 +410,12 @@ hr:active {
 }
 
 .product-card {
-    margin-right: 20px;
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 15px;
-    width: 256px;
-    height: 256px;
-    transition: all .3s;
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
-} 
-
-@media screen and (max-width: 1590px) and (min-width: 768px) {
-    .card {
-        height: auto;
-    }
-    .product-card {
-        width: calc(100% - 30px); /* Two cards per row with gap considered */
-        margin: 10px 0; /* Maintain vertical margin */
-        height: auto;
-        
-    }
-
-    .product-card img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Ensure image covers the area */
-    }
+  width: 256px;
+  height: 256px;
+  margin: 10px 20px 10px 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 8px 0 rgb(0 0 0 / 8%);
+  transition: all 0.3s;
 }
 
 .product-card:hover {
@@ -507,75 +429,16 @@ hr:active {
 }
 
 .card-img {
-    margin: 0 auto;
-    width: auto;
-    position: relative;
-}
-
-.body-card {
-    width: 155px;
-    height: 200px;
-}
-
-@media screen and (max-width: 1440px) and (min-width: 1024px) {
-    .card-img {
-        margin: 0 auto;
-        position: relative;
-    }
-
-    .body-card {
-        width: 150px;
-        height: 170px;
-        object-fit: contain;
-    }
-
-}
-
-.card-palette, .card-palette-laptop {
-    width: 24px;
-    height: 88px;
-    position: absolute;
-    bottom: 0; 
-    left: 190px;
-    z-index: 2;
-}
-
-.card-palette-laptop  {
-    left: 245px;
-}
-
-@media screen and (max-width: 1440px) and (min-width: 1024px) {
-    .card-palette {
-       width: 24px;
-       position: absolute;
-       bottom: 0; 
-       left: 160px;
-   }
-
-   .card-palette-laptop {
-       left: 170px;
-   }
-
-   .card-img-laptop {
-       width: 120px;
-   } 
-}
-
-.card-img-laptop {
-    margin: 0 auto;
-    position: relative;
-    width: 90%;
-    z-index: 1; 
+  margin: 0 auto;
 }
 
 .card-svg_like {
-    cursor: pointer;
-    width: 36px;
-    height: 36px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 2;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 36px;
+  color: #6f4c9a;
+  cursor: pointer;
 }
 
 .card-footer {
@@ -595,13 +458,11 @@ hr:active {
 }
 
 .card h3 {
-    margin: 0;
-    padding-top: 34px;
-    padding-bottom: 10px;
-    font-weight: 400;
-    font-size: 24px;
-    font-family: 'Inter', sans-serif;
-    color: #1c1817;
+  margin: 0;
+  padding-top: 34px;
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 24px;
 }
 
 .card-buy {
@@ -609,14 +470,9 @@ hr:active {
 }
 
 .card p {
-    margin: 0;
-    font-size: 24px;
-    font-weight: 400;
-    font-family: 'Inter', sans-serif;
-    color: #1c1817;
-
+  margin: 0;
+  font-size: 25px;
 }
-
 
 .ant-card .ant-card-body {
   position: relative;
@@ -713,18 +569,12 @@ hr:active {
   gap: 16px;
 }
 
-.contact-info-section {
-    align-items: end;
-}
-
-
 .clients-section h3,
 .categories-section h3,
 .contact-section h3 {
   margin: 0;
   font-weight: 500;
   font-size: 24px;
-  color: white;
 }
 
 .footer-nav {
@@ -754,3 +604,10 @@ hr:active {
 }
 
 /* #endregion */
+.footer-link {
+  font-size: 13px;
+  color: white;
+  position: relative;
+  top: 275px;
+  right: 160px;
+}
