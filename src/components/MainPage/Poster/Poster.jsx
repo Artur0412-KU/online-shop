@@ -1,8 +1,5 @@
-import React from 'react'
+import React from 'react';
 
 export default function Poster() {
-  return (
-    <div className='poster-container'>
-    </div>
-  )
+  return <div className="poster-container"></div>;
 }

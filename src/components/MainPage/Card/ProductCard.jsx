@@ -3,10 +3,11 @@ import { Card, Rate } from "antd";
 import DATA_CARD from "./costants";
 
 export default function ProductCard() {
-  const [data, setData] = useState(DATA_CARD);
+  // const [data, setData] = useState(DATA_CARD);
   const [isHovered, setIsHovered] = useState(false);
   const [isClicked, setIsClicked] = useState(false); 
   const [isClickedLike, setIsClickedLike] = useState(true); // ? Context -> LaptopCard double
+  const [isClicked, setIsClicked] = useState(false);
 
   const handleClickBuy = () => {
     setIsClicked((prevState) => !prevState);
@@ -14,11 +15,11 @@ export default function ProductCard() {
 
   const handleMouseLeave = () => {
     setIsHovered(false);
-  }
+  };
 
   const handleMouseEnter = () => {
     setIsHovered(true);
-  }
+  };
 
   const handleClickLike = () => {
     setIsClickedLike((prevState) => !prevState);
@@ -26,7 +27,7 @@ export default function ProductCard() {
 
   return (
     <div className="card-container">
-      {data.map((item) => (
+      {DATA_CARD.map((item) => (
         <Card key={item.key} className="card">
           <img
             onClick={handleClickLike}

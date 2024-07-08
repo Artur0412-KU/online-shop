@@ -3,7 +3,7 @@ import { Card, Rate  } from "antd";
 import DATA_CARD from "./costants";
 
 export default function LaptopCard() {
-  const [data, setData] = useState(DATA_CARD);
+  // const [data, setData] = useState(DATA_CARD);
   const [isHovered, setIsHovered] = useState(false);
   const [isClicked, setIsClicked] = useState(false); // ? Context -> LaptopCard double
   const [isClickedLike, setIsClickedLike] = useState(true); // ? Context -> LaptopCard double
@@ -14,20 +14,19 @@ export default function LaptopCard() {
 
   const handleMouseLeave = () => {
     setIsHovered(false);
-  }
+  };
 
   const handleMouseEnter = () => {
     setIsHovered(true);
-  }
+  };
 
   const handleClickLike = () => {
     setIsClickedLike((prevState) => !prevState);
   };
 
-
   return (
     <div className="card-container">
-      {data.map((item) => (
+      {DATA_CARD.map((item) => (
         <Card key={item.key} className="card" >
           <img
             onClick={handleClickLike}
@@ -56,14 +55,19 @@ export default function LaptopCard() {
             <img
               className="card-buy"
               onClick={handleClickBuy}
-              src={isHovered ? item.svgCardHover : isClicked ? item.svgCardClick : item.svgCard}
+              src={
+                isHovered
+                  ? item.svgCardHover
+                  : isClicked
+                    ? item.svgCardClick
+                    : item.svgCard
+              }
               alt="buy"
               width={43}
               height={43}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             />
-            
           </div>
         </Card>
       ))}

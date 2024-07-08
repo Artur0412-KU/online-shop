@@ -1,17 +1,17 @@
-import React from "react";
-import { Space, Divider } from "antd";
-import { Link } from "react-router-dom";
-import Smartphone from "../img/catalog-icons/smartphone.svg";
-import laptop from "../img/catalog-icons/laptop.svg";
-import tablet from "../img/catalog-icons/tablet.svg";
-import PC from "../img/catalog-icons/pc.svg";
-import TV from "../img/catalog-icons/tv.svg";
-import watch from "../img/catalog-icons/watch.svg";
-import audio from "../img/catalog-icons/audio.svg";
-import console from "../img/catalog-icons/console.svg";
-import photo from "../img/catalog-icons/photo.svg";
-import kids from "../img/catalog-icons/kids.svg";
-import sale from "../img/catalog-icons/sale.svg";
+import React from 'react';
+import { Space, Divider } from 'antd';
+import { Link } from 'react-router-dom';
+import Smartphone from '../img/catalog-icons/smartphone.svg';
+import laptop from '../img/catalog-icons/laptop.svg';
+import tablet from '../img/catalog-icons/tablet.svg';
+import PC from '../img/catalog-icons/pc.svg';
+import TV from '../img/catalog-icons/tv.svg';
+import watch from '../img/catalog-icons/watch.svg';
+import audio from '../img/catalog-icons/audio.svg';
+import console from '../img/catalog-icons/console.svg';
+import photo from '../img/catalog-icons/photo.svg';
+import kids from '../img/catalog-icons/kids.svg';
+import sale from '../img/catalog-icons/sale.svg';
 
 export default function ProductList() {
   const items = [
@@ -30,13 +30,17 @@ export default function ProductList() {
 
   return (
     <div className="product-list">
-      {items.map((item, index) => (
-        <div key={item.key} style={{width: '100%'}}>
+      {items.map((item) => (
+        <div key={item.key} style={{ width: '100%' }}>
           <div className="catalog-nav">
             <Link
               to={item.link}
               className="catalog-item"
-              style={{ alignItems: "center", display: "flex", justifyContent: "space-between" }}
+              style={{
+                alignItems: 'center',
+                display: 'flex',
+                justifyContent: 'space-between',
+              }}
             >
               
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>

@@ -1,17 +1,8 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
-import Logo from '../img/gadget-house-logo.png'
-import {Dropdown, Input, Space } from 'antd';
-import { AppstoreOutlined } from '@ant-design/icons';
-const { Search } = Input;
-import items from '../ProductList/Items';
-import CatalogIcon from '../img/catalog-icon.png'
+import React from 'react';
+import CatalogIcon from '../img/catalog-icon.png';
 import Button from '@mui/material/Button';
 
-
-
 export default function Catalog() {
-    const navigate = useNavigate();
   return (
       <Button className='dropdown' 
         style={{
