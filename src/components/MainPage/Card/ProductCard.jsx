@@ -7,7 +7,6 @@ export default function ProductCard() {
   const [isHovered, setIsHovered] = useState(false);
   const [isClicked, setIsClicked] = useState(false); 
   const [isClickedLike, setIsClickedLike] = useState(true); // ? Context -> LaptopCard double
-  const [isClicked, setIsClicked] = useState(false);
 
   const handleClickBuy = () => {
     setIsClicked((prevState) => !prevState);
