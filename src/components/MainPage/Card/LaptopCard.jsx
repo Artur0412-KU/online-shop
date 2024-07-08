@@ -26,7 +26,7 @@ export default function LaptopCard() {
 
   return (
     <div className="card-container">
-      {data.map((item) => (
+      {DATA_CARD.map((item) => (
         <Card key={item.key} className="card" >
           <img
             onClick={handleClickLike}
