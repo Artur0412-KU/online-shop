@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
 import { Dropdown, Menu, Space } from 'antd';
 import items from './Items';
 import styles from './Catalog.module.css';
@@ -10,7 +9,6 @@ const catalogIcon = {
 };
 
 export default function Catalog() {
-  const navigate = useNavigate();
   const [showOverlay, setShowOverlay] = useState(false);
 
   const handleMouseEnter = () => {
@@ -21,10 +19,9 @@ export default function Catalog() {
     setShowOverlay(false);
   };
 
-
   return (
     <>
-      <div className={`${styles.overlay} ${showOverlay ? styles.show : ''}`}/>
+      <div className={`${styles.overlay} ${showOverlay ? styles.show : ''}`} />
       <Dropdown
         overlay={<Menu items={items} />}
         onOpenChange={(open) => setShowOverlay(open)}
@@ -46,7 +43,7 @@ export default function Catalog() {
               height: '62px',
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'start'
+              justifyContent: 'start',
             }}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
