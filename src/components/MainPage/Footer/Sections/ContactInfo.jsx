@@ -9,7 +9,7 @@ export default function ContactInfo() {
         <h3>Contact Information</h3>
         <nav className='contact-nav'>
           {DATA.map(item => (
-            <a href={item.link} key={item.id}><img src={item.icon} className='social-icon' href = ""/></a> 
+            <a href={item.link} key={item.id} target="_blank"><img src={item.icon} className='social-icon' href = ""/></a> 
           ))}
           
         </nav>
