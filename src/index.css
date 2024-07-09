@@ -6,8 +6,9 @@ body {
   background-color: #f8f7fa;
 }
 
-a {
+a, p, h1, h2, h3, h4, h5 {
   text-decoration: none;
+  color: #1C1817;
 }
 
 /* #region Header */
@@ -21,7 +22,7 @@ a {
 
 .nunito-sans-logo {
   margin: 0;
-  color: #000000;
+  color: #1C1817;
   font-weight: 800;
   font-size: 34px;
   font-family: "Nunito Sans", sans-serif;
@@ -317,6 +318,10 @@ i {
     font-size: 24px;
     width: 240px;
     line-height: 150%;
+}
+
+.right {
+  color: #1C1817;
 }
 
 .catalog-list:hover {
@@ -719,6 +724,7 @@ hr:active {
   margin: 0;
   font-weight: 500;
   font-size: 24px;
+  color: white;
 }
 
 .footer-nav {
