@@ -36,7 +36,7 @@ export default function Brands() {
   return (
     <div className="carousel-wrapper brands-container">
       <Carousel
-        slidesToShow={5}
+        slidesToShow={6}
         slidesToScroll={1}
         autoplay={false}
         dots={false}
