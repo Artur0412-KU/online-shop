@@ -11,6 +11,8 @@ export default function Clients() {
         <a href="">New items</a>
         <a href="">Delivery</a>
         <a href="">Payment</a>
+        <a href=''>Privacy police</a>
+        <a href=''>Terms and Conditions</a>
       </nav>
     </div>
   );
