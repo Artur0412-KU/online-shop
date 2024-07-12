@@ -3,21 +3,23 @@ import { Card, Rate  } from "antd";
 import DATA_CARD from "./costants";
 
 export default function LaptopCard() {
-  // const [data, setData] = useState(DATA_CARD);
   const [isHovered, setIsHovered] = useState(false);
-  const [isClicked, setIsClicked] = useState(false); // ? Context -> LaptopCard double
-  const [isClickedLike, setIsClickedLike] = useState(true); // ? Context -> LaptopCard double
+  const [isClicked, setIsClicked] = useState(false);
+  const [isClickedLike, setIsClickedLike] = useState(true);
 
   const handleClickBuy = () => {
-    setIsClicked((prevState) => !prevState);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
+    setIsClicked(true);
+    setTimeout(() => {
+      setIsClicked(false);
+    }, 150); // Час, через який повертається до початкового стану
   };
 
   const handleMouseEnter = () => {
     setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
   };
 
   const handleClickLike = () => {
@@ -27,7 +29,7 @@ export default function LaptopCard() {
   return (
     <div className="card-container">
       {DATA_CARD.map((item) => (
-        <Card key={item.key} className="card" >
+        <Card key={item.key} className="card">
           <img
             onClick={handleClickLike}
             src={isClickedLike ? item.svgLike : item.svgLikeH}
@@ -36,14 +38,14 @@ export default function LaptopCard() {
           />
           <div className="card-img">
             <img
-            className="card-img-laptop"
-            src={item.img2}
-            alt="#"
+              className="card-img-laptop"
+              src={item.img2}
+              alt="#"
             />
             <img
-             className="card-palette-laptop"
-             src={item.colorPalette2}
-             alt="#"
+              className="card-palette-laptop"
+              src={item.colorPalette2}
+              alt="#"
             />
           </div>
           
@@ -56,10 +58,10 @@ export default function LaptopCard() {
               className="card-buy"
               onClick={handleClickBuy}
               src={
-                isHovered
-                  ? item.svgCardHover
-                  : isClicked
-                    ? item.svgCardClick
+                isClicked
+                  ? item.svgCardClick
+                  : isHovered
+                    ? item.svgCardHover
                     : item.svgCard
               }
               alt="buy"
