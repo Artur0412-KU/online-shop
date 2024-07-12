@@ -5,7 +5,7 @@ import styles from './Catalog.module.css';
 import { CatalogIcon } from '../../../MainPage/img/icons';
 
 const catalogIcon = {
-  img: CatalogIcon
+  img: CatalogIcon,
 };
 
 export default function Catalog() {

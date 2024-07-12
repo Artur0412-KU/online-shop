@@ -15,17 +15,23 @@ import sale from '../img/catalog-icons/sale.svg';
 
 export default function ProductList() {
   const items = [
-    { key: "1", title: "Smartphone", img: Smartphone, link: "/smartphones" },
-    { key: "2", title: "Laptop", img: laptop, link: "/laptops" },
-    { key: "3", title: "Tablet", img: tablet, link: "/tablets" },
-    { key: "4", title: "PC", img: PC, link: "/pcs" },
-    { key: "5", title: "TVs and Multimedia", img: TV, link: "/tvs" },
-    { key: "6", title: "Smart-watch", img: watch, link: "/smartwatches" },
-    { key: "7", title: "Audio", img: audio, link: "/audio" },
-    { key: "8", title: "Game console", img: console, link: "/consoles" },
-    { key: "9", title: "Photo and video", img: photo, link: "/photo-video" },
-    { key: "10", title: "KIDS", img: kids, link: "/kids" },
-    { key: "11", title: "SALE", img: sale, link: "/sale", style: { color: "#F01A1A" } },
+    { key: '1', title: 'Smartphone', img: Smartphone, link: '/smartphones' },
+    { key: '2', title: 'Laptop', img: laptop, link: '/laptops' },
+    { key: '3', title: 'Tablet', img: tablet, link: '/tablets' },
+    { key: '4', title: 'PC', img: PC, link: '/pcs' },
+    { key: '5', title: 'TVs and Multimedia', img: TV, link: '/tvs' },
+    { key: '6', title: 'Smart-watch', img: watch, link: '/smartwatches' },
+    { key: '7', title: 'Audio', img: audio, link: '/audio' },
+    { key: '8', title: 'Game console', img: console, link: '/consoles' },
+    { key: '9', title: 'Photo and video', img: photo, link: '/photo-video' },
+    { key: '10', title: 'KIDS', img: kids, link: '/kids' },
+    {
+      key: '11',
+      title: 'SALE',
+      img: sale,
+      link: '/sale',
+      style: { color: '#F01A1A' },
+    },
   ];
 
   return (
@@ -42,8 +48,9 @@ export default function ProductList() {
                 justifyContent: 'space-between',
               }}
             >
-              
-              <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <div
+                style={{ display: 'flex', alignItems: 'center', gap: '8px' }}
+              >
                 <img src={item.img} alt={item.title} />
                 <a href="" className="catalog-list" style={item.style}>
                   {item.title}
@@ -51,10 +58,10 @@ export default function ProductList() {
               </div>
               <i className="arrow right"></i>
             </Link>
-            
           </div>
-          <Divider style={{ marginTop: "8px", color: "#808080", marginBottom: '0px' }} />
-          
+          <Divider
+            style={{ marginTop: '8px', color: '#808080', marginBottom: '0px' }}
+          />
         </div>
       ))}
     </div>

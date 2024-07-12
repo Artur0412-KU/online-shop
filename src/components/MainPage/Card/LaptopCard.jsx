@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { Card, Rate  } from "antd";
-import DATA_CARD from "./costants";
+import React, { useState } from 'react';
+import { Card, Rate } from 'antd';
+import DATA_CARD from './costants';
 
 export default function LaptopCard() {
   // const [data, setData] = useState(DATA_CARD);
@@ -27,7 +27,7 @@ export default function LaptopCard() {
   return (
     <div className="card-container">
       {DATA_CARD.map((item) => (
-        <Card key={item.key} className="card" >
+        <Card key={item.key} className="card">
           <img
             onClick={handleClickLike}
             src={isClickedLike ? item.svgLike : item.svgLikeH}
@@ -35,23 +35,19 @@ export default function LaptopCard() {
             className="card-svg_like"
           />
           <div className="card-img">
+            <img className="card-img-laptop" src={item.img2} alt="#" />
             <img
-            className="card-img-laptop"
-            src={item.img2}
-            alt="#"
-            />
-            <img
-             className="card-palette-laptop"
-             src={item.colorPalette2}
-             alt="#"
+              className="card-palette-laptop"
+              src={item.colorPalette2}
+              alt="#"
             />
           </div>
-          
+
           <h3>{item.title2}</h3>
           <Rate className="card-rate" />
           <div className="card-footer">
             <p>{item.price2}</p>
-            
+
             <img
               className="card-buy"
               onClick={handleClickBuy}

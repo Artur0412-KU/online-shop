@@ -35,48 +35,49 @@ export default function ViewedSlider() {
 
   return (
     <div className="carousel-wrapper">
-     <Carousel
-      slidesToShow={5}
-      slidesToScroll={1}
-      autoplay={false}
-      dots={false}
-      style={{paddingBottom: '24px'}}
-      ref={ref}
-      responsive={[
-        {
-          breakpoint: 1890, // Less than 1890px
-          settings: {
-            slidesToShow: 5,
-            slidesToScroll: 1,
+      <Carousel
+        slidesToShow={5}
+        slidesToScroll={1}
+        autoplay={false}
+        dots={false}
+        style={{ paddingBottom: '24px' }}
+        ref={ref}
+        responsive={[
+          {
+            breakpoint: 1890, // Less than 1890px
+            settings: {
+              slidesToShow: 5,
+              slidesToScroll: 1,
+            },
           },
-        },
-        {
-          breakpoint: 1550, // Less than 1440px
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 1,
+          {
+            breakpoint: 1550, // Less than 1440px
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1,
+            },
           },
-        },
-      ]}
-    >
-      <div>
-        <ProductCard />
-      </div>
-      <div>
-        <ProductCard />
-      </div>
-      <div>
-        <ProductCard />
-      </div>
-      <div>
-        <ProductCard />
-      </div>
-      <div>
-        <ProductCard />
-      </div>
-    </Carousel>
-    <div className="arrow-container">
-       <Button className={`btn-arrow-prev ${prevClick ? 'clicked' : ''}`}
+        ]}
+      >
+        <div>
+          <ProductCard />
+        </div>
+        <div>
+          <ProductCard />
+        </div>
+        <div>
+          <ProductCard />
+        </div>
+        <div>
+          <ProductCard />
+        </div>
+        <div>
+          <ProductCard />
+        </div>
+      </Carousel>
+      <div className="arrow-container">
+        <Button
+          className={`btn-arrow-prev ${prevClick ? 'clicked' : ''}`}
           onClick={handlePrevClick}
           onMouseEnter={handleMouseEnterPrev}
           onMouseLeave={handleMouseLeavePrev}
