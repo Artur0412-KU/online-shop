@@ -1,10 +1,4 @@
 import React from 'react';
-import MessengerIcon from '../social-media/messenger.png';
-import InstagramIcon from '../social-media/insta.png';
-import TelegramIcon from '../social-media/telegram.png';
-import FacebookIcon from '../social-media/facebook.png';
-import EmailIcon from '../social-media/email.svg';
-import PhoneIcon from '../social-media/phone.png';
 import DATA from '../constants';
 
 export default function ContactInfo() {
