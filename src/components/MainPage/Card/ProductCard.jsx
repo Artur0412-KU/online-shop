@@ -8,8 +8,13 @@ export default function ProductCard() {
   const [isClicked, setIsClicked] = useState(false); 
   const [isClickedLike, setIsClickedLike] = useState(true); // ? Context -> LaptopCard double
 
+  
+
   const handleClickBuy = () => {
-    setIsClicked((prevState) => !prevState);
+    setIsClicked(true);
+    setTimeout(() => {
+      setIsClicked(false);
+    }, 150);
   };
 
   const handleMouseLeave = () => {
@@ -54,7 +59,11 @@ export default function ProductCard() {
             <img
               onClick={handleClickBuy}
               className="card-buy"
-              src={isHovered ? item.svgCardHover : isClicked ? item.svgCardClick : item.svgCard}
+              src={isClicked
+                ? item.svgCardClick
+                : isHovered
+                  ? item.svgCardHover
+                  : item.svgCard}
               alt="buy"
               width={43}
               height={43}
