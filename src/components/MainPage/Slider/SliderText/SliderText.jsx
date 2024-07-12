@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import DATA from './constants';
-
 
 export default function SliderText(props) {
   // const [data, setData] = useState(DATA);

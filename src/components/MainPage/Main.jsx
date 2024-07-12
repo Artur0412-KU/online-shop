@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import Header from './Header/Header';
 import ProductList from './ProductList/ProductList';
@@ -14,16 +14,18 @@ import SliderText from './Slider/SliderText/SliderText';
 
 export default function Main() {
   useEffect(() => {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
 
     if ('scrollRestoration' in window.history) {
       window.history.scrollRestoration = 'manual';
     }
-  }, [])
+  }, []);
   return (
     <>
       <Header />
+
       <Navigation />
+
       <div className="main-container">
         <ProductList />
         <Poster />

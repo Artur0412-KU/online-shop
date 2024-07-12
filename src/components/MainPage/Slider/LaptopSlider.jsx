@@ -60,18 +60,17 @@ export default function LaptopSlider() {
         ]}
       >
         <div>
-          <LaptopCard/>
+          <LaptopCard />
         </div>
         <div>
-        <LaptopCard/>
+          <LaptopCard />
         </div>
         <div>
-        <LaptopCard/>
+          <LaptopCard />
         </div>
         <div>
-        <LaptopCard/>
+          <LaptopCard />
         </div>
-        
       </Carousel>
       <div className="arrow-container">
         <Button
@@ -81,7 +80,12 @@ export default function LaptopSlider() {
           onMouseLeave={handleMouseLeavePrev}
           style={{ borderColor: prevHover ? '#4DA856' : '' }}
         >
-          <img src={prevHover ? PrevIconHover : prevClick ? PrevIconClick : PrevIcon} alt="Previous" />
+          <img
+            src={
+              prevHover ? PrevIconHover : prevClick ? PrevIconClick : PrevIcon
+            }
+            alt="Previous"
+          />
         </Button>
         <Button
           className={`btn-arrow-next ${nextClick ? 'clicked' : ''}`}
@@ -90,10 +94,14 @@ export default function LaptopSlider() {
           onMouseLeave={handleMouseLeaveNext}
           style={{ borderColor: nextHover ? '#4DA856' : '' }}
         >
-          <img src={nextHover ? NextIconHover : nextClick ? NextIconClick : NextIcon} alt="Next" />
+          <img
+            src={
+              nextHover ? NextIconHover : nextClick ? NextIconClick : NextIcon
+            }
+            alt="Next"
+          />
         </Button>
       </div>
     </div>
-   
   );
 }

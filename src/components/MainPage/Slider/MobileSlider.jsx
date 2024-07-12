@@ -71,7 +71,6 @@ export default function MobileSlider() {
         <div>
           <ProductCard />
         </div>
-        
       </Carousel>
       <div className="arrow-container">
         <Button
