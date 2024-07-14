@@ -36,6 +36,7 @@ export default function ViewedSlider() {
   return (
     <div className="carousel-wrapper">
       <Carousel
+        className="viewed-slider27"
         slidesToShow={5}
         slidesToScroll={1}
         autoplay={false}

@@ -5,10 +5,8 @@ import DATA_CARD from './costants';
 export default function ProductCard() {
   // const [data, setData] = useState(DATA_CARD);
   const [isHovered, setIsHovered] = useState(false);
-  const [isClicked, setIsClicked] = useState(false); 
+  const [isClicked, setIsClicked] = useState(false);
   const [isClickedLike, setIsClickedLike] = useState(true); // ? Context -> LaptopCard double
-
-  
 
   const handleClickBuy = () => {
     setIsClicked(true);
@@ -30,7 +28,7 @@ export default function ProductCard() {
   };
 
   return (
-    <div className="card-container">
+    <div className="card-container mobile-card">
       {DATA_CARD.map((item) => (
         <Card key={item.key} className="card">
           <img
@@ -51,11 +49,13 @@ export default function ProductCard() {
             <img
               onClick={handleClickBuy}
               className="card-buy"
-              src={isClicked
-                ? item.svgCardClick
-                : isHovered
-                  ? item.svgCardHover
-                  : item.svgCard}
+              src={
+                isClicked
+                  ? item.svgCardClick
+                  : isHovered
+                    ? item.svgCardHover
+                    : item.svgCard
+              }
               alt="buy"
               width={43}
               height={43}

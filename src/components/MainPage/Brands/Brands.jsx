@@ -1,5 +1,5 @@
 import { Button, Carousel } from 'antd';
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import PrevIcon from '../img/icons/prev-icon.png';
 import NextIcon from '../img/icons/next-icon.png';
 import ProductCard from './Card/ProductCard';
@@ -33,6 +33,15 @@ export default function Brands() {
     setTimeout(() => setNextClick(false), 200);
   };
 
+  useEffect(() => {
+    const a = document.querySelector('.brands-arrow-container');
+    const b = document.body.offsetWidth + 16;
+    console.log(b);
+    if (b > 1550 && b < 2100) {
+      a.style.marginRight = `calc(1px + (30 - 0) * ((100vw - 1550px) / (${b} - 1540)))`;
+    }
+  }, []);
+
   return (
     <div className="carousel-wrapper brands-container">
       <Carousel
@@ -47,26 +56,40 @@ export default function Brands() {
           {
             breakpoint: 3200, // Less than 3200px
             settings: {
-              slidesToShow: 7,
+              slidesToShow: 8,
               slidesToScroll: 1,
             },
           },
           {
             breakpoint: 2600, // Less than 2600px
             settings: {
+              slidesToShow: 7,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 2100, // Less than 2100px
+            settings: {
               slidesToShow: 6,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 1550, // Less than 1440px
+            settings: {
+              slidesToShow: 5,
               slidesToScroll: 1,
             },
           },
         ]}
       >
-        {Array.from(Array(7), (_, i) => (
+        {Array.from(Array(8), (_, i) => (
           <div key={i}>
             <ProductCard />
           </div>
         ))}
       </Carousel>
-      <div className="arrow-container">
+      <div className="arrow-container brands-arrow-container">
         <Button
           className={`btn-arrow-prev ${prevClick ? 'clicked' : ''}`}
           onClick={handlePrevClick}
