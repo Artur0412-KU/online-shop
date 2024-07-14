@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { Card, Rate } from "antd";
-import DATA_CARD from "./costants";
+import React, { useState } from 'react';
+import { Card, Rate } from 'antd';
+import DATA_CARD from './costants';
 
 export default function ProductCard() {
   const [isHovered, setIsHovered] = useState(false);
@@ -48,6 +48,7 @@ export default function ProductCard() {
               src={item.colorPalette}
               alt="#"
             />
+
           </div>
 
           <h3>{item.title}</h3>

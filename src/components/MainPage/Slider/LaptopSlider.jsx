@@ -44,7 +44,21 @@ export default function LaptopSlider() {
         ref={ref}
         responsive={[
           {
-            breakpoint: 1890, // Less than 1890px
+            breakpoint: 3200, // Less than 3200px
+            settings: {
+              slidesToShow: 7,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 2600, // Less than 2600px
+            settings: {
+              slidesToShow: 6,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 2100, // Less than 2100px
             settings: {
               slidesToShow: 5,
               slidesToScroll: 1,
@@ -59,19 +73,11 @@ export default function LaptopSlider() {
           },
         ]}
       >
-        <div>
-          <LaptopCard/>
-        </div>
-        <div>
-        <LaptopCard/>
-        </div>
-        <div>
-        <LaptopCard/>
-        </div>
-        <div>
-        <LaptopCard/>
-        </div>
-        
+        {Array.from(Array(7), (_, i) => (
+          <div key={i}>
+            <LaptopCard />
+          </div>
+        ))}
       </Carousel>
       <div className="arrow-container">
         <Button
@@ -81,7 +87,12 @@ export default function LaptopSlider() {
           onMouseLeave={handleMouseLeavePrev}
           style={{ borderColor: prevHover ? '#4DA856' : '' }}
         >
-          <img src={prevHover ? PrevIconHover : prevClick ? PrevIconClick : PrevIcon} alt="Previous" />
+          <img
+            src={
+              prevHover ? PrevIconHover : prevClick ? PrevIconClick : PrevIcon
+            }
+            alt="Previous"
+          />
         </Button>
         <Button
           className={`btn-arrow-next ${nextClick ? 'clicked' : ''}`}
@@ -90,10 +101,14 @@ export default function LaptopSlider() {
           onMouseLeave={handleMouseLeaveNext}
           style={{ borderColor: nextHover ? '#4DA856' : '' }}
         >
-          <img src={nextHover ? NextIconHover : nextClick ? NextIconClick : NextIcon} alt="Next" />
+          <img
+            src={
+              nextHover ? NextIconHover : nextClick ? NextIconClick : NextIcon
+            }
+            alt="Next"
+          />
         </Button>
       </div>
     </div>
-   
   );
 }

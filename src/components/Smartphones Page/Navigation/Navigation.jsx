@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import Catalog from './Catalog/Catalog'
-import Search from './Search/Search'
-import ButtonIcon from './Button/ButtonIcon'
-import DATA from './costants'
+import React, { useState } from 'react';
+import Catalog from './Catalog/Catalog';
+import Search from './Search/Search';
+import ButtonIcon from './Button/ButtonIcon';
+import DATA from './costants';
 
 export default function Navigation() {
   // const [data, setData] = useState(DATA);

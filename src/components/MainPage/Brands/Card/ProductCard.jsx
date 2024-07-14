@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { Card } from "antd";
-import DATA_CARD from "./constants";
+import React, { useState } from 'react';
+import { Card } from 'antd';
+import DATA_CARD from './constants';
 
 export default function ProductCard() {
   // const [data, setData] = useState(DATA_CARD);
@@ -9,11 +9,7 @@ export default function ProductCard() {
     <>
       {DATA_CARD.map((item) => (
         <Card key={item.key} className="product-card">
-          <img
-            className="card-img"
-            src={item.img}
-            alt="#"
-          />
+          <img className="card-img" src={item.img} alt="#" />
         </Card>
       ))}
     </>
