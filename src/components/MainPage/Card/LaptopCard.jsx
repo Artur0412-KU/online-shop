@@ -4,15 +4,8 @@ import DATA_CARD from "./costants";
 
 export default function LaptopCard() {
   const [isHovered, setIsHovered] = useState(false);
-  const [isClicked, setIsClicked] = useState(false);
   const [isClickedLike, setIsClickedLike] = useState(true);
-
-  const handleClickBuy = () => {
-    setIsClicked(true);
-    setTimeout(() => {
-      setIsClicked(false);
-    }, 150); // Час, через який повертається до початкового стану
-  };
+  const [isMouseDown, setIsMouseDown] = useState(false);
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -20,6 +13,14 @@ export default function LaptopCard() {
 
   const handleMouseLeave = () => {
     setIsHovered(false);
+  };
+
+  const handleMouseDown = () => {
+    setIsMouseDown(true);
+  };
+
+  const handleMouseUp = () => {
+    setIsMouseDown(false);
   };
 
   const handleClickLike = () => {
@@ -56,14 +57,13 @@ export default function LaptopCard() {
             
             <img
               className="card-buy"
-              onClick={handleClickBuy}
-              src={
-                isClicked
-                  ? item.svgCardClick
-                  : isHovered
-                    ? item.svgCardHover
-                    : item.svgCard
-              }
+              onMouseDown={handleMouseDown}
+              onMouseUp={handleMouseUp}
+              src={isMouseDown
+                ? item.svgCardClick
+                : isHovered
+                  ? item.svgCardHover
+                  : item.svgCard}
               alt="buy"
               width={43}
               height={43}
