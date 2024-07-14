@@ -44,7 +44,21 @@ export default function ViewedSlider() {
         ref={ref}
         responsive={[
           {
-            breakpoint: 1890, // Less than 1890px
+            breakpoint: 3200, // Less than 3200px
+            settings: {
+              slidesToShow: 7,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 2600, // Less than 2600px
+            settings: {
+              slidesToShow: 6,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 2100, // Less than 2100px
             settings: {
               slidesToShow: 5,
               slidesToScroll: 1,
@@ -59,21 +73,11 @@ export default function ViewedSlider() {
           },
         ]}
       >
-        <div>
-          <ProductCard />
-        </div>
-        <div>
-          <ProductCard />
-        </div>
-        <div>
-          <ProductCard />
-        </div>
-        <div>
-          <ProductCard />
-        </div>
-        <div>
-          <ProductCard />
-        </div>
+        {Array.from(Array(7), (_, i) => (
+          <div key={i}>
+            <ProductCard />
+          </div>
+        ))}
       </Carousel>
       <div className="arrow-container">
         <Button

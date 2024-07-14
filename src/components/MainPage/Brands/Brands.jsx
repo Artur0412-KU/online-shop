@@ -43,22 +43,28 @@ export default function Brands() {
         style={{ paddingBottom: '24px' }}
         className="carousel-brands-container"
         ref={ref}
+        responsive={[
+          {
+            breakpoint: 3200, // Less than 3200px
+            settings: {
+              slidesToShow: 7,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 2600, // Less than 2600px
+            settings: {
+              slidesToShow: 6,
+              slidesToScroll: 1,
+            },
+          },
+        ]}
       >
-        <div>
-          <ProductCard />
-        </div>
-        <div>
-          <ProductCard />
-        </div>
-        <div>
-          <ProductCard />
-        </div>
-        <div>
-          <ProductCard />
-        </div>
-        <div>
-          <ProductCard />
-        </div>
+        {Array.from(Array(7), (_, i) => (
+          <div key={i}>
+            <ProductCard />
+          </div>
+        ))}
       </Carousel>
       <div className="arrow-container">
         <Button
