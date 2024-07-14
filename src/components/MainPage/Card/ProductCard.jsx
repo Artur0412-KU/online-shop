@@ -3,8 +3,7 @@ import { Card, Rate } from 'antd';
 import DATA_CARD from './costants';
 
 export default function ProductCard() {
-  // const [data, setData] = useState(DATA_CARD);
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState(false)
   const [isClicked, setIsClicked] = useState(false);
   const [isClickedLike, setIsClickedLike] = useState(true); // ? Context -> LaptopCard double
 
@@ -13,14 +12,25 @@ export default function ProductCard() {
     setTimeout(() => {
       setIsClicked(false);
     }, 150);
+
+  const [isClickedLike, setIsClickedLike] = useState(true);
+  const [isMouseDown, setIsMouseDown] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+
   };
 
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
 
-  const handleMouseEnter = () => {
-    setIsHovered(true);
+  const handleMouseDown = () => {
+    setIsMouseDown(true);
+  };
+
+  const handleMouseUp = () => {
+    setIsMouseDown(false);
   };
 
   const handleClickLike = () => {
@@ -38,8 +48,17 @@ export default function ProductCard() {
             className="card-svg_like"
           />
           <div className="card-img">
-            <img src={item.img} alt="#" className="body-card" />
-            <img className="card-palette" src={item.colorPalette} alt="#" />
+            <img
+              src={item.img}
+              alt="#"
+              className="body-card"
+            />
+            <img
+              className="card-palette"
+              src={item.colorPalette}
+              alt="#"
+            />
+
           </div>
 
           <h3>{item.title}</h3>
@@ -47,8 +66,10 @@ export default function ProductCard() {
           <div className="card-footer">
             <p>{item.price}</p>
             <img
-              onClick={handleClickBuy}
+              onMouseDown={handleMouseDown}
+              onMouseUp={handleMouseUp}
               className="card-buy"
+
               src={
                 isClicked
                   ? item.svgCardClick
@@ -56,6 +77,13 @@ export default function ProductCard() {
                     ? item.svgCardHover
                     : item.svgCard
               }
+
+              src={isMouseDown
+                ? item.svgCardClick
+                : isHovered
+                  ? item.svgCardHover
+                  : item.svgCard}
+
               alt="buy"
               width={43}
               height={43}
@@ -68,3 +96,4 @@ export default function ProductCard() {
     </div>
   );
 }
+
