@@ -36,6 +36,7 @@ export default function LaptopSlider() {
   return (
     <div className="carousel-wrapper">
       <Carousel
+        className="laptop-slider27"
         slidesToShow={5}
         slidesToScroll={1}
         autoplay={false}

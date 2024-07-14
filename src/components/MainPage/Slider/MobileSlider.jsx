@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Button, Carousel } from 'antd';
 import ProductCard from '../Card/ProductCard';
 import PrevIcon from '../img/icons/prev-icon.png';
@@ -9,6 +9,7 @@ import NextIconClick from '../img/arrow-next-click.png';
 import PrevIconClick from '../img/arrow-prev-click.png';
 
 export default function MobileSlider() {
+  const [arrowBtnPosition, setArrowBtnPosition] = useState(0);
   const ref = useRef();
   const [prevHover, setPrevHover] = useState(false);
   const [nextHover, setNextHover] = useState(false);
@@ -32,10 +33,37 @@ export default function MobileSlider() {
     ref.current.next();
     setTimeout(() => setNextClick(false), 200); // Reset click state after 200ms
   };
+  useEffect(() => {
+    /*     setArrowBtnPosition(
+      Array.from(a).slice(0, lent)[lent - 1].getClientRects()[0].right -
+        50 -
+        72 * 1.5,
+    );
+    console.log(Array.from(a).slice(0, lent));
+    console.log(Array.from(a).slice(0, lent)[lent - 1].getClientRects()[0]);
+    console.log(document.body.offsetWidth); */
+  });
+
+  /*   requestAnimationFrame(() => {
+    const elements = document.querySelectorAll(
+      '.mobile-slider27 .slick-active',
+    );
+    const mobileArrowContainer = document.querySelector(
+      '.mobile-arrow-container',
+    );
+    const arrowContainerWidth = mobileArrowContainer.clientWidth - 4;
+    const elementWidth = elements[0].offsetWidth;
+    const elementsLength = elements.length;
+
+    const tempResult = elementWidth * elementsLength - arrowContainerWidth - 25;
+    setArrowBtnPosition(tempResult);
+  });
+  console.log(arrowBtnPosition); */
 
   return (
     <div className="carousel-wrapper">
       <Carousel
+        className="mobile-slider27"
         slidesToShow={5}
         slidesToScroll={1}
         autoplay={false}
@@ -79,7 +107,7 @@ export default function MobileSlider() {
           </div>
         ))}
       </Carousel>
-      <div className="arrow-container">
+      <div className="arrow-container mobile-arrow-container">
         <Button
           className={`btn-arrow-prev ${prevClick ? 'clicked' : ''}`}
           onClick={handlePrevClick}

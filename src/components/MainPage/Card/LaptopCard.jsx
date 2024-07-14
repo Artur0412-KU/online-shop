@@ -28,7 +28,7 @@ export default function LaptopCard() {
   };
 
   return (
-    <div className="card-container">
+    <div className="card-container laptop-card">
       {DATA_CARD.map((item) => (
         <Card key={item.key} className="card">
           <img
