@@ -71,6 +71,9 @@ export default function LaptopSlider() {
         <div>
           <LaptopCard />
         </div>
+        <div>
+          <LaptopCard />
+        </div>
       </Carousel>
       <div className="arrow-container">
         <Button
