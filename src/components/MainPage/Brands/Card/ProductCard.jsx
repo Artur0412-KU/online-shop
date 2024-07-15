@@ -9,7 +9,7 @@ export default function ProductCard() {
     <>
       {DATA_CARD.map((item) => (
         <Card key={item.key} className="product-card">
-          <img className="card-img" src={item.img} alt="#" />
+          <img className="card-img product-img" src={item.img} alt="#" />
         </Card>
       ))}
     </>
