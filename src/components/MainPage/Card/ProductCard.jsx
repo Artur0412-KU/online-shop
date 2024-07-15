@@ -70,14 +70,6 @@ export default function ProductCard() {
               onMouseUp={handleMouseUp}
               className="card-buy"
 
-              src={
-                isClicked
-                  ? item.svgCardClick
-                  : isHovered
-                    ? item.svgCardHover
-                    : item.svgCard
-              }
-
               src={isMouseDown
                 ? item.svgCardClick
                 : isHovered
@@ -96,4 +88,4 @@ export default function ProductCard() {
     </div>
   );
 }
-
+}
