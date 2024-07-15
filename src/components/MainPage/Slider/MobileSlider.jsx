@@ -63,12 +63,11 @@ export default function MobileSlider() {
   return (
     <div className="carousel-wrapper">
       <Carousel
-        className="mobile-slider27"
+        className="mobile-slider27 wrapper-bottom"
         slidesToShow={5}
         slidesToScroll={1}
         autoplay={false}
         dots={false}
-        className='wrapper-bottom'
         ref={ref}
         responsive={[
           {

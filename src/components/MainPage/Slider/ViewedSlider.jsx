@@ -36,12 +36,11 @@ export default function ViewedSlider() {
   return (
     <div className="carousel-wrapper">
       <Carousel
-        className="viewed-slider27"
+        className="viewed-slider27 wrapper-bottom"
         slidesToShow={5}
         slidesToScroll={1}
         autoplay={false}
         dots={false}
-        style={{ paddingBottom: '24px' }}
         ref={ref}
         responsive={[
           {

@@ -36,12 +36,11 @@ export default function LaptopSlider() {
   return (
     <div className="carousel-wrapper">
       <Carousel
-        className="laptop-slider27"
+        className="laptop-slider27 wrapper-bottom"
         slidesToShow={5}
         slidesToScroll={1}
         autoplay={false}
         dots={false}
-        style={{ paddingBottom: '24px' }}
         ref={ref}
         responsive={[
           {
