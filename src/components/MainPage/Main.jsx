@@ -20,6 +20,7 @@ export default function Main() {
       window.history.scrollRestoration = 'manual';
     }
   }, []);
+
   return (
     <>
       <Header />

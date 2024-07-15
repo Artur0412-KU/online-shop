@@ -1,5 +1,5 @@
 import { Button, Carousel } from 'antd';
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import PrevIcon from '../img/icons/prev-icon.png';
 import NextIcon from '../img/icons/next-icon.png';
 import ProductCard from './Card/ProductCard';
@@ -32,6 +32,15 @@ export default function Brands() {
     ref.current.next();
     setTimeout(() => setNextClick(false), 200);
   };
+
+  useEffect(() => {
+    const a = document.querySelector('.brands-arrow-container');
+    const b = document.body.offsetWidth + 16;
+    console.log(b);
+    if (b > 1550 && b < 2100) {
+      a.style.marginRight = `calc(1px + (30 - 0) * ((100vw - 1550px) / (${b} - 1540)))`;
+    }
+  }, []);
 
   return (
     <div className="carousel-wrapper brands-container">
@@ -85,25 +94,16 @@ export default function Brands() {
               slidesToScroll: 1,
             },
           },
+
         ]}
       >
-        <div>
-          <ProductCard />
-        </div>
-        <div>
-          <ProductCard />
-        </div>
-        <div>
-          <ProductCard />
-        </div>
-        <div>
-          <ProductCard />
-        </div>
-        <div>
-          <ProductCard />
-        </div>
+        {Array.from(Array(8), (_, i) => (
+          <div key={i}>
+            <ProductCard />
+          </div>
+        ))}
       </Carousel>
-      <div className="arrow-container">
+      <div className="arrow-container brands-arrow-container">
         <Button
           className={`btn-arrow-prev ${prevClick ? 'clicked' : ''}`}
           onClick={handlePrevClick}

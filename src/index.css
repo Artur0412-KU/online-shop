@@ -382,10 +382,9 @@ hr:active {
 
 .arrow-container {
   display: flex;
+  justify-content: end;
+  margin-right: 20px;
   align-items: end;
-  justify-content: flex-end;
-  flex-direction: row;
-  padding-right: 10px;
 }
 
 .btn-arrow-prev,
@@ -395,6 +394,10 @@ hr:active {
   align-items: center;
   border: 3px solid #00820d;
   border-radius: 12px;
+}
+.brands-container .slick-active > div > div {
+  display: flex !important;
+  justify-content: center;
 }
 
 .carousel-wrapper .btn-arrow-prev:hover,
@@ -427,12 +430,8 @@ hr:active {
 }
 
 .card {
-  margin-right: 20px;
-  margin-left: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 0;
   border-radius: 15px;
-  width: 305px;
   height: 480px;
   border: 2px solid #5a3e7d07;
   transition: all 0.2s;
@@ -446,17 +445,40 @@ hr:active {
 .card:hover {
   transform: scale(1.05);
 }
+.slick-track {
+  display: flex !important;
+  gap: 40px;
+}
 
 .product-card {
-  margin-right: 20px;
-  margin-left: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 0;
   border-radius: 15px;
-  width: 256px;
-  height: 256px;
+
   transition: all 0.3s;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+}
+.product-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure image covers the area */
+}
+
+/* @media screen and (min-width: 1550px) and (max-width: 2100px) {
+  .brands-arrow-container {
+    margin-right: calc(1px + (30 - 0) * ((100vw - 1550px) / (2088 - 1540)));
+  }
+} */
+
+
+@media screen and (max-width: 1590px) and (min-width: 768px) {
+  .card {
+    height: auto;
+  }
+  .product-card {
+    width: calc(100% - 30px); /* Two cards per row with gap considered */
+    margin: 10px 0; /* Maintain vertical margin */
+    height: auto;
+  }
 }
 
 .product-card:hover {
@@ -471,7 +493,7 @@ hr:active {
 
 .card-img {
   margin: 0 auto;
-  width: auto;
+
   position: relative;
 }
 
