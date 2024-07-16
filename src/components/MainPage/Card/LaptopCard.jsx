@@ -3,21 +3,24 @@ import { Card, Rate } from 'antd';
 import DATA_CARD from './costants';
 
 export default function LaptopCard() {
-  // const [data, setData] = useState(DATA_CARD);
   const [isHovered, setIsHovered] = useState(false);
-  const [isClicked, setIsClicked] = useState(false); // ? Context -> LaptopCard double
-  const [isClickedLike, setIsClickedLike] = useState(true); // ? Context -> LaptopCard double
+  const [isClickedLike, setIsClickedLike] = useState(true);
+  const [isMouseDown, setIsMouseDown] = useState(false);
 
-  const handleClickBuy = () => {
-    setIsClicked((prevState) => !prevState);
+  const handleMouseEnter = () => {
+    setIsHovered(true);
   };
 
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
 
-  const handleMouseEnter = () => {
-    setIsHovered(true);
+  const handleMouseDown = () => {
+    setIsMouseDown(true);
+  };
+
+  const handleMouseUp = () => {
+    setIsMouseDown(false);
   };
 
   const handleClickLike = () => {
@@ -25,7 +28,7 @@ export default function LaptopCard() {
   };
 
   return (
-    <div className="card-container">
+    <div className="card-container laptop-card">
       {DATA_CARD.map((item) => (
         <Card key={item.key} className="card">
           <img
@@ -50,14 +53,13 @@ export default function LaptopCard() {
 
             <img
               className="card-buy"
-              onClick={handleClickBuy}
-              src={
-                isHovered
+              onMouseDown={handleMouseDown}
+              onMouseUp={handleMouseUp}
+              src={isMouseDown
+                ? item.svgCardClick
+                : isHovered
                   ? item.svgCardHover
-                  : isClicked
-                    ? item.svgCardClick
-                    : item.svgCard
-              }
+                  : item.svgCard}
               alt="buy"
               width={43}
               height={43}

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Button, Carousel } from 'antd';
 import ProductCard from '../Card/ProductCard';
 import PrevIcon from '../img/icons/prev-icon.png';
@@ -9,6 +9,7 @@ import NextIconClick from '../img/arrow-next-click.png';
 import PrevIconClick from '../img/arrow-prev-click.png';
 
 export default function MobileSlider() {
+  const [arrowBtnPosition, setArrowBtnPosition] = useState(0);
   const ref = useRef();
   const [prevHover, setPrevHover] = useState(false);
   const [nextHover, setNextHover] = useState(false);
@@ -32,19 +33,59 @@ export default function MobileSlider() {
     ref.current.next();
     setTimeout(() => setNextClick(false), 200); // Reset click state after 200ms
   };
+  useEffect(() => {
+    /*     setArrowBtnPosition(
+      Array.from(a).slice(0, lent)[lent - 1].getClientRects()[0].right -
+        50 -
+        72 * 1.5,
+    );
+    console.log(Array.from(a).slice(0, lent));
+    console.log(Array.from(a).slice(0, lent)[lent - 1].getClientRects()[0]);
+    console.log(document.body.offsetWidth); */
+  });
+
+  /*   requestAnimationFrame(() => {
+    const elements = document.querySelectorAll(
+      '.mobile-slider27 .slick-active',
+    );
+    const mobileArrowContainer = document.querySelector(
+      '.mobile-arrow-container',
+    );
+    const arrowContainerWidth = mobileArrowContainer.clientWidth - 4;
+    const elementWidth = elements[0].offsetWidth;
+    const elementsLength = elements.length;
+
+    const tempResult = elementWidth * elementsLength - arrowContainerWidth - 25;
+    setArrowBtnPosition(tempResult);
+  });
+  console.log(arrowBtnPosition); */
 
   return (
     <div className="carousel-wrapper">
       <Carousel
+        className="mobile-slider27 wrapper-bottom"
         slidesToShow={5}
         slidesToScroll={1}
         autoplay={false}
         dots={false}
-        style={{ paddingBottom: '24px' }}
         ref={ref}
         responsive={[
           {
-            breakpoint: 1890, // Less than 1890px
+            breakpoint: 3200, // Less than 3200px
+            settings: {
+              slidesToShow: 7,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 2600, // Less than 2600px
+            settings: {
+              slidesToShow: 6,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 2100, // Less than 2100px
             settings: {
               slidesToShow: 5,
               slidesToScroll: 1,
@@ -57,22 +98,29 @@ export default function MobileSlider() {
               slidesToScroll: 1,
             },
           },
+          {
+            breakpoint: 1024, 
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 375, 
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
         ]}
       >
-        <div>
-          <ProductCard />
-        </div>
-        <div>
-          <ProductCard />
-        </div>
-        <div>
-          <ProductCard />
-        </div>
-        <div>
-          <ProductCard />
-        </div>
+        {Array.from(Array(7), (_, i) => (
+          <div key={i}>
+            <ProductCard />
+          </div>
+        ))}
       </Carousel>
-      <div className="arrow-container">
+      <div className="arrow-container mobile-arrow-container">
         <Button
           className={`btn-arrow-prev ${prevClick ? 'clicked' : ''}`}
           onClick={handlePrevClick}
