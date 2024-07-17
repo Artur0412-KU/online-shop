@@ -401,7 +401,7 @@ hr:active {
   border-left: 0;
 }
 
-.wrapper-bottom {
+.wrapper-bottom, .carousel-brands-container {
     padding-bottom: 24px;
 }
 
