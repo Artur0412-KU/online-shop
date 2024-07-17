@@ -41,11 +41,13 @@ export default function ViewedSlider() {
   return (
     <div className="carousel-wrapper">
       <Carousel
+        className="viewed-slider27 wrapper-bottom"
         slidesToShow={5}
         slidesToScroll={1}
         autoplay={false}
         dots={false}
         className="wrapper-bottom"
+
         ref={ref}
         responsive={[
           {
@@ -92,21 +94,11 @@ export default function ViewedSlider() {
           },
         ]}
       >
-        <div>
-          <ProductCard />
-        </div>
-        <div>
-          <ProductCard />
-        </div>
-        <div>
-          <ProductCard />
-        </div>
-        <div>
-          <ProductCard />
-        </div>
-        <div>
-          <ProductCard />
-        </div>
+        {Array.from(Array(7), (_, i) => (
+          <div key={i}>
+            <ProductCard />
+          </div>
+        ))}
       </Carousel>
       <div className="arrow-container">
         <Button
