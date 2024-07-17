@@ -54,7 +54,6 @@ export default function Brands() {
         slidesToScroll={1}
         autoplay={false}
         dots={false}
-        style={{ paddingBottom: '24px' }}
         className="carousel-brands-container"
         ref={ref}
         responsive={[
@@ -86,6 +85,22 @@ export default function Brands() {
               slidesToScroll: 1,
             },
           },
+          {
+            breakpoint: 1024, 
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 375, 
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            },
+          },
+
+
         ]}
       >
         {Array.from(Array(8), (_, i) => (
