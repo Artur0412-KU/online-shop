@@ -7,20 +7,15 @@ export default function ProductCard() {
   const [isHovered, setIsHovered] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
   const [isClickedLike, setIsClickedLike] = useState(true); // ? Context -> LaptopCard double
-  const handleClickBuy = () => {
-    setIsClicked(true);
-    setTimeout(() => {
-      setIsClicked(false);
-    }, 150);
-  };
   const [isMouseDown, setIsMouseDown] = useState(false);
+  
   const handleClickBuy = () => {
     setIsClicked(true);
     setTimeout(() => {
       setIsClicked(false);
     }, 150);
   };
-
+  
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
