@@ -1,36 +1,28 @@
-import React, { useState } from 'react';
-import { Card, Rate } from 'antd';
-import DATA_CARD from './costants';
+import React, { useState } from "react";
+import { Card, Rate } from "antd";
+import DATA_CARD from "./costants";
 
 export default function ProductCard() {
-  const [isHovered, setIsHovered] = useState(false)
-  const [isClicked, setIsClicked] = useState(false);
+  // const [data, setData] = useState(DATA_CARD);
+  const [isHovered, setIsHovered] = useState(false);
+  const [isClicked, setIsClicked] = useState(false); 
   const [isClickedLike, setIsClickedLike] = useState(true); // ? Context -> LaptopCard double
+
+  
 
   const handleClickBuy = () => {
     setIsClicked(true);
     setTimeout(() => {
       setIsClicked(false);
     }, 150);
-
-  const [isClickedLike, setIsClickedLike] = useState(true);
-  const [isMouseDown, setIsMouseDown] = useState(false);
-
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-
   };
 
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
 
-  const handleMouseDown = () => {
-    setIsMouseDown(true);
-  };
-
-  const handleMouseUp = () => {
-    setIsMouseDown(false);
+  const handleMouseEnter = () => {
+    setIsHovered(true);
   };
 
   const handleClickLike = () => {
@@ -38,7 +30,7 @@ export default function ProductCard() {
   };
 
   return (
-    <div className="card-container mobile-card">
+    <div className="card-container">
       {DATA_CARD.map((item) => (
         <Card key={item.key} className="card">
           <img
@@ -49,41 +41,29 @@ export default function ProductCard() {
           />
           <div className="card-img">
             <img
-              src={item.img}
-              alt="#"
-              className="body-card"
+            src={item.img}
+            alt="#"
+            className="body-card"
+           />
+           <img
+             className="card-palette"
+             src={item.colorPalette}
+             alt="#"
             />
-            <img
-              className="card-palette"
-              src={item.colorPalette}
-              alt="#"
-            />
-
           </div>
-
+          
           <h3>{item.title}</h3>
           <Rate className="card-rate" />
           <div className="card-footer">
             <p>{item.price}</p>
             <img
-              onMouseDown={handleMouseDown}
-              onMouseUp={handleMouseUp}
+              onClick={handleClickBuy}
               className="card-buy"
-
-              src={
-                isClicked
-                  ? item.svgCardClick
-                  : isHovered
-                    ? item.svgCardHover
-                    : item.svgCard
-              }
-
-              src={isMouseDown
+              src={isClicked
                 ? item.svgCardClick
                 : isHovered
                   ? item.svgCardHover
                   : item.svgCard}
-
               alt="buy"
               width={43}
               height={43}
@@ -96,4 +76,3 @@ export default function ProductCard() {
     </div>
   );
 }
-

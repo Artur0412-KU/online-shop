@@ -41,12 +41,11 @@ export default function LaptopSlider() {
   return (
     <div className="carousel-wrapper">
       <Carousel
-        className="laptop-slider27"
+        className="wrapper-bottom"
         slidesToShow={5}
         slidesToScroll={1}
         autoplay={false}
         dots={false}
-        className='wrapper-bottom '
         ref={ref}
         responsive={[
           {

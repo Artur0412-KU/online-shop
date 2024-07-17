@@ -9,7 +9,6 @@ import NextIconClick from '../img/arrow-next-click.png';
 import PrevIconClick from '../img/arrow-prev-click.png';
 
 export default function MobileSlider() {
-  const [arrowBtnPosition, setArrowBtnPosition] = useState(0);
   const ref = useRef();
   const [prevHover, setPrevHover] = useState(false);
   const [nextHover, setNextHover] = useState(false);
@@ -38,38 +37,12 @@ export default function MobileSlider() {
     ref.current.next();
     setTimeout(() => setNextClick(false), 200); // Reset click state after 200ms
   };
-  useEffect(() => {
-    /*     setArrowBtnPosition(
-      Array.from(a).slice(0, lent)[lent - 1].getClientRects()[0].right -
-        50 -
-        72 * 1.5,
-    );
-    console.log(Array.from(a).slice(0, lent));
-    console.log(Array.from(a).slice(0, lent)[lent - 1].getClientRects()[0]);
-    console.log(document.body.offsetWidth); */
-  });
 
-  /*   requestAnimationFrame(() => {
-    const elements = document.querySelectorAll(
-      '.mobile-slider27 .slick-active',
-    );
-    const mobileArrowContainer = document.querySelector(
-      '.mobile-arrow-container',
-    );
-    const arrowContainerWidth = mobileArrowContainer.clientWidth - 4;
-    const elementWidth = elements[0].offsetWidth;
-    const elementsLength = elements.length;
-
-    const tempResult = elementWidth * elementsLength - arrowContainerWidth - 25;
-    setArrowBtnPosition(tempResult);
-  });
-  console.log(arrowBtnPosition); */
 
   return (
     <div className="carousel-wrapper">
-      <Carousel
-        className="mobile-slider27 wrapper-bottom"
-
+       <Carousel
+        className="wrapper-bottom"
         slidesToShow={5}
         slidesToScroll={1}
         autoplay={false}
@@ -104,25 +77,11 @@ export default function MobileSlider() {
               slidesToScroll: 1,
             },
           },
-          {
-            breakpoint: 1024, 
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 1,
-            },
-          },
-          {
-            breakpoint: 375, 
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-            },
-          },
         ]}
       >
         {Array.from(Array(7), (_, i) => (
           <div key={i}>
-            <ProductCard />
+            <ProductCard/>
           </div>
         ))}
       </Carousel>
