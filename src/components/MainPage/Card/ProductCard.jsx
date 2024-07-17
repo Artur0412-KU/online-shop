@@ -14,12 +14,7 @@ export default function ProductCard() {
     }, 150);
   };
   const [isMouseDown, setIsMouseDown] = useState(false);
-  const handleClickBuy = () => {
-    setIsClicked(true);
-    setTimeout(() => {
-      setIsClicked(false);
-    }, 150);
-  };
+
 
   const handleMouseLeave = () => {
     setIsHovered(false);

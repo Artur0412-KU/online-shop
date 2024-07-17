@@ -46,7 +46,6 @@ export default function ViewedSlider() {
         slidesToScroll={1}
         autoplay={false}
         dots={false}
-        className="wrapper-bottom"
 
         ref={ref}
         responsive={[
