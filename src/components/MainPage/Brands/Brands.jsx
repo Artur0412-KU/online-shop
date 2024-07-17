@@ -21,6 +21,11 @@ export default function Brands() {
   const handleMouseEnterNext = () => setNextHover(true);
   const handleMouseLeaveNext = () => setNextHover(false);
 
+  const handleMouseDownPrev = () => setPrevClick(true);
+  const handleMouseUpPrev = () => setPrevClick(false);
+  const handleMouseDownNext = () => setNextClick(true);
+  const handleMouseUpNext = () => setNextClick(false);
+
   const handlePrevClick = () => {
     setPrevClick(true);
     ref.current.prev();
@@ -61,31 +66,27 @@ export default function Brands() {
         </div>
       </Carousel>
       <div className="arrow-container">
-        <Button
+      <Button
           className={`btn-arrow-prev ${prevClick ? 'clicked' : ''}`}
           onClick={handlePrevClick}
           onMouseEnter={handleMouseEnterPrev}
           onMouseLeave={handleMouseLeavePrev}
+          onMouseDown={handleMouseDownPrev}
+          onMouseUp={handleMouseUpPrev}
           style={{ borderColor: prevHover ? '#4DA856' : '' }}
         >
-          <img
-            src={
-              prevHover ? PrevIconHover : prevClick ? PrevIconClick : PrevIcon
-            }
-          />
+          <img src={prevClick ? PrevIconClick : prevHover ? PrevIconHover : PrevIcon} alt="Previous" />
         </Button>
         <Button
           className={`btn-arrow-next ${nextClick ? 'clicked' : ''}`}
           onClick={handleNextClick}
           onMouseEnter={handleMouseEnterNext}
           onMouseLeave={handleMouseLeaveNext}
+          onMouseDown={handleMouseDownNext}
+          onMouseUp={handleMouseUpNext}
           style={{ borderColor: nextHover ? '#4DA856' : '' }}
         >
-          <img
-            src={
-              nextHover ? NextIconHover : nextClick ? NextIconClick : NextIcon
-            }
-          />
+          <img src={nextClick ? NextIconClick: nextHover ? NextIconHover : NextIcon} alt="Next" />
         </Button>
       </div>
     </div>

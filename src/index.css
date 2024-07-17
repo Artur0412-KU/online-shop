@@ -400,6 +400,10 @@ hr:active {
     border-left: 0;
 }
 
+.wrapper-bottom {
+    padding-bottom: 24px;
+}
+
 /* #region Card */
 .card-container {
     display: flex;
@@ -583,8 +587,6 @@ hr:active {
     flex-direction: column;
     position: relative;
 }
-
-/* #endregion */
 
 /* #endregion */
 

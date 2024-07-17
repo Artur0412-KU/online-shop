@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Button, Carousel } from 'antd';
 import ProductCard from '../Card/ProductCard';
 import PrevIcon from '../img/icons/prev-icon.png';
@@ -9,6 +9,7 @@ import NextIconClick from '../img/arrow-next-click.png';
 import PrevIconClick from '../img/arrow-prev-click.png';
 
 export default function MobileSlider() {
+  const [arrowBtnPosition, setArrowBtnPosition] = useState(0);
   const ref = useRef();
   const [prevHover, setPrevHover] = useState(false);
   const [nextHover, setNextHover] = useState(false);
@@ -20,6 +21,11 @@ export default function MobileSlider() {
   const handleMouseLeavePrev = () => setPrevHover(false);
   const handleMouseEnterNext = () => setNextHover(true);
   const handleMouseLeaveNext = () => setNextHover(false);
+
+  const handleMouseDownPrev = () => setPrevClick(true);
+  const handleMouseUpPrev = () => setPrevClick(false);
+  const handleMouseDownNext = () => setNextClick(true);
+  const handleMouseUpNext = () => setNextClick(false);
 
   const handlePrevClick = () => {
     setPrevClick(true);
@@ -36,15 +42,29 @@ export default function MobileSlider() {
   return (
     <div className="carousel-wrapper">
       <Carousel
+        className="mobile-slider27 wrapper-bottom"
         slidesToShow={5}
         slidesToScroll={1}
         autoplay={false}
         dots={false}
-        style={{ paddingBottom: '24px' }}
         ref={ref}
         responsive={[
           {
-            breakpoint: 1890, // Less than 1890px
+            breakpoint: 3200, // Less than 3200px
+            settings: {
+              slidesToShow: 7,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 2600, // Less than 2600px
+            settings: {
+              slidesToShow: 6,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 2100, // Less than 2100px
             settings: {
               slidesToShow: 5,
               slidesToScroll: 1,
@@ -57,33 +77,41 @@ export default function MobileSlider() {
               slidesToScroll: 1,
             },
           },
+          {
+            breakpoint: 1024, 
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 375, 
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
         ]}
       >
-        <div>
-          <ProductCard />
-        </div>
-        <div>
-          <ProductCard />
-        </div>
-        <div>
-          <ProductCard />
-        </div>
-        <div>
-          <ProductCard />
-        </div>
-        
+        {Array.from(Array(7), (_, i) => (
+          <div key={i}>
+            <ProductCard />
+          </div>
+        ))}
       </Carousel>
-      <div className="arrow-container">
+      <div className="arrow-container mobile-arrow-container">
         <Button
           className={`btn-arrow-prev ${prevClick ? 'clicked' : ''}`}
           onClick={handlePrevClick}
           onMouseEnter={handleMouseEnterPrev}
           onMouseLeave={handleMouseLeavePrev}
+          onMouseDown={handleMouseDownPrev}
+          onMouseUp={handleMouseUpPrev}
           style={{ borderColor: prevHover ? '#4DA856' : '' }}
         >
           <img
             src={
-              prevHover ? PrevIconHover : prevClick ? PrevIconClick : PrevIcon
+              prevClick ? PrevIconClick : prevHover ? PrevIconHover : PrevIcon
             }
             alt="Previous"
           />
@@ -93,11 +121,13 @@ export default function MobileSlider() {
           onClick={handleNextClick}
           onMouseEnter={handleMouseEnterNext}
           onMouseLeave={handleMouseLeaveNext}
+          onMouseDown={handleMouseDownNext}
+          onMouseUp={handleMouseUpNext}
           style={{ borderColor: nextHover ? '#4DA856' : '' }}
         >
           <img
             src={
-              nextHover ? NextIconHover : nextClick ? NextIconClick : NextIcon
+              nextClick ? NextIconClick: nextHover ? NextIconHover : NextIcon
             }
             alt="Next"
           />

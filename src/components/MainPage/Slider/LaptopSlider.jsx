@@ -21,6 +21,11 @@ export default function LaptopSlider() {
   const handleMouseEnterNext = () => setNextHover(true);
   const handleMouseLeaveNext = () => setNextHover(false);
 
+  const handleMouseDownPrev = () => setPrevClick(true);
+  const handleMouseUpPrev = () => setPrevClick(false);
+  const handleMouseDownNext = () => setNextClick(true);
+  const handleMouseUpNext = () => setNextClick(false);
+
   const handlePrevClick = () => {
     setPrevClick(true);
     ref.current.prev();
@@ -40,7 +45,7 @@ export default function LaptopSlider() {
         slidesToScroll={1}
         autoplay={false}
         dots={false}
-        style={{ paddingBottom: '24px' }}
+        className='wrapper-bottom '
         ref={ref}
         responsive={[
           {
@@ -79,18 +84,22 @@ export default function LaptopSlider() {
           onClick={handlePrevClick}
           onMouseEnter={handleMouseEnterPrev}
           onMouseLeave={handleMouseLeavePrev}
+          onMouseDown={handleMouseDownPrev}
+          onMouseUp={handleMouseUpPrev}
           style={{ borderColor: prevHover ? '#4DA856' : '' }}
         >
-          <img src={prevHover ? PrevIconHover : prevClick ? PrevIconClick : PrevIcon} alt="Previous" />
+          <img src={prevClick ? PrevIconClick : prevHover ? PrevIconHover : PrevIcon} alt="Previous" />
         </Button>
         <Button
           className={`btn-arrow-next ${nextClick ? 'clicked' : ''}`}
           onClick={handleNextClick}
           onMouseEnter={handleMouseEnterNext}
           onMouseLeave={handleMouseLeaveNext}
+          onMouseDown={handleMouseDownNext}
+          onMouseUp={handleMouseUpNext}
           style={{ borderColor: nextHover ? '#4DA856' : '' }}
         >
-          <img src={nextHover ? NextIconHover : nextClick ? NextIconClick : NextIcon} alt="Next" />
+          <img src={nextClick ? NextIconClick: nextHover ? NextIconHover : NextIcon} alt="Next" />
         </Button>
       </div>
     </div>
