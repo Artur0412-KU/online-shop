@@ -1,10 +1,10 @@
-import { RightIcon, RightIconClick } from "../../img/icons"
+import { RightIcon, RightIconClick } from '../../img/icons';
 
 const DATA = [
-    {
-        img: RightIcon,
-        imgClick: RightIconClick
-    }
-]
+  {
+    img: RightIcon,
+    imgClick: RightIconClick,
+  },
+];
 
-export default DATA
+export default DATA;
