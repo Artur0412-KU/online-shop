@@ -21,6 +21,11 @@ export default function Brands() {
   const handleMouseEnterNext = () => setNextHover(true);
   const handleMouseLeaveNext = () => setNextHover(false);
 
+  const handleMouseDownPrev = () => setPrevClick(true);
+  const handleMouseUpPrev = () => setPrevClick(false);
+  const handleMouseDownNext = () => setNextClick(true);
+  const handleMouseUpNext = () => setNextClick(false);
+
   const handlePrevClick = () => {
     setPrevClick(true);
     ref.current.prev();
@@ -36,6 +41,10 @@ export default function Brands() {
   useEffect(() => {
     const a = document.querySelector('.brands-arrow-container');
     const b = document.body.offsetWidth + 16;
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
     if (b > 1550 && b < 2100) {
       a.style.marginRight = `calc(1px + (30 - 0) * ((100vw - 1550px) / (${b} - 1540)))`;
     }
@@ -94,6 +103,10 @@ export default function Brands() {
             },
           },
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
         ]}
       >
         {Array.from(Array(8), (_, i) => (
@@ -104,30 +117,27 @@ export default function Brands() {
       </Carousel>
       <div className="arrow-container brands-arrow-container">
         <Button
+
           className={`btn-arrow-prev ${prevClick ? 'clicked' : ''}`}
           onClick={handlePrevClick}
           onMouseEnter={handleMouseEnterPrev}
           onMouseLeave={handleMouseLeavePrev}
+          onMouseDown={handleMouseDownPrev}
+          onMouseUp={handleMouseUpPrev}
           style={{ borderColor: prevHover ? '#4DA856' : '' }}
         >
-          <img
-            src={
-              prevHover ? PrevIconHover : prevClick ? PrevIconClick : PrevIcon
-            }
-          />
+          <img src={prevClick ? PrevIconClick : prevHover ? PrevIconHover : PrevIcon} alt="Previous" />
         </Button>
         <Button
           className={`btn-arrow-next ${nextClick ? 'clicked' : ''}`}
           onClick={handleNextClick}
           onMouseEnter={handleMouseEnterNext}
           onMouseLeave={handleMouseLeaveNext}
+          onMouseDown={handleMouseDownNext}
+          onMouseUp={handleMouseUpNext}
           style={{ borderColor: nextHover ? '#4DA856' : '' }}
         >
-          <img
-            src={
-              nextHover ? NextIconHover : nextClick ? NextIconClick : NextIcon
-            }
-          />
+          <img src={nextClick ? NextIconClick: nextHover ? NextIconHover : NextIcon} alt="Next" />
         </Button>
       </div>
     </div>

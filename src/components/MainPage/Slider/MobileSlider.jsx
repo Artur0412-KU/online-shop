@@ -22,6 +22,11 @@ export default function MobileSlider() {
   const handleMouseEnterNext = () => setNextHover(true);
   const handleMouseLeaveNext = () => setNextHover(false);
 
+  const handleMouseDownPrev = () => setPrevClick(true);
+  const handleMouseUpPrev = () => setPrevClick(false);
+  const handleMouseDownNext = () => setNextClick(true);
+  const handleMouseUpNext = () => setNextClick(false);
+
   const handlePrevClick = () => {
     setPrevClick(true);
     ref.current.prev();
@@ -60,10 +65,11 @@ export default function MobileSlider() {
   });
   console.log(arrowBtnPosition); */
 
+
   return (
     <div className="carousel-wrapper">
-      <Carousel
-        className="mobile-slider27"
+       <Carousel
+        className="wrapper-bottom"
         slidesToShow={5}
         slidesToScroll={1}
         autoplay={false}
@@ -117,7 +123,7 @@ export default function MobileSlider() {
       >
         {Array.from({ length: 7 }).map((_, i) => (
           <div key={i}>
-            <ProductCard />
+            <ProductCard/>
           </div>
         ))}
       </Carousel>
@@ -127,11 +133,13 @@ export default function MobileSlider() {
           onClick={handlePrevClick}
           onMouseEnter={handleMouseEnterPrev}
           onMouseLeave={handleMouseLeavePrev}
+          onMouseDown={handleMouseDownPrev}
+          onMouseUp={handleMouseUpPrev}
           style={{ borderColor: prevHover ? '#4DA856' : '' }}
         >
           <img
             src={
-              prevHover ? PrevIconHover : prevClick ? PrevIconClick : PrevIcon
+              prevClick ? PrevIconClick : prevHover ? PrevIconHover : PrevIcon
             }
             alt="Previous"
           />
@@ -141,11 +149,13 @@ export default function MobileSlider() {
           onClick={handleNextClick}
           onMouseEnter={handleMouseEnterNext}
           onMouseLeave={handleMouseLeaveNext}
+          onMouseDown={handleMouseDownNext}
+          onMouseUp={handleMouseUpNext}
           style={{ borderColor: nextHover ? '#4DA856' : '' }}
         >
           <img
             src={
-              nextHover ? NextIconHover : nextClick ? NextIconClick : NextIcon
+              nextClick ? NextIconClick: nextHover ? NextIconHover : NextIcon
             }
             alt="Next"
           />
