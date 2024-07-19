@@ -42,6 +42,7 @@ export default function MobileSlider() {
         autoplay={false}
         dots={false}
         ref={ref}
+        initialSlide={0}
         responsive={[
           {
             breakpoint: 3200, // Less than 3200px
