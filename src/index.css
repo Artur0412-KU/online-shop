@@ -471,8 +471,7 @@ hr:active {
   .brands-arrow-container {
     margin-right: calc(1px + (30 - 0) * ((100vw - 1550px) / (2088 - 1540)));
   }
-}
-
+} 
 
 @media screen and (max-width: 1590px) and (min-width: 768px) {
   .card {
@@ -688,6 +687,24 @@ hr:active {
 }
 
 @media (max-width: 375px)  {  
+  .slick-track {
+    gap: 8px;
+  }
+  .card {
+    width: auto;
+    height: 287px;
+  }
+
+  .card-rate {
+    font-size: 10px;
+    padding-top: 6px;
+  }
+
+  :where(.css-dev-only-do-not-override-1qfezbu).ant-rate .ant-rate-star:not(:last-child) {
+    margin-inline-end: 1px;
+  }
+
+
   .carousel-wrapper {
     padding: 16px;
   }
@@ -695,8 +712,19 @@ hr:active {
     margin-top: 16px;
   }
 
-  .card p {
+  .card h3 {
     font-size: 16px;
+    width: 100%;
+    line-height: 150%;
+  }
+
+  .card p {
+    font-size: 14px;
+    font-weight: medium;
+  }
+
+  .card p {
+    padding-top: 20px;
   }
 
   .card-svg_like {
@@ -705,8 +733,17 @@ hr:active {
   } 
   
   .card-buy {
-    height: 48px;
-    width: 48px;
+    height: 45px;
+    width: 45px;
+  }
+
+  .body-card {
+    height: 90px;
+    width: auto;
+  }
+
+  .card-palette {
+    left: 85px;
   }
 
   .product-card {
@@ -714,7 +751,6 @@ hr:active {
     height: 100px;
   }
 }
-
 
 /* #endregion */
 

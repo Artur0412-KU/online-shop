@@ -22,6 +22,7 @@ export default function ProductCard() {
 
   const handleMouseEnter = () => {
     setIsHovered(true);
+
   };
 
   const handleClickLike = () => {

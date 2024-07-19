@@ -41,7 +41,6 @@ export default function Brands() {
   useEffect(() => {
     const a = document.querySelector('.brands-arrow-container');
     const b = document.body.offsetWidth + 16;
-
     if (b > 1550 && b < 2100) {
       a.style.marginRight = `calc(1px + (30 - 0) * ((100vw - 1550px) / (${b} - 1540)))`;
     }
@@ -99,8 +98,6 @@ export default function Brands() {
               slidesToScroll: 1,
             },
           },
-
-
         ]}
       >
         {Array.from(Array(8), (_, i) => (
