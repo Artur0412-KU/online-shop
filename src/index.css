@@ -306,6 +306,7 @@ i {
   justify-content: center;
   gap: 8px;
   cursor: pointer;
+  margin-top: -7px;
 }
 
 .button-link {
