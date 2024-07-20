@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Card, Rate } from 'antd';
 import DATA_CARD from './costants';
 
-export default function ProductCard() {
+export default function ProductCard({ i }) {
   const [isHovered, setIsHovered] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
   const [isClickedLike, setIsClickedLike] = useState(true); // ? Context -> LaptopCard double
@@ -50,7 +50,9 @@ export default function ProductCard() {
             <img className="card-palette" src={item.colorPalette} alt="#" />
           </div>
 
-          <h3>{item.title}</h3>
+          <h3>
+            {item.title} {i}
+          </h3>
           <Rate className="card-rate" />
           <div className="card-footer">
             <p>{item.price}</p>
