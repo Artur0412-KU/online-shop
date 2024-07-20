@@ -341,24 +341,24 @@ hr:active {
 
 @media (max-width: 1024px) {
   /* For screens smaller than 1024px */
- .slider-text { 
+  .slider-text {
     justify-content: space-between;
     padding-left: 24px;
     padding-right: 24px;
- }
+  }
 }
 
-@media (max-width: 375px){
+@media (max-width: 375px) {
   .slider-text h2 {
     font-size: 24px;
   }
 }
 
 @media (max-width: 375px) {
-  .slider-text { 
+  .slider-text {
     padding-left: 16px;
     padding-right: 16px;
- }
+  }
 }
 /* #endregion */
 
@@ -482,8 +482,9 @@ hr:active {
   outline: none;
 }
 
-.wrapper-bottom, .carousel-brands-container {
-    padding-bottom: 24px;
+.wrapper-bottom,
+.carousel-brands-container {
+  padding-bottom: 24px;
 }
 
 /* #region Card */
@@ -528,20 +529,6 @@ hr:active {
   object-fit: cover; /* Ensure image covers the area */
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 2912b9c282fc9aff0448c2fed544739cac9200a7
-@media screen and (min-width: 1550px) and (max-width: 2100px) {
-  .brands-arrow-container {
-    margin-right: calc(1px + (30 - 0) * ((100vw - 1550px) / (2088 - 1540)));
-  }
-<<<<<<< HEAD
-}
-=======
-} 
->>>>>>> 2912b9c282fc9aff0448c2fed544739cac9200a7
-
 @media screen and (max-width: 1590px) and (min-width: 768px) {
   .card {
     height: auto;
@@ -578,7 +565,6 @@ hr:active {
   height: 200px;
 }
 
-
 .card-palette,
 .card-palette-laptop {
   width: 24px;
@@ -608,8 +594,6 @@ hr:active {
   .card-img-laptop {
     width: 120px;
   }
-
-  
 }
 
 .card-img-laptop {
@@ -728,7 +712,7 @@ hr:active {
   .card-svg_like {
     width: 32px;
     height: 32px;
-  } 
+  }
 
   .card-palette {
     height: 44px;
@@ -742,7 +726,7 @@ hr:active {
     left: 95%;
   }
 
-  .arrow-container  {
+  .arrow-container {
     display: none;
   }
 
@@ -753,13 +737,13 @@ hr:active {
     align-items: center;
     justify-content: center;
   }
-  
+
   .product-img {
     width: 100%;
   }
 }
 
-@media (max-width: 375px)  {  
+@media (max-width: 375px) {
   .slick-track {
     gap: 8px;
   }
@@ -773,10 +757,10 @@ hr:active {
     padding-top: 6px;
   }
 
-  :where(.css-dev-only-do-not-override-1qfezbu).ant-rate .ant-rate-star:not(:last-child) {
+  :where(.css-dev-only-do-not-override-1qfezbu).ant-rate
+    .ant-rate-star:not(:last-child) {
     margin-inline-end: 1px;
   }
-
 
   .carousel-wrapper {
     padding: 16px;
@@ -803,8 +787,8 @@ hr:active {
   .card-svg_like {
     width: 24px;
     height: 24px;
-  } 
-  
+  }
+
   .card-buy {
     height: 45px;
     width: 45px;

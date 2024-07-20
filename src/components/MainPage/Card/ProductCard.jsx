@@ -15,6 +15,9 @@ export default function ProductCard() {
       setIsClicked(false);
     }, 150);
   };
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
 
   const handleMouseEnter = () => {
     setIsHovered(true);
