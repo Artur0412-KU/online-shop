@@ -3,7 +3,7 @@ import { Carousel } from 'antd';
 import { SliderButtons } from '../Slider/SliderButtons';
 import BrandCard from './Card/ProductCard';
 
-export const Brands = ({ children, carouselClassName, sliderClassName }) => {
+export const Brands = () => {
   const ref = useRef();
   const [prevClick, setPrevClick] = useState(false);
   const [nextClick, setNextClick] = useState(false);
