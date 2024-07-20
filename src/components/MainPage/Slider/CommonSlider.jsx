@@ -1,9 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Carousel } from 'antd';
-import { SliderButtons } from '../Slider/SliderButtons';
-import BrandCard from './Card/ProductCard';
+import { Button, Carousel, ConfigProvider } from 'antd';
+import { SliderButtons } from './SliderButtons';
 
-export const Brands = () => {
+export const CommonSlider = ({
+  children,
+  carouselClassName,
+  sliderClassName,
+}) => {
   const ref = useRef();
   const [prevClick, setPrevClick] = useState(false);
   const [nextClick, setNextClick] = useState(false);
@@ -23,17 +26,18 @@ export const Brands = () => {
   };
   useEffect(() => {
     const allSlicks = document.querySelectorAll(
-      `.brands-carousel .slick-slide`,
+      `.${carouselClassName} .slick-slide`,
     );
     const filteredElements = Array.from(allSlicks).filter(
       (element) => !element.classList.contains('slick-cloned'),
     );
     const activeSlicks = document.querySelectorAll(
-      `.brands-carousel .slick-active`,
+      `.${carouselClassName} .slick-active`,
     );
     const currentSlickIndex = document
-      .querySelector(`.brands-carousel .slick-current`)
+      .querySelector(`.${carouselClassName} .slick-current`)
       .getAttribute('data-index');
+
     const currentSlickIndex2 =
       activeSlicks[activeSlicks?.length - 1]?.getAttribute('data-index');
 
@@ -50,10 +54,10 @@ export const Brands = () => {
   }, [prevClick, nextClick]);
 
   return (
-    <div className={`carousel-wrapper brands-carousel`}>
+    <div className={`carousel-wrapper ${carouselClassName}`}>
       <Carousel
-        className="brand-slider"
-        slidesToShow={6}
+        className={sliderClassName}
+        slidesToShow={5}
         slidesToScroll={1}
         autoplay={false}
         dots={false}
@@ -63,51 +67,35 @@ export const Brands = () => {
           {
             breakpoint: 3200, // Less than 3200px
             settings: {
-              slidesToShow: 8,
+              slidesToShow: 7,
               slidesToScroll: 1,
             },
           },
           {
             breakpoint: 2600, // Less than 2600px
             settings: {
-              slidesToShow: 7,
+              slidesToShow: 6,
               slidesToScroll: 1,
             },
           },
           {
             breakpoint: 2100, // Less than 2100px
             settings: {
-              slidesToShow: 6,
+              slidesToShow: 5,
               slidesToScroll: 1,
             },
           },
           {
             breakpoint: 1550, // Less than 1440px
             settings: {
-              slidesToShow: 5,
-              slidesToScroll: 1,
-            },
-          },
-          {
-            breakpoint: 1024,
-            settings: {
               slidesToShow: 4,
-              slidesToScroll: 1,
-            },
-          },
-          {
-            breakpoint: 375,
-            settings: {
-              slidesToShow: 3,
               slidesToScroll: 1,
             },
           },
         ]}
       >
-        {Array.from(Array(8), (_, i) => (
-          <React.Fragment key={i}>
-            <BrandCard />
-          </React.Fragment>
+        {Array.from(Array(7), (_, i) => (
+          <React.Fragment key={i}>{children}</React.Fragment>
         ))}
       </Carousel>
       <div className="arrow-container">
