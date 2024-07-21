@@ -16,13 +16,13 @@ export const CommonSlider = ({
   const handlePrevClick = () => {
     setPrevClick(true);
     ref.current.prev();
-    setTimeout(() => setPrevClick(false), 200); // Reset click state after 200ms
+    setTimeout(() => setPrevClick(false), 0); // Reset click state after 0s
   };
 
   const handleNextClick = () => {
     setNextClick(true);
     ref.current.next();
-    setTimeout(() => setNextClick(false), 200); // Reset click state after 200ms
+    setTimeout(() => setNextClick(false), 0); // Reset click state after 0s
   };
   useEffect(() => {
     const allSlicks = document.querySelectorAll(
@@ -41,7 +41,7 @@ export const CommonSlider = ({
     const currentSlickIndex2 =
       activeSlicks[activeSlicks?.length - 1]?.getAttribute('data-index');
 
-    if (+currentSlickIndex2 === filteredElements?.length - 1) {
+    if (+currentSlickIndex2 >= filteredElements?.length - 1) {
       setIsLastSslick(true);
     } else {
       setIsLastSslick(false);
@@ -94,7 +94,7 @@ export const CommonSlider = ({
           },
         ]}
       >
-        {Array.from(Array(7), (_, i) => (
+        {Array.from(Array(8), (_, i) => (
           <React.Fragment key={i}>{children}</React.Fragment>
         ))}
       </Carousel>
