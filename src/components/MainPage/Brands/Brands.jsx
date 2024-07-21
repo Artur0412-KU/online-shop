@@ -13,13 +13,13 @@ export const Brands = () => {
   const handlePrevClick = () => {
     setPrevClick(true);
     ref.current.prev();
-    setTimeout(() => setPrevClick(false), 200); // Reset click state after 200ms
+    setTimeout(() => setPrevClick(false), 0); // Reset click state after 0s
   };
 
   const handleNextClick = () => {
     setNextClick(true);
     ref.current.next();
-    setTimeout(() => setNextClick(false), 200); // Reset click state after 200ms
+    setTimeout(() => setNextClick(false), 0); // Reset click state after 0s
   };
   useEffect(() => {
     const allSlicks = document.querySelectorAll(

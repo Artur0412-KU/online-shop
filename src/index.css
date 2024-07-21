@@ -513,6 +513,7 @@ hr:active {
 }
 .slick-track {
   display: flex !important;
+  justify-content: space-between;
   gap: 40px;
 }
 
@@ -552,6 +553,13 @@ hr:active {
   color: #6f4c9a;
   font-size: 17px;
   padding-top: 4px;
+}
+.ant-rate-star:focus-visible {
+  outline: none !important;
+}
+.ant-rate-star > div:focus-visible {
+  outline: none !important;
+  transform: scale(1) !important;
 }
 
 .card-img {
