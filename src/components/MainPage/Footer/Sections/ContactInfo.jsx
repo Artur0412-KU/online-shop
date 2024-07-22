@@ -10,7 +10,7 @@ export default function ContactInfo() {
           <a
             key={index}
             href={item.link}
-            target='_blank'
+            target="_blank"
             rel="noopener noreferrer"
           >
             <img src={item.icon} alt="" className={item.className} />

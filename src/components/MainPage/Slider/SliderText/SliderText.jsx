@@ -4,7 +4,7 @@ import DATA from './constants';
 
 export default function SliderText(props) {
   // const [data, setData] = useState(DATA);
-  const [isClicked, setIsClicked] = useState(true);
+  const [isClicked, setIsClicked] = useState(false);
 
   const handleClick = (event) => {
     event.stopPropagation();
@@ -14,18 +14,22 @@ export default function SliderText(props) {
   return (
     <div className="slider-text">
       <h2>{props.text}</h2>
-      <Link className="button-link" to="/smartphones" onClick={handleClick}>
+      <Link className="button-link" onClick={handleClick}>
         <div className="button-content">
-          <span>See more</span>
+          <span
+            className={`button-link ${isClicked ? 'button-link-active' : ''}`}
+          >
+            See more
+          </span>
           {DATA.map((item) => (
             <img
-              src={isClicked ? item.img : item.imgClick}
+              src={isClicked ? item.imgClick : item.img}
               alt="Right Icon"
               key={crypto.randomUUID()}
             />
           ))}
         </div>
-        <hr className="button-hr" />
+        <hr className={`button-hr ${isClicked ? 'button-hr-active' : ''}`} />
       </Link>
     </div>
   );

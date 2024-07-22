@@ -32,6 +32,24 @@ a {
   margin: 0;
 }
 
+/* Mobile-specific styles for iPhone 14 Pro Max */
+@media (max-width: 430px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 17px;
+    padding-bottom: 12px;
+    background-color: #ffffff;
+  }
+  .nunito-sans-logo {
+    font-size: 34px;
+  }
+}
+
+/* Hide Catalog on smartphone screens */
+
 /* #endregion */
 
 /* search */
@@ -51,6 +69,8 @@ a {
 :where(.css-1qfezbu).ant-input-affix-wrapper {
   border-radius: 13px;
   padding-left: 22px;
+  font-family: "Inter";
+  font-size: 16px;
 }
 
 .search-input {
@@ -282,8 +302,6 @@ i {
 }
 
 /* #endregion */
-
-/* #region slider-text-top */
 .slider-text {
   padding-left: 50px;
   padding-top: 48px;
@@ -309,34 +327,38 @@ i {
   justify-content: center;
   gap: 8px;
   cursor: pointer;
+  margin-top: -7px;
 }
 
 .button-link {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2px;
+  height: 24px;
+  font-weight: 400;
+  word-spacing: 0.2px;
   font-size: 16px;
   color: #00820d;
   text-decoration: none;
+  margin-top: 4px;
 }
 
-.button-link:active {
+.button-link-active {
   color: #6f4c9a;
 }
 
 .button-hr {
-  border: 1px solid #00820d;
+  border: 0.5px solid #00820d;
   width: 100%;
   margin: 0;
 }
 
-.slider-text-button .button-content {
-  width: 100%;
+hr.button-hr-active {
+  border: 0.5px solid #6f4c9a;
 }
 
-hr:active {
-  color: #6f4c9a;
+.slider-text-button .button-content {
+  width: 100%;
 }
 
 @media (max-width: 1024px) {
@@ -348,17 +370,15 @@ hr:active {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .slider-text h2 {
     font-size: 24px;
   }
-}
-
-@media (max-width: 375px) {
-  .slider-text {
+  .slider-text { 
     padding-left: 16px;
     padding-right: 16px;
-  }
+    padding-top: 32px;
+ } 
 }
 /* #endregion */
 
@@ -530,6 +550,12 @@ hr:active {
   object-fit: cover; /* Ensure image covers the area */
 }
 
+@media screen and (min-width: 1550px) and (max-width: 2100px) {
+  .brands-arrow-container {
+    margin-right: calc(1px + (30 - 0) * ((100vw - 1550px) / (2088 - 1540)));
+  }
+}
+
 @media screen and (max-width: 1590px) and (min-width: 768px) {
   .card {
     height: auto;
@@ -557,15 +583,12 @@ hr:active {
 .ant-rate-star:focus-visible {
   outline: none !important;
 }
-
 .ant-rate-star > div:focus-visible {
   outline: none !important;
   transform: scale(1) !important;
 }
-
 .card-img {
   margin: 0 auto;
-
   position: relative;
 }
 
@@ -671,6 +694,11 @@ hr:active {
   .carousel-wrapper {
     padding: 24px;
   }
+
+  .carousel-brands-container {
+    padding-bottom: 0;
+  }
+
   .ant-card-body {
     padding: 12px;
   }
@@ -725,8 +753,9 @@ hr:active {
 
   .card-palette {
     height: 44px;
-    width: 12px;
-    left: 130%;
+    left: 105%;
+    bottom: 0;
+    right: 0;
   }
 
   .card-palette-laptop {
@@ -752,13 +781,16 @@ hr:active {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px)  {  
   .slick-track {
     gap: 8px;
   }
   .card {
     width: auto;
     height: 287px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .card-rate {
@@ -774,6 +806,7 @@ hr:active {
   .carousel-wrapper {
     padding: 16px;
   }
+
   .card-footer {
     margin-top: 16px;
   }
@@ -785,11 +818,8 @@ hr:active {
   }
 
   .card p {
-    font-size: 14px;
-    font-weight: medium;
-  }
-
-  .card p {
+    font-size: 16px;
+    font-weight: 600;
     padding-top: 20px;
   }
 
@@ -799,24 +829,24 @@ hr:active {
   }
 
   .card-buy {
-    height: 45px;
-    width: 45px;
+    height: 48px;
+    width: 48px;
   }
 
-  .body-card {
-    height: 90px;
+  .body-card {  
     width: auto;
+    height: 100px;
   }
 
   .card-palette {
-    left: 85px;
+    left: 115%;
   }
 
   .product-card {
     width: 100px;
     height: 100px;
   }
-}
+} 
 
 /* #endregion */
 

@@ -96,12 +96,13 @@ export const Brands = () => {
             },
           },
           {
-            breakpoint: 375,
+            breakpoint: 450, 
             settings: {
               slidesToShow: 3,
               slidesToScroll: 1,
             },
           },
+          
         ]}
       >
         {Array.from(Array(8), (_, i) => (
