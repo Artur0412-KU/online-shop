@@ -348,17 +348,15 @@ hr:active {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .slider-text h2 {
     font-size: 24px;
   }
-}
-
-@media (max-width: 375px) {
-  .slider-text {
+  .slider-text { 
     padding-left: 16px;
     padding-right: 16px;
-  }
+    padding-top: 32px;
+ } 
 }
 /* #endregion */
 
@@ -564,7 +562,6 @@ hr:active {
 
 .card-img {
   margin: 0 auto;
-
   position: relative;
 }
 
@@ -670,6 +667,11 @@ hr:active {
   .carousel-wrapper {
     padding: 24px;
   }
+
+  .carousel-brands-container {
+    padding-bottom: 0;
+  }
+
   .ant-card-body {
     padding: 12px;
   }
@@ -724,8 +726,9 @@ hr:active {
 
   .card-palette {
     height: 44px;
-    width: 12px;
-    left: 130%;
+    left: 105%;
+    bottom: 0;
+    right: 0;
   }
 
   .card-palette-laptop {
@@ -751,13 +754,16 @@ hr:active {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px)  {  
   .slick-track {
     gap: 8px;
   }
   .card {
     width: auto;
     height: 287px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .card-rate {
@@ -773,6 +779,7 @@ hr:active {
   .carousel-wrapper {
     padding: 16px;
   }
+
   .card-footer {
     margin-top: 16px;
   }
@@ -784,11 +791,8 @@ hr:active {
   }
 
   .card p {
-    font-size: 14px;
-    font-weight: medium;
-  }
-
-  .card p {
+    font-size: 16px;
+    font-weight: 600;
     padding-top: 20px;
   }
 
@@ -798,17 +802,17 @@ hr:active {
   }
 
   .card-buy {
-    height: 45px;
-    width: 45px;
+    height: 48px;
+    width: 48px;
   }
 
-  .body-card {
-    height: 90px;
+  .body-card {  
     width: auto;
+    height: 100px;
   }
 
   .card-palette {
-    left: 85px;
+    left: 115%;
   }
 
   .product-card {
