@@ -94,7 +94,7 @@ export const CommonSlider = ({
           },
         ]}
       >
-        {Array.from(Array(7), (_, i) => (
+        {Array.from(Array(8), (_, i) => (
           <React.Fragment key={i}>{children}</React.Fragment>
         ))}
       </Carousel>
