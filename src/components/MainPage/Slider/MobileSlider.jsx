@@ -113,6 +113,13 @@ export default function MobileSlider() {
             },
           },
           {
+            breakpoint: 450, 
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+          {
             breakpoint: 375, 
             settings: {
               slidesToShow: 2,
