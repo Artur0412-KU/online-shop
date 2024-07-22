@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 body {
+  box-sizing: border-box;
   margin: 0 auto;
   font-family: "Inter", sans-serif;
   background-color: #f8f7fa;
@@ -340,14 +341,14 @@ hr:active {
 
 @media (max-width: 1024px) {
   /* For screens smaller than 1024px */
- .slider-text { 
+  .slider-text {
     justify-content: space-between;
     padding-left: 24px;
     padding-right: 24px;
- }
+  }
 }
 
-@media (max-width: 450px){
+@media (max-width: 450px) {
   .slider-text h2 {
     font-size: 24px;
   }
@@ -357,7 +358,6 @@ hr:active {
     padding-top: 32px;
  } 
 }
-
 /* #endregion */
 
 /* #region Carousel */
@@ -368,11 +368,15 @@ hr:active {
   padding-top: 50px;
   padding-right: 50px;
   padding-bottom: 24px;
+  box-sizing: border-box;
 }
 
 .brands-container {
   padding-bottom: 24px;
   background-color: #f8f7fa;
+}
+.brands-container > div > div {
+  margin: 0 auto;
 }
 
 .carousel-slide {
@@ -385,44 +389,100 @@ hr:active {
   margin-right: 20px;
   align-items: end;
 }
-
-.btn-arrow-prev,
-.btn-arrow-next {
-  padding: 2px;
+.arrow-container > div {
+  display: flex;
+}
+.btn-arrow-prev {
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
-  border: 3px solid #00820d;
-  border-radius: 12px;
-}
-.brands-container .slick-active > div > div {
-  display: flex !important;
   justify-content: center;
-}
-
-.carousel-wrapper .btn-arrow-prev:hover,
-.carousel-wrapper .btn-arrow-next:hover {
-  border-color: #4da856 !important;
-}
-
-.carousel-wrapper .btn-arrow-prev.clicked,
-.carousel-wrapper .btn-arrow-next.clicked {
-  border-color: #00680a !important;
-}
-
-.btn-arrow-prev {
+  border-radius: 12px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  border-right: 0;
+  border: 2px solid #00820d;
+  border-right: none;
+  outline: none;
 }
-
 .btn-arrow-next {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  border-left: 0;
+  border: 2px solid #00820d;
+  border-left: none;
+  outline: none;
+}
+/* when button hovered --- start*/
+.arrow-container > div:hover .btn-arrow-prev,
+.arrow-container > div:hover .btn-arrow-next {
+  cursor: pointer;
+}
+.arrow-container > div:hover .btn-arrow-prev {
+  border: 3px solid #4da856 !important;
+  border-right: none !important;
+}
+.arrow-container > div:hover .btn-arrow-next {
+  border: 3px solid #4da856 !important;
+  border-left: none !important;
+}
+/* when button hovered --- end*/
+
+/* when button active --- start*/
+.arrow-container > div .btn-arrow-prev:active {
+  border: 3px solid #00680a !important;
+  border-right: none !important;
+  outline: none;
+}
+.arrow-container > div .btn-arrow-next:active {
+  border: 3px solid #00680a !important;
+  border-left: none !important;
+  outline: none;
+}
+.arrow-container > div .btn-arrow-prev:active svg path,
+.arrow-container > div .btn-arrow-next:active svg path {
+  stroke-width: 2.5px;
+  stroke: #00680a !important;
+}
+/* when button active --- end*/
+
+/* when button disabled --- start*/
+.arrow-container > div .btn-arrow-prev.disabled {
+  border: 2px solid #c3c3c5 !important;
+  border-right: none !important;
+  cursor: not-allowed;
+}
+.arrow-container > div .btn-arrow-next.disabled {
+  border: 2px solid #c3c3c5 !important;
+  border-left: none !important;
+  cursor: not-allowed;
+}
+.arrow-container > div .btn-arrow-prev.disabled:hover {
+  border: 3px solid #c3c3c5 !important;
+  border-right: none !important;
+}
+.arrow-container > div .btn-arrow-next.disabled:hover {
+  border: 3px solid #c3c3c5 !important;
+  border-left: none !important;
+}
+.arrow-container > div .btn-arrow-prev.disabled svg path,
+.arrow-container > div .btn-arrow-next.disabled svg path {
+  stroke: #c3c3c5 !important;
+}
+/* when button disabled --- end*/
+
+.slick-active div:focus-visible {
+  outline: none;
 }
 
-.wrapper-bottom, .carousel-brands-container {
-    padding-bottom: 24px;
+.wrapper-bottom,
+.carousel-brands-container {
+  padding-bottom: 24px;
 }
 
 /* #region Card */
@@ -446,31 +506,27 @@ hr:active {
 }
 
 .card:hover {
+  cursor: pointer;
   transform: scale(1.05);
 }
 .slick-track {
   display: flex !important;
+  justify-content: space-between;
   gap: 40px;
 }
 
-.product-card {
+.brand-card {
   margin: 10px 0;
   border-radius: 15px;
 
   transition: all 0.3s;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
 }
-.product-card img {
+.brand-card img {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Ensure image covers the area */
 }
-
-@media screen and (min-width: 1550px) and (max-width: 2100px) {
-  .brands-arrow-container {
-    margin-right: calc(1px + (30 - 0) * ((100vw - 1550px) / (2088 - 1540)));
-  }
-} 
 
 @media screen and (max-width: 1590px) and (min-width: 768px) {
   .card {
@@ -481,9 +537,13 @@ hr:active {
     margin: 10px 0; /* Maintain vertical margin */
     height: auto;
   }
+  .brand-card {
+    margin: 0 auto;
+  }
 }
 
-.product-card:hover {
+.brand-card:hover {
+  cursor: pointer;
   transform: scale(1.05);
 }
 
@@ -491,6 +551,13 @@ hr:active {
   color: #6f4c9a;
   font-size: 17px;
   padding-top: 4px;
+}
+.ant-rate-star:focus-visible {
+  outline: none !important;
+}
+.ant-rate-star > div:focus-visible {
+  outline: none !important;
+  transform: scale(1) !important;
 }
 
 .card-img {
@@ -502,7 +569,6 @@ hr:active {
   width: 155px;
   height: 200px;
 }
-
 
 .card-palette,
 .card-palette-laptop {
@@ -533,8 +599,6 @@ hr:active {
   .card-img-laptop {
     width: 120px;
   }
-
-  
 }
 
 .card-img-laptop {
@@ -658,7 +722,7 @@ hr:active {
   .card-svg_like {
     width: 32px;
     height: 32px;
-  } 
+  }
 
   .card-palette {
     height: 44px;
@@ -673,7 +737,7 @@ hr:active {
     left: 95%;
   }
 
-  .arrow-container  {
+  .arrow-container {
     display: none;
   }
 
@@ -684,7 +748,7 @@ hr:active {
     align-items: center;
     justify-content: center;
   }
-  
+
   .product-img {
     width: 100%;
   }
@@ -707,7 +771,8 @@ hr:active {
     padding-top: 6px;
   }
 
-  :where(.css-dev-only-do-not-override-1qfezbu).ant-rate .ant-rate-star:not(:last-child) {
+  :where(.css-dev-only-do-not-override-1qfezbu).ant-rate
+    .ant-rate-star:not(:last-child) {
     margin-inline-end: 1px;
   }
 
@@ -734,8 +799,8 @@ hr:active {
   .card-svg_like {
     width: 24px;
     height: 24px;
-  } 
-  
+  }
+
   .card-buy {
     height: 48px;
     width: 48px;
