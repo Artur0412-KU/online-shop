@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { Card, Rate } from "antd";
-import DATA_CARD from "./costants";
+import React, { useState } from 'react';
+import { Card, Rate } from 'antd';
+import DATA_CARD from './costants';
 
 export default function ProductCard() {
   // const [data, setData] = useState(DATA_CARD);
@@ -8,14 +8,13 @@ export default function ProductCard() {
   const [isClicked, setIsClicked] = useState(false);
   const [isClickedLike, setIsClickedLike] = useState(true); // ? Context -> LaptopCard double
   const [isMouseDown, setIsMouseDown] = useState(false);
-  
+
   const handleClickBuy = () => {
     setIsClicked(true);
     setTimeout(() => {
       setIsClicked(false);
     }, 150);
   };
-  
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
@@ -41,7 +40,6 @@ export default function ProductCard() {
             <img src={item.img} alt="#" className="body-card" />
             <img className="card-palette" src={item.colorPalette} alt="#" />
           </div>
-          
           <h3>{item.title}</h3>
           <Rate className="card-rate" />
           <div className="card-footer">
@@ -67,5 +65,4 @@ export default function ProductCard() {
       ))}
     </div>
   );
-
 }

@@ -75,6 +75,7 @@ export default function MobileSlider() {
         autoplay={false}
         dots={false}
         ref={ref}
+        initialSlide={0}
         responsive={[
           {
             breakpoint: 3200, // Less than 3200px
@@ -98,7 +99,7 @@ export default function MobileSlider() {
             },
           },
           {
-            breakpoint: 1550, // Less than 1440px
+            breakpoint: 1550, // Less than 1550px
             settings: {
               slidesToShow: 4,
               slidesToScroll: 1,
@@ -112,7 +113,14 @@ export default function MobileSlider() {
             },
           },
           {
-            breakpoint: 375,
+            breakpoint: 450, 
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 375, 
             settings: {
               slidesToShow: 2,
               slidesToScroll: 1,
@@ -120,7 +128,7 @@ export default function MobileSlider() {
           },
         ]}
       >
-        {Array.from(Array(7), (_, i) => (
+        {Array.from({ length: 7 }).map((_, i) => (
           <div key={i}>
             <ProductCard/>
           </div>

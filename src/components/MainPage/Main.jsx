@@ -1,16 +1,15 @@
 import React, { useEffect } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
 import Header from './Header/Header';
 import ProductList from './ProductList/ProductList';
 import Poster from './Poster/Poster';
-import MobileSlider from './Slider/MobileSlider';
-import ViewedSlider from './Slider/ViewedSlider';
 import Benefits from './Benefits/Benefits';
 import Footer from './Footer/Footer';
-import Brands from './Brands/Brands';
-import LaptopSlider from './Slider/LaptopSlider';
+import { Brands } from './Brands/Brands';
+import { CommonSlider } from './Slider/CommonSlider';
 import Navigation from './Navigation/Navigation';
 import SliderText from './Slider/SliderText/SliderText';
+import ProductCard from './Card/ProductCard';
+import LaptopCard from './Card/LaptopCard';
 
 export default function Main() {
   useEffect(() => {
@@ -33,15 +32,30 @@ export default function Main() {
       </div>
 
       <SliderText text="Smartphone" />
-      <MobileSlider />
+      <CommonSlider
+        carouselClassName="mobile-carausel"
+        sliderClassName="mobile-slider"
+      >
+        <ProductCard />
+      </CommonSlider>
 
       <Brands />
 
       <SliderText text="Laptop" />
-      <LaptopSlider />
+      <CommonSlider
+        carouselClassName="laptop-carausel"
+        sliderClassName="laptop-slider"
+      >
+        <LaptopCard />
+      </CommonSlider>
 
       <SliderText text="Previously reviewed offers" />
-      <ViewedSlider />
+      <CommonSlider
+        carouselClassName="viewed-carausel"
+        sliderClassName="viewed-slider"
+      >
+        <ProductCard />
+      </CommonSlider>
 
       <Benefits />
       <Footer />
