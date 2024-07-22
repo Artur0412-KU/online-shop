@@ -31,6 +31,24 @@ a {
   margin: 0;
 }
 
+/* Mobile-specific styles for iPhone 14 Pro Max */
+@media (max-width: 430px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 17px;
+    padding-bottom: 12px;
+    background-color: #ffffff;
+  }
+  .nunito-sans-logo {
+    font-size: 34px;
+  }
+}
+
+/* Hide Catalog on smartphone screens */
+
 /* #endregion */
 
 /* search */
@@ -50,6 +68,8 @@ a {
 :where(.css-1qfezbu).ant-input-affix-wrapper {
   border-radius: 13px;
   padding-left: 22px;
+  font-family: "Inter";
+  font-size: 16px;
 }
 
 .search-input {
