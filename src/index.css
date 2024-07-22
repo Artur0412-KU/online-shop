@@ -366,9 +366,9 @@ hr:active {
 
 .carousel-wrapper {
   background-color: #eae4ee;
-  padding-left: 50px;
+  padding-left: 20px;
   padding-top: 50px;
-  padding-right: 50px;
+  padding-right: 30px;
   padding-bottom: 24px;
   box-sizing: border-box;
 }
@@ -557,6 +557,7 @@ hr:active {
 .ant-rate-star:focus-visible {
   outline: none !important;
 }
+
 .ant-rate-star > div:focus-visible {
   outline: none !important;
   transform: scale(1) !important;
