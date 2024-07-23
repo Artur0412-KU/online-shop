@@ -14,19 +14,21 @@ const SearchField = ({ status, onHover }) => {
               height={'24px'}
               color={'#6a0dad'}
               style={{ cursor: 'pointer' }}
+              tabIndex={0}
             />
           ),
         };
       case 'Disable':
         return {
           disabled: true,
-          style: { backgroundColor: '#E6E6E6' },
+          style: { backgroundColor: '#ffffff' },
           suffix: (
             <SearchIcon
               width={'24px'}
               height={'24px'}
-              color={'#A5A5A5'}
+              color={'#FFFFFF'}
               style={{ cursor: 'not-allowed' }}
+              tabIndex={-1}
             />
           ),
         };
@@ -37,8 +39,9 @@ const SearchField = ({ status, onHover }) => {
             <SearchIcon
               width={'24px'}
               height={'24px'}
-              color={'#6a0dad'}
+              color={'#FFFFFF'}
               style={{ cursor: 'pointer' }}
+              tabIndex={0}
             />
           ),
         };
@@ -52,11 +55,13 @@ const SearchField = ({ status, onHover }) => {
       onMouseEnter={() => onHover('Hover')}
       onMouseLeave={() => onHover('Disable')}
       style={{ width: 610, height: 56, display: 'flex', borderRadius: '16px' }}
+      tabIndex={0}
     >
       <Input
         onFocus={() => onHover('Active')}
         placeholder={status === 'Active' ? null : 'Searching...'}
         {...getStatusProps(status)}
+        tabIndex={0}
       />
     </div>
   );

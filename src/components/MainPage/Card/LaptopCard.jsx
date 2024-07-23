@@ -55,11 +55,13 @@ export default function LaptopCard() {
               className="card-buy"
               onMouseDown={handleMouseDown}
               onMouseUp={handleMouseUp}
-              src={isMouseDown
-                ? item.svgCardClick
-                : isHovered
-                  ? item.svgCardHover
-                  : item.svgCard}
+              src={
+                isMouseDown
+                  ? item.svgCardClick
+                  : isHovered
+                    ? item.svgCardHover
+                    : item.svgCard
+              }
               alt="buy"
               width={43}
               height={43}

@@ -32,6 +32,24 @@ a {
   margin: 0;
 }
 
+/* Mobile-specific styles for iPhone 14 Pro Max */
+@media (max-width: 430px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 17px;
+    padding-bottom: 12px;
+    background-color: #ffffff;
+  }
+  .nunito-sans-logo {
+    font-size: 34px;
+  }
+}
+
+/* Hide Catalog on smartphone screens */
+
 /* #endregion */
 
 /* search */
@@ -51,6 +69,8 @@ a {
 :where(.css-1qfezbu).ant-input-affix-wrapper {
   border-radius: 13px;
   padding-left: 22px;
+  font-family: "Inter";
+  font-size: 16px;
 }
 
 .search-input {
@@ -282,8 +302,6 @@ i {
 }
 
 /* #endregion */
-
-/* #region slider-text-top */
 .slider-text {
   padding-left: 50px;
   padding-top: 48px;
@@ -309,34 +327,38 @@ i {
   justify-content: center;
   gap: 8px;
   cursor: pointer;
+  margin-top: -7px;
 }
 
 .button-link {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2px;
+  height: 24px;
+  font-weight: 400;
+  word-spacing: 0.2px;
   font-size: 16px;
   color: #00820d;
   text-decoration: none;
+  margin-top: 4px;
 }
 
-.button-link:active {
+.button-link-active {
   color: #6f4c9a;
 }
 
 .button-hr {
-  border: 1px solid #00820d;
+  border: 0.5px solid #00820d;
   width: 100%;
   margin: 0;
 }
 
-.slider-text-button .button-content {
-  width: 100%;
+hr.button-hr-active {
+  border: 0.5px solid #6f4c9a;
 }
 
-hr:active {
-  color: #6f4c9a;
+.slider-text-button .button-content {
+  width: 100%;
 }
 
 @media (max-width: 1024px) {
@@ -529,6 +551,12 @@ hr:active {
   object-fit: cover; /* Ensure image covers the area */
 }
 
+@media screen and (min-width: 1550px) and (max-width: 2100px) {
+  .brands-arrow-container {
+    margin-right: calc(1px + (30 - 0) * ((100vw - 1550px) / (2088 - 1540)));
+  }
+}
+
 @media screen and (max-width: 1590px) and (min-width: 768px) {
   .card {
     height: auto;
@@ -556,15 +584,12 @@ hr:active {
 .ant-rate-star:focus-visible {
   outline: none !important;
 }
-
 .ant-rate-star > div:focus-visible {
   outline: none !important;
   transform: scale(1) !important;
 }
-
 .card-img {
   margin: 0 auto;
-
   position: relative;
 }
 
@@ -670,9 +695,11 @@ hr:active {
   .carousel-wrapper {
     padding: 24px;
   }
+
   .carousel-brands-container {
     padding-bottom: 0;
   }
+
   .ant-card-body {
     padding: 12px;
   }
@@ -780,6 +807,7 @@ hr:active {
   .carousel-wrapper {
     padding: 16px;
   }
+
   .card-footer {
     margin-top: 16px;
   }
