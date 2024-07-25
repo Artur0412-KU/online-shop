@@ -374,11 +374,11 @@ hr.button-hr-active {
   .slider-text h2 {
     font-size: 24px;
   }
-  .slider-text { 
+  .slider-text {
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 32px;
- } 
+  }
 }
 /* #endregion */
 
@@ -782,7 +782,7 @@ hr.button-hr-active {
   }
 }
 
-@media (max-width: 450px)  {  
+@media (max-width: 450px) {
   .slick-track {
     gap: 8px;
   }
@@ -834,7 +834,7 @@ hr.button-hr-active {
     width: 48px;
   }
 
-  .body-card {  
+  .body-card {
     width: auto;
     height: 100px;
   }
@@ -847,7 +847,7 @@ hr.button-hr-active {
     width: 100px;
     height: 100px;
   }
-} 
+}
 
 /* #endregion */
 
