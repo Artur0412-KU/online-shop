@@ -1,16 +1,18 @@
 import React from 'react';
+import { ROOT } from '../../../App';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
-  const handleLogoClick = (e) => {
+  /*   const handleLogoClick = (e) => {
     e.preventDefault();
     window.location.reload();
-  };
+  }; */
 
   return (
     <header className="header">
-      <a href="#" onClick={handleLogoClick}>
+      <Link to={ROOT}>
         <p className="nunito-sans-logo">GadgetHouse</p>
-      </a>
+      </Link>
     </header>
   );
 }
