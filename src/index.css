@@ -33,14 +33,117 @@ a {
 }
 
 /* Responsive styles */
-@media (max-width: 430px) {
+@media (max-width: 768px) {
+  #root {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .benefits-container,
+  .footer {
+    overflow: hidden;
+  }
   .header {
     display: flex;
     justify-content: center;
     border-width: 17px 16px 12px 16px;
-    padding: 17px 16px 12px 16px;
+    padding: 17px 16px 0 16px;
+  }
+  .header,
+  .navigation {
+    background-color: #fff !important;
+  }
+  .navigation {
+    position: relative;
+    gap: 9px;
+    padding: 12px 16px 16px 16px !important;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
+  }
+  .hamburger-menu {
+    padding: 0 15px;
+    flex-basis: 48px;
+    max-width: 18px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .catalog-item {
+    width: auto !important;
+  }
+  .catalog-item:hover,
+  .catalog-item:active {
+    gap: 58px;
+  }
+  .burger-navigations-buttons > button {
+    box-sizing: border-box;
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    border: 1px solid #eae4ee !important;
+  }
+  .header-search {
+    flex-grow: 1;
+    max-height: 48px;
+
+    > span {
+      padding: 0 !important;
+      align-items: center;
+      > input {
+        line-height: normal !important;
+        margin: 0 5px 0 22px !important;
+      }
+      > span {
+        width: 48px;
+        height: 48px;
+        padding: 0 12px;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+        background-color: #00820d;
+        border: 1px solid #00820d;
+        cursor: pointer;
+        > svg path {
+          stroke: #fff;
+        }
+        &:hover {
+          background-color: #00680a;
+        }
+      }
+    }
+  }
+  .navigations-buttons .navigation-button {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 48px !important;
+    min-width: 48px !important;
+    min-height: 48px !important;
+    max-height: 48px !important;
+    padding: 0 !important;
+    border: 1px solid #eae4ee !important;
+    cursor: pointer;
+    > img {
+      max-width: 23px;
+      max-height: 28px;
+    }
+  }
+  .navigations-buttons .navigation-button:hover > svg path {
+    stroke: #fff !important;
   }
 
+  .navigations-buttons .navigation-button:not(.navigation-button:last-child) {
+    display: none !important;
+  }
+  .main-container {
+    display: none !important;
+  }
+  .slider-text {
+    margin-top: 10px;
+    padding: 14px 16px 12px 16px !important;
+    background-color: #f8f7fa;
+  }
   .nunito-sans-logo {
     font-size: 34px;
   }
@@ -49,6 +152,36 @@ a {
     width: 100%;
     max-width: 100%; /* Ensure the search bar uses the full width */
     height: auto; /* Allow height to adjust based on content */
+  }
+}
+@media screen and (max-width: 425px) {
+  .product-list {
+    width: 90%;
+    min-width: 270px !important;
+    padding-right: 12px !important;
+  }
+  .catalog-nav {
+    display: block !important;
+  }
+  .catalog-item {
+    gap: 20px !important;
+    > div {
+      flex-grow: 0 !important;
+    }
+    i {
+      margin-right: 8px;
+    }
+  }
+  .catalog-item:hover > i,
+  .catalog-item:active > i {
+    margin-right: 0;
+  }
+  .catalog-list {
+    width: auto !important;
+    font-size: 1.1rem !important;
+  }
+  .catalog-items > div {
+    flex-grow: initial !important;
   }
 }
 
