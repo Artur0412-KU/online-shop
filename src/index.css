@@ -32,19 +32,53 @@ a {
   margin: 0;
 }
 
-/* Mobile-specific styles for iPhone 14 Pro Max */
+/* Responsive styles */
 @media (max-width: 430px) {
   .header {
     display: flex;
     justify-content: center;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 17px;
-    padding-bottom: 12px;
-    background-color: #ffffff;
+    border-width: 17px 16px 12px 16px;
+    padding: 17px 16px 12px 16px;
   }
+
   .nunito-sans-logo {
     font-size: 34px;
+  }
+
+  .search-container {
+    width: 100%;
+    max-width: 100%; /* Ensure the search bar uses the full width */
+    height: auto; /* Allow height to adjust based on content */
+  }
+}
+
+@media (max-width: 768px) and (min-width: 431px) {
+  .header {
+    padding: 20px 30px; /* Adjust padding for medium screens */
+  }
+
+  .nunito-sans-logo {
+    font-size: 34px; /* Adjust logo font size for medium screens */
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .header {
+    padding: 22px 40px; /* Adjust padding for larger screens */
+  }
+
+  .nunito-sans-logo {
+    font-size: 34px; /* Adjust logo font size for larger screens */
+  }
+}
+
+@media (min-width: 1025px) {
+  .header {
+    padding: 25px 50px; /* Default padding for larger screens */
+  }
+
+  .nunito-sans-logo {
+    font-size: 34px; /* Default logo font size for larger screens */
   }
 }
 
@@ -371,6 +405,13 @@ hr.button-hr-active {
 }
 
 @media (max-width: 450px) {
+  .button-link {
+    font-size: 9px;
+    margin-top: 0;
+    height: auto;
+    line-height: 150%;
+  }
+
   .slider-text h2 {
     font-size: 24px;
   }
@@ -380,7 +421,6 @@ hr.button-hr-active {
     padding-top: 32px;
   }
 }
-
 /* #endregion */
 
 /* #region Carousel */
@@ -562,8 +602,8 @@ hr.button-hr-active {
     height: auto;
   }
   .product-card {
-    width: calc(100% - 30px); /* Two cards per row with gap considered */
-    margin: 10px 0; /* Maintain vertical margin */
+    width: calc(100% - 30px);
+    margin: 10px 0;
     height: auto;
   }
   .brand-card {
@@ -590,7 +630,33 @@ hr.button-hr-active {
 }
 .card-img {
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
   position: relative;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1240px) and (min-width: 1024px) {
+  .card-img-right {
+    left: 70%;
+  }
+}
+
+.card-img-right {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 90px;
+  z-index: 100;
+  right: -45%;
+}
+
+.card-img-right-laptop {
+  right: -10%;
 }
 
 .body-card {
@@ -602,45 +668,21 @@ hr.button-hr-active {
 .card-palette-laptop {
   width: 24px;
   height: 88px;
-  position: absolute;
-  bottom: 0;
-  left: 190px;
-  z-index: 2;
-}
-
-.card-palette-laptop {
-  left: 245px;
-}
-
-@media screen and (max-width: 1440px) and (min-width: 1024px) {
-  .card-palette {
-    width: 24px;
-    position: absolute;
-    bottom: 0;
-    left: 160px;
-  }
-
-  .card-palette-laptop {
-    left: 170px;
-  }
-
-  .card-img-laptop {
-    width: 120px;
-  }
 }
 
 .card-img-laptop {
   margin: 0 auto;
-  position: relative;
-  width: 90%;
   z-index: 1;
+}
+
+.body-card-laptop {
+  width: auto;
 }
 
 .card-svg_like {
   cursor: pointer;
   width: 36px;
   height: 36px;
-  position: absolute;
   top: 10px;
   right: 10px;
   z-index: 2;
@@ -732,10 +774,23 @@ hr.button-hr-active {
     position: relative;
   }
 
+  .card-img-right {
+    gap: 60px;
+    right: -60%;
+  }
+
+  .card-img-right-laptop {
+    gap: 90px;
+    right: -20%;
+  }
+
   .body-card {
     width: 100px;
-    height: 124px;
-    object-fit: contain;
+    height: 130px;
+  }
+
+  .body-card-laptop {
+    width: auto;
   }
 
   .card h3 {
@@ -754,15 +809,13 @@ hr.button-hr-active {
 
   .card-palette {
     height: 44px;
-    left: 105%;
     bottom: 0;
-    right: 0;
   }
 
   .card-palette-laptop {
     width: 12px;
     height: 12px;
-    left: 95%;
+    right: -2%;
   }
 
   .arrow-container {
@@ -795,7 +848,7 @@ hr.button-hr-active {
   }
 
   .card-rate {
-    font-size: 10px;
+    font-size: 12px;
     padding-top: 6px;
   }
 
@@ -839,8 +892,19 @@ hr.button-hr-active {
     height: 100px;
   }
 
-  .card-palette {
-    left: 115%;
+  .body-card-laptop {
+    width: 130px;
+    height: 100px;
+  }
+
+  .card-img-right {
+    gap: 45px;
+    right: -60%;
+  }
+
+  .card-img-right-laptop {
+    gap: 80px;
+    right: -20%;
   }
 
   .product-card {
