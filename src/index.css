@@ -47,42 +47,40 @@ a {
 
   .search-container {
     width: 100%;
-    max-width: 100%; /* Ensure the search bar uses the full width */
-    height: auto; /* Allow height to adjust based on content */
+    max-width: 100%;
+    height: auto;
   }
 }
 
 @media (max-width: 768px) and (min-width: 431px) {
   .header {
-    padding: 20px 30px; /* Adjust padding for medium screens */
+    padding: 20px 30px;
   }
 
   .nunito-sans-logo {
-    font-size: 34px; /* Adjust logo font size for medium screens */
+    font-size: 34px;
   }
 }
 
 @media (max-width: 1024px) and (min-width: 769px) {
   .header {
-    padding: 22px 40px; /* Adjust padding for larger screens */
+    padding: 22px 40px;
   }
 
   .nunito-sans-logo {
-    font-size: 34px; /* Adjust logo font size for larger screens */
+    font-size: 34px;
   }
 }
 
 @media (min-width: 1025px) {
   .header {
-    padding: 25px 50px; /* Default padding for larger screens */
+    padding: 25px 50px;
   }
 
   .nunito-sans-logo {
-    font-size: 34px; /* Default logo font size for larger screens */
+    font-size: 34px;
   }
 }
-
-/* Hide Catalog on smartphone screens */
 
 /* #endregion */
 
