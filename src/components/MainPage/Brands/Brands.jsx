@@ -9,6 +9,7 @@ export const Brands = () => {
   const [nextClick, setNextClick] = useState(false);
   const [isLastSlick, setIsLastSslick] = useState();
   const [isFirstSlick, setIsFirstSslick] = useState();
+  const [currentSlickIndex, setCurrentSlickIndex] = useState(0); 
 
   const handlePrevClick = () => {
     setPrevClick(true);
