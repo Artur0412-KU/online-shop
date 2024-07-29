@@ -528,6 +528,13 @@ hr:active {
   object-fit: cover; /* Ensure image covers the area */
 }
 
+
+@media screen and (min-width: 1550px) and (max-width: 2100px) {
+  .brands-arrow-container {
+    margin-right: calc(1px + (30 - 0) * ((100vw - 1550px) / (2088 - 1540)));
+  }
+}
+
 @media screen and (max-width: 1590px) and (min-width: 768px) {
   .card {
     height: auto;

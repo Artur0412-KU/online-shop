@@ -22,25 +22,11 @@ export const Brands = () => {
     setTimeout(() => setNextClick(false), 0); // Reset click state after 0s
   };
   useEffect(() => {
-    const allSlicks = document.querySelectorAll(
-      `.brands-carousel .slick-slide`,
-    );
-    const filteredElements = Array.from(allSlicks).filter(
-      (element) => !element.classList.contains('slick-cloned'),
-    );
-    const activeSlicks = document.querySelectorAll(
-      `.brands-carousel .slick-active`,
-    );
-    const currentSlickIndex = document
-      .querySelector(`.brands-carousel .slick-current`)
-      .getAttribute('data-index');
-    const currentSlickIndex2 =
-      activeSlicks[activeSlicks?.length - 1]?.getAttribute('data-index');
+    const a = document.querySelector('.brands-arrow-container');
+    const b = document.body.offsetWidth + 16;
 
-    if (+currentSlickIndex2 === filteredElements?.length - 1) {
-      setIsLastSslick(true);
-    } else {
-      setIsLastSslick(false);
+    if (b > 1550 && b < 2100) {
+      a.style.marginRight = `calc(1px + (30 - 0) * ((100vw - 1550px) / (${b} - 1540)))`;
     }
     if (+currentSlickIndex === 0) {
       setIsFirstSslick(true);
@@ -102,7 +88,6 @@ export const Brands = () => {
               slidesToScroll: 1,
             },
           },
-          
         ]}
       >
         {Array.from(Array(8), (_, i) => (
