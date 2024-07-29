@@ -31,19 +31,17 @@ export default function LaptopCard() {
     <div className="card-container laptop-card">
       {DATA_CARD.map((item) => (
         <Card key={item.key} className="card">
-          <img
-            onClick={handleClickLike}
-            src={isClickedLike ? item.svgLike : item.svgLikeH}
-            alt="#"
-            className="card-svg_like"
-          />
-          <div className="card-img">
-            <img className="card-img-laptop" src={item.img2} alt="#" />
-            <img
-              className="card-palette-laptop"
-              src={item.colorPalette2}
-              alt="#"
-            />
+          <div className="card-img card-img-laptop">
+            <img src={item.img2} alt="#" className="body-card body-card-laptop" />
+            <div className='card-img-right card-img-right-laptop'>
+              <img
+                onClick={handleClickLike}
+                src={isClickedLike ? item.svgLike : item.svgLikeH}
+                alt="#"
+                className="card-svg_like"
+              />
+              <img className="card-palette-laptop" src={item.colorPalette2} alt="#" />
+            </div>
           </div>
 
           <h3>{item.title2}</h3>
@@ -55,11 +53,13 @@ export default function LaptopCard() {
               className="card-buy"
               onMouseDown={handleMouseDown}
               onMouseUp={handleMouseUp}
-              src={isMouseDown
-                ? item.svgCardClick
-                : isHovered
-                  ? item.svgCardHover
-                  : item.svgCard}
+              src={
+                isMouseDown
+                  ? item.svgCardClick
+                  : isHovered
+                    ? item.svgCardHover
+                    : item.svgCard
+              }
               alt="buy"
               width={43}
               height={43}

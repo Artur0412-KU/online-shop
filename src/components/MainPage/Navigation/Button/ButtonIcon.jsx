@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Button } from '@mui/material';
+import { Link } from 'react-router-dom';
 
-export default function ButtonIcon({ icon, clickImg, hoverImg }) {
+export default function ButtonIcon({ icon, clickImg, hoverImg, hrefPath }) {
   const [isHovered, setIsHovered] = useState(false);
   const [isClicked, setIsClicked] = useState(false); // ? Context -> LaptopCard double
 
@@ -22,6 +23,7 @@ export default function ButtonIcon({ icon, clickImg, hoverImg }) {
       onClick={handleClick}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      to={hrefPath}
     >
       <img
         src={isHovered ? hoverImg : isClicked ? clickImg : icon}

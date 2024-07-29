@@ -82,7 +82,7 @@ export const Brands = () => {
             },
           },
           {
-            breakpoint: 450, 
+            breakpoint: 450,
             settings: {
               slidesToShow: 3,
               slidesToScroll: 1,

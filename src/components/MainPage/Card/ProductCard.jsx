@@ -38,15 +38,19 @@ export default function ProductCard() {
     <div className="card-container mobile-card">
       {DATA_CARD.map((item) => (
         <Card key={item.key} className="card">
-          <img
-            onClick={handleClickLike}
-            src={isClickedLike ? item.svgLike : item.svgLikeH}
-            alt="#"
-            className="card-svg_like"
-          />
+          
           <div className="card-img">
             <img src={item.img} alt="#" className="body-card" />
-            <img className="card-palette" src={item.colorPalette} alt="#" />
+            <div className='card-img-right'>
+              <img
+                onClick={handleClickLike}
+                src={isClickedLike ? item.svgLike : item.svgLikeH}
+                alt="#"
+                className="card-svg_like"
+              />
+              <img className="card-palette" src={item.colorPalette} alt="#" />
+            </div>
+            
           </div>
           <h3>{item.title}</h3>
           <Rate className="card-rate" />
