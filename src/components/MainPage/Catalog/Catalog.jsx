@@ -19,6 +19,7 @@ export default function Catalog() {
         fontFamily: '"Inter", sans-serif',
         fontWeight: 'medium',
         maxWidth: '420px',
+        minWidth: '420px',
         height: '94px',
       }}
       startIcon={<img src={CatalogIcon} />}

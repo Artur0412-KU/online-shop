@@ -86,6 +86,8 @@ a {
   .header-search {
     flex-grow: 1;
     max-height: 48px;
+    margin-left: -40px;
+    margin-right: -42px;
 
     > span {
       padding: 0 !important;
@@ -163,12 +165,6 @@ a {
 
   .nunito-sans-logo {
     font-size: 34px;
-  }
-
-  .search-container {
-    width: 100%;
-    max-width: 100%; /* Ensure the search bar uses the full width */
-    height: auto; /* Allow height to adjust based on content */
   }
 }
 @media screen and (max-width: 425px) {

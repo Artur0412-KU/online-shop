@@ -50,7 +50,15 @@ const SearchField = ({ status, onHover }) => {
       onMouseLeave={() =>
         onHover((prev) => (prev === 'Active' ? 'Active' : 'Disable'))
       }
-      style={{ width: 610, height: 56, display: 'flex', borderRadius: '16px' }}
+      style={{
+        width: 610,
+        height: 56,
+        display: 'flex',
+        borderRadius: '16px',
+        paddingLeft: '40px',
+        paddingRight: '42px',
+        flexGrow: 1,
+      }}
     >
       <Input
         onFocus={() => onHover('Active')}
