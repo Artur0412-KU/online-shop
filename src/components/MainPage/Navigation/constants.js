@@ -32,8 +32,8 @@ const DATA = [
     key: '4',
     img: BasketIcon,
     hrefPath: '/basket',
-    hoverImg: BasketIcon,
-    clickImg: BasketIcon,
+    hoverImg: BasketIconWhite,
+    clickImg: BasketIconWhite,
   },
 ];
 

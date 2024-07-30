@@ -26,15 +26,17 @@ export const Brands = () => {
     const a = document.querySelector('.brands-arrow-container');
     const b = document.body.offsetWidth + 16;
 
-    if (b > 1550 && b < 2100) {
-      a.style.marginRight = `calc(1px + (30 - 0) * ((100vw - 1550px) / (${b} - 1540)))`;
+    if (a) {
+      if (b > 1550 && b < 2100) {
+        a.style.marginRight = `calc(1px + (30 - 0) * ((100vw - 1550px) / (${b} - 1540)))`;
+      }
     }
-    if (+currentSlickIndex === 0) {
+    if (currentSlickIndex === 0) {
       setIsFirstSslick(true);
     } else {
       setIsFirstSslick(false);
     }
-  }, [prevClick, nextClick]);
+  }, [prevClick, nextClick, currentSlickIndex]);
 
   return (
     <div className={`carousel-wrapper brands-carousel`}>
