@@ -86,8 +86,8 @@ a {
   .header-search {
     flex-grow: 1;
     max-height: 48px;
-    margin-left: -40px;
-    margin-right: -42px;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
 
     > span {
       padding: 0 !important;
@@ -195,56 +195,6 @@ a {
   }
   .catalog-items > div {
     flex-grow: initial !important;
-  }
-}
-
-@media (max-width: 768px) and (min-width: 431px) {
-  .header {
-    padding: 20px 30px; /* Adjust padding for medium screens */
-  }
-
-  .nunito-sans-logo {
-    font-size: 34px; /* Adjust logo font size for medium screens */
-  }
-}
-
-@media (max-width: 1024px) and (min-width: 769px) {
-  .header {
-    padding: 22px 40px; /* Adjust padding for larger screens */
-  }
-
-  .nunito-sans-logo {
-    font-size: 34px; /* Adjust logo font size for larger screens */
-  }
-}
-
-@media (min-width: 1025px) {
-  .header {
-    padding: 25px 50px; /* Default padding for larger screens */
-  }
-
-  .nunito-sans-logo {
-    font-size: 34px; /* Default logo font size for larger screens */
-  }
-}
-
-@media (max-width: 1024px) and (min-width: 769px) {
-  .header {
-    padding: 22px 40px;
-  }
-
-  .nunito-sans-logo {
-    font-size: 34px;
-  }
-}
-
-@media (min-width: 1025px) {
-  .header {
-    padding: 25px 50px;
-  }
-
-  .nunito-sans-logo {
-    font-size: 34px;
   }
 }
 

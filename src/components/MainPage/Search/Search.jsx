@@ -55,8 +55,9 @@ const SearchField = ({ status, onHover }) => {
         height: 56,
         display: 'flex',
         borderRadius: '16px',
-        paddingLeft: '40px',
-        paddingRight: '42px',
+        marginLeft: '40px',
+        marginRight: '42px',
+        minWidth: 150,
         flexGrow: 1,
       }}
     >
