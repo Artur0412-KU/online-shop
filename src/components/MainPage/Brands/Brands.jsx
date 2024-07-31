@@ -14,29 +14,34 @@ export const Brands = () => {
   const handlePrevClick = () => {
     setPrevClick(true);
     ref.current.prev();
-    setTimeout(() => setPrevClick(false), 0); // Reset click state after 0s
+    setTimeout(() => setPrevClick(false), 200); // Reset click state after 200ms
   };
 
   const handleNextClick = () => {
     setNextClick(true);
     ref.current.next();
-    setTimeout(() => setNextClick(false), 0); // Reset click state after 0s
+    setTimeout(() => setNextClick(false), 200); // Reset click state after 200ms
   };
-  useEffect(() => {
-    const a = document.querySelector('.brands-arrow-container');
-    const b = document.body.offsetWidth + 16;
 
-    if (a) {
-      if (b > 1550 && b < 2100) {
-        a.style.marginRight = `calc(1px + (30 - 0) * ((100vw - 1550px) / (${b} - 1540)))`;
+  const handleBeforeChange = (current, next) => {
+    setCurrentSlickIndex(next);
+  }
+
+  useEffect(() => {
+      const a = document.querySelector('.brands-arrow-container');
+      const b = document.body.offsetWidth + 16;
+
+      if (a) {
+        if (b > 1550 && b < 2100) {
+          a.style.marginRight = `calc(1px + (30 - 0) * ((100vw - 1550px) / (${b} - 1540)))`;
+        }
       }
-    }
-    if (currentSlickIndex === 0) {
-      setIsFirstSslick(true);
-    } else {
-      setIsFirstSslick(false);
-    }
-  }, [prevClick, nextClick, currentSlickIndex]);
+      if (+currentSlickIndex === 0) {
+       setIsFirstSslick(true);
+     } else {
+        setIsFirstSslick(false);
+     }
+   }, [prevClick, nextClick, currentSlickIndex]);
 
   return (
     <div className={`carousel-wrapper brands-carousel`}>
@@ -48,6 +53,7 @@ export const Brands = () => {
         dots={false}
         style={{ paddingBottom: '24px' }}
         ref={ref}
+        beforeChange={handleBeforeChange}
         responsive={[
           {
             breakpoint: 3200, // Less than 3200px
