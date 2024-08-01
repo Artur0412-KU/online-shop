@@ -970,11 +970,12 @@ hr.button-hr-active {
 
 @media (max-width: 450px) {
   .slick-track {
-    gap: 8px;
+    gap: 8px;  
   }
+
   .card {
     width: auto;
-    height: 287px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1026,23 +1027,28 @@ hr.button-hr-active {
   }
 
   .body-card-laptop {
-    width: 130px;
+    width: 120px;
     height: 100px;
   }
 
   .card-img-right {
     gap: 45px;
-    right: -60%;
+    left: auto;
   }
 
   .card-img-right-laptop {
     gap: 80px;
-    right: -20%;
   }
 
   .product-card {
     width: 100px;
     height: 100px;
+  }
+
+  .brand-card {
+    width: auto;
+    height: auto;
+    margin: 0;
   }
 }
 
