@@ -17,7 +17,6 @@ export default function ProductCard() {
 
   const handleMouseDown = () => {
     setIsMouseDown(true);
-
   };
 
   const handleMouseUp = () => {
