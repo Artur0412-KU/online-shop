@@ -59,6 +59,7 @@ const SearchField = ({ status, onHover }) => {
         {...getStatusProps(status)}
         style={{ borderRadius: '16px' }}
         value={searchValue}
+        name="search_product"
         onChange={handleSearchValueChange}
         maxLength={100}
         required
