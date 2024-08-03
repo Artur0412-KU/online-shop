@@ -43,47 +43,6 @@ a {
   padding-right: 42px;
 }
 
-/* Responsive styles */
-
-@media (max-width: 768px) and (min-width: 431px) {
-  .header {
-    padding: 20px 30px;
-  }
-
-  .nunito-sans-logo {
-    font-size: 34px;
-  }
-}
-@media screen and (max-width: 425px) {
-  .product-list {
-    width: 90%;
-    min-width: 270px !important;
-    padding-right: 12px !important;
-  }
-  .catalog-nav {
-    display: block !important;
-  }
-  .catalog-item {
-    gap: 20px !important;
-    > div {
-      flex-grow: 0 !important;
-    }
-    i {
-      margin-right: 8px;
-    }
-  }
-  .catalog-item:hover > i,
-  .catalog-item:active > i {
-    margin-right: 0;
-  }
-  .catalog-list {
-    width: auto !important;
-    font-size: 1.1rem !important;
-  }
-  .catalog-items > div {
-    flex-grow: initial !important;
-  }
-}
 
 /* #endregion */
 
@@ -1165,3 +1124,42 @@ hr.button-hr-active {
   }
 }
 
+@media (max-width: 768px) and (min-width: 431px) {
+  .header {
+    padding: 20px 30px;
+  }
+
+  .nunito-sans-logo {
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .product-list {
+    width: 90%;
+    min-width: 270px;
+    padding-right: 12px;
+  }
+  .catalog-nav {
+    display: block;
+  }
+  .catalog-item {
+    gap: 20px;
+    > div {
+      flex-grow: 0;
+    }
+    i {
+      margin-right: 8px;
+    }
+  }
+  .catalog-item:hover > i,
+  .catalog-item:active > i {
+    margin-right: 0;
+  }
+  .catalog-list {
+    width: auto;
+    font-size: 1.1rem;
+  }
+  .catalog-items > div {
+    flex-grow: initial;
+  }
+}
