@@ -32,6 +32,17 @@ a {
   margin: 0;
 }
 
+.header-search {
+  width: 610px;
+  height: 56px;
+  display: flex;
+  border-radius: 16px;
+  min-width: 150px;
+  flex-grow: 1;
+  padding-left: 40px;
+  padding-right: 42px;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   #root {
@@ -86,7 +97,8 @@ a {
   .header-search {
     flex-grow: 1;
     max-height: 48px;
-
+    padding-left: 0px;
+    padding-right: 0px;
     > span {
       padding: 0 !important;
       align-items: center;
@@ -132,7 +144,6 @@ a {
   .navigations-buttons .navigation-button:hover > svg path {
     stroke: #fff !important;
   }
-
   .navigations-buttons .navigation-button:not(.navigation-button:last-child) {
     display: none !important;
   }
@@ -147,11 +158,20 @@ a {
   .nunito-sans-logo {
     font-size: 34px;
   }
-
   .search-container {
     width: 100%;
-    max-width: 100%; /* Ensure the search bar uses the full width */
-    height: auto; /* Allow height to adjust based on content */
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 431px) {
+  .header {
+    padding: 20px 30px;
+  }
+
+  .nunito-sans-logo {
+    font-size: 34px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -184,38 +204,6 @@ a {
     flex-grow: initial !important;
   }
 }
-
-@media (max-width: 768px) and (min-width: 431px) {
-  .header {
-    padding: 20px 30px; /* Adjust padding for medium screens */
-  }
-
-  .nunito-sans-logo {
-    font-size: 34px; /* Adjust logo font size for medium screens */
-  }
-}
-
-@media (max-width: 1024px) and (min-width: 769px) {
-  .header {
-    padding: 22px 40px; /* Adjust padding for larger screens */
-  }
-
-  .nunito-sans-logo {
-    font-size: 34px; /* Adjust logo font size for larger screens */
-  }
-}
-
-@media (min-width: 1025px) {
-  .header {
-    padding: 25px 50px; /* Default padding for larger screens */
-  }
-
-  .nunito-sans-logo {
-    font-size: 34px; /* Default logo font size for larger screens */
-  }
-}
-
-/* Hide Catalog on smartphone screens */
 
 /* #endregion */
 
