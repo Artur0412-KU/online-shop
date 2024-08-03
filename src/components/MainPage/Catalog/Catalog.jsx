@@ -9,20 +9,17 @@ export default function Catalog() {
       style={{
         fontSize: '42px',
         backgroundColor: '#6f4c9a',
-        paddingLeft: '50px',
-        paddingRight: '173px',
-        paddingTop: '15px',
-        paddingBottom: '15px',
-        borderRadius: '0px',
+        padding: '15px 173px 15px 50px',
+        borderRadius: '0',
         color: '#fff',
         textTransform: 'capitalize',
         fontFamily: '"Inter", sans-serif',
-        fontWeight: 'medium',
+        fontWeight: 500,
         maxWidth: '420px',
         minWidth: '420px',
         height: '94px',
       }}
-      startIcon={<img src={CatalogIcon} />}
+      startIcon={<img src={CatalogIcon} alt="Catalog Icon" />}
     >
       Catalog
     </Button>
